@@ -3268,6 +3268,12 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "corporaciones" ] = "corporaciones";
 	$projectEntities[ "estructura" ] = array( "url" => "estructura", "type" => 0 );
 	$projectEntitiesReverse[ "estructura" ] = "estructura";
+	$projectEntities[ "admin_rights" ] = array( "url" => "admin_rights", "type" => 1 );
+	$projectEntitiesReverse[ "admin_rights" ] = "admin_rights";
+	$projectEntities[ "admin_members" ] = array( "url" => "admin_members", "type" => 1 );
+	$projectEntitiesReverse[ "admin_members" ] = "admin_members";
+	$projectEntities[ "admin_users" ] = array( "url" => "admin_users", "type" => 1 );
+	$projectEntitiesReverse[ "admin_users" ] = "admin_users";
 }
 
 function findTable( $table ) {

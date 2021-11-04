@@ -256,7 +256,7 @@ class MembersPage extends ListPage_Simple
 		
 		$sql = "select ". $grConnection->addFieldWrappers( "GroupID" ) .", "
 			. $grConnection->addFieldWrappers( "Label" )
-			." from ". $grConnection->addTableWrappers( "uggroups" ) 
+			." from ". $grConnection->addTableWrappers( "generales_uggroups" ) 
 			." order by ". $grConnection->addFieldWrappers( "Label" );
 		
 		$qResult = $grConnection->query( $sql );

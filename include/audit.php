@@ -402,6 +402,18 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="admin_rights")
+		{
+			return false;
+		}
+		if($table=="admin_members")
+		{
+			return false;
+		}
+		if($table=="admin_users")
+		{
+			return false;
+		}
 	}
 
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -807,6 +819,18 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="estructura")
+		{
+			return false;
+		}
+		if($table=="admin_rights")
+		{
+			return false;
+		}
+		if($table=="admin_members")
+		{
+			return false;
+		}
+		if($table=="admin_users")
 		{
 			return false;
 		}

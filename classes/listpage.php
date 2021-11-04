@@ -744,7 +744,28 @@ class ListPage extends RunnerPage
 					}
 					$this->audit->LogDelete($this->tName, $deleted_audit_values, $keys);
 				}
+						if ( $this->tName == ADMIN_USERS ) {
+					// delete _ugmembers corr. rec.
+					$dataSource = Security::getUgMembersDatasource();
+					
+					$user = $deleted_values[ GetUserNameField() ];
+					if( GetGlobalData("isFB", false) || GetGlobalData("isGoogleSignIn", false) ) {
+						$securityIdField = GetGlobalData("SpUserIdField", "");
+						if( $securityIdField )
+							$user = $deleted_values[ $securityIdField ];
+					}
 		
+					$dc = new DsCommand();
+					$dc->filter = DataCondition::FieldEquals( 
+						"UserName", 
+						$user, 
+						0, 
+						$this->pSet->isCaseInsensitiveUsername() ? dsCASE_INSENSITIVE : dsCASE_STRICT 
+					);
+					
+					$dataSource->deleteSingle( $dc, false );
+				}
+
 				if($this->eventExists("AfterDelete"))
 				{
 					RunnerContext::pushRecordContext( $deleted_values, $this );

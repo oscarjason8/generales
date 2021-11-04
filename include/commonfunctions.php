@@ -235,6 +235,12 @@ function checkTableName($shortTName )
 		return true;
 	if ("estructura" == $shortTName )
 		return true;
+	if ("admin_rights" == $shortTName )
+		return true;
+	if ("admin_members" == $shortTName )
+		return true;
+	if ("admin_users" == $shortTName )
+		return true;
 	return false;
 }
 
@@ -510,6 +516,33 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="estructura";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("admin_rights");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="admin_rights";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("admin_members");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="admin_members";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("admin_users");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="admin_users";
+	}
 	return $arr;
 }
 
@@ -544,6 +577,9 @@ function GetTablesListWithoutSecurity()
 	$arr[]="partido";
 	$arr[]="corporaciones";
 	$arr[]="estructura";
+	$arr[]="admin_rights";
+	$arr[]="admin_members";
+	$arr[]="admin_users";
 	return $arr;
 }
 
@@ -1184,7 +1220,7 @@ function ReadUserPermissions($userID = "")
 	$sql = "select ". $gConn->addFieldWrappers( "TableName" )
 		.", ". $gConn->addFieldWrappers( "AccessMask" )
 		.", ". $gConn->addFieldWrappers( "Page" )
-		." from ". $gConn->addTableWrappers( "ugrights" )
+		." from ". $gConn->addTableWrappers( "generales_ugrights" )
 		." where ". $gConn->addFieldWrappers( "GroupID" ) ." in (".$groupstr.")";
 
 	$qResult = $gConn->query( $sql );
@@ -1241,6 +1277,12 @@ function GetUserPermissionsDynamic($table="")
 	ReadUserPermissions();
 	if(IsAdmin())
 	{
+		if($table=="admin_rights")
+			return "ADESPIM";
+		if($table=="admin_members")
+			return "ADESPIM";
+		if($table=="admin_users")
+			return "ADESPIM";
 	}
 
 	return @$_SESSION["UserRights"][$_SESSION["UserID"]][$table]["mask"];
@@ -1402,6 +1444,24 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="estructura" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="admin_rights" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="admin_members" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="admin_users" )
 	{
 //	default permissions
 		// grant all by default
@@ -1654,7 +1714,7 @@ function SecuritySQL($strAction, $table, $strPerm="")
 	if(!strlen($strPerm))
 		$strPerm = GetUserPermissions($table);
 
-	if( strpos($strPerm, "M") === false )
+	if(strpos($strPerm,"M")===false)
 	{
 	}
 

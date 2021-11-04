@@ -544,6 +544,8 @@ $globalSettings["strFromEmail"] = "";
 
 $ajaxSearchStartsWith = true;
 
+$globalSettings["isDynamicPerm"] = true;
+
 
 
 
@@ -648,6 +650,8 @@ $arrCustomPages = array();
 			$cUserNameFieldType	= 200;
 																					$cPasswordFieldType	= 200;
 			
+$gPermissionsRefreshTime = 0;
+$gPermissionsRead = false;
 
 $useAJAX = true;
 $suggestAllContent = true;
@@ -655,9 +659,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "440_1635995821";
+$projectBuildKey = "441_1635995821";
 $wizardBuildKey = "35214";
-$projectBuildNumber = "440";
+$projectBuildNumber = "441";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -703,6 +707,9 @@ $tableCaptions["Spanish"]["Urnas___Completadas"] = "Urnas Completadas - Eleccion
 $tableCaptions["Spanish"]["partido"] = "Partido - Elecciones Generales 2021";
 $tableCaptions["Spanish"]["corporaciones"] = "Corporaciones";
 $tableCaptions["Spanish"]["estructura"] = "Estructura";
+$tableCaptions["Spanish"]["admin_rights"] = "Admin Rights";
+$tableCaptions["Spanish"]["admin_members"] = "Admin Members";
+$tableCaptions["Spanish"]["admin_users"] = "Add/Edit users";
 
 
 $globalEvents = new class_GlobalEvents;
@@ -789,7 +796,7 @@ $scriptname = getFileNameFromURL();
 }
 
 
-$isGroupSecurity = false;
+$isGroupSecurity = true;
 
 $isUseRTEBasic = true;
 

@@ -52,6 +52,9 @@ class tDAL
 	var $tblinternas_new_at_localhost__corporaciones;
 	var $tblinternas_new_at_localhost__distritos;
 	var $tblinternas_new_at_localhost__estructura;
+	var $tblinternas_new_at_localhost__generales_uggroups;
+	var $tblinternas_new_at_localhost__generales_ugmembers;
+	var $tblinternas_new_at_localhost__generales_ugrights;
 	var $tblinternas_new_at_localhost__partido;
 	var $tblinternas_new_at_localhost__sectores;
 	var $tblinternas_new_at_localhost__urna;
@@ -72,6 +75,9 @@ class tDAL
 		$this->lstTables[] = array("name" => "corporaciones", "varname" => "internas_new_at_localhost__corporaciones", "altvarname" => "corporaciones", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "distritos", "varname" => "internas_new_at_localhost__distritos", "altvarname" => "distritos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "estructura", "varname" => "internas_new_at_localhost__estructura", "altvarname" => "estructura", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "generales_uggroups", "varname" => "internas_new_at_localhost__generales_uggroups", "altvarname" => "generales_uggroups", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "generales_ugmembers", "varname" => "internas_new_at_localhost__generales_ugmembers", "altvarname" => "generales_ugmembers", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "generales_ugrights", "varname" => "internas_new_at_localhost__generales_ugrights", "altvarname" => "generales_ugrights", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "partido", "varname" => "internas_new_at_localhost__partido", "altvarname" => "partido", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "sectores", "varname" => "internas_new_at_localhost__sectores", "altvarname" => "sectores", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "urna", "varname" => "internas_new_at_localhost__urna", "altvarname" => "urna", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");

@@ -113,7 +113,9 @@ class MenuPage extends RunnerPage
 		$this->xt->assign("guestloginbutton", isLoggedAsGuest());
 		$this->xt->assign("logoutbutton", isSingleSign() && !isLoggedAsGuest());
 
-			*/
+			if( IsAdmin() )
+			$this->xt->assign("adminarea_link", true);
+		*/
 
 		$this->assignBody();
 	}

@@ -269,6 +269,11 @@ class Security
 
 	public static function doGuestLogin()
 	{
+			$allowGuest = guestHasPermissions();
+	if( !$allowGuest )
+		return;
+
+	DoLogin(true);
 	}
 
 	/**
@@ -314,7 +319,8 @@ class Security
 		}
 
 		//	dynamic permissions
-				$groups = array();
+				ReadUserPermissions();
+		$groups = array();
 		foreach( $_SESSION["UserRights"][ $_SESSION["UserID"] ][ ".Groups" ] as $g )
 			$groups[$g] = true;
 		return $groups;
@@ -346,7 +352,7 @@ class Security
 		$grConnection = $cman->getForUserGroups();
 
 		$sql = "select ". $grConnection->addFieldWrappers( "Label" )
-			." from ". $grConnection->addTableWrappers( "uggroups" ) . " WHERE " . $grConnection->addFieldWrappers( "GroupID" )
+			." from ". $grConnection->addTableWrappers( "generales_uggroups" ) . " WHERE " . $grConnection->addFieldWrappers( "GroupID" )
 			." in ( " . implode( ",", array_keys( $groupIds ) ) . ")";
 
 		$qResult = $grConnection->query( $sql );
@@ -953,7 +959,7 @@ class Security
 			return null;
 		}
 		global $cman;
-		return getTableDataSource( "ugmembers", $cman->getUserGroupsConnId() );
+		return getTableDataSource( "generales_ugmembers", $cman->getUserGroupsConnId() );
 	}	
 }
 ?>

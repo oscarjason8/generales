@@ -235,6 +235,9 @@ class ConnectionManager_Base
 		$connectionsIds["partido"] = "internas_new_at_localhost";
 		$connectionsIds["corporaciones"] = "internas_new_at_localhost";
 		$connectionsIds["estructura"] = "internas_new_at_localhost";
+		$connectionsIds["admin_rights"] = "internas_new_at_localhost";
+		$connectionsIds["admin_members"] = "internas_new_at_localhost";
+		$connectionsIds["admin_users"] = "internas_new_at_localhost";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}
