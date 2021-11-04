@@ -121,29 +121,29 @@ class ConnectionManager extends ConnectionManager_Base
 		$data = array();
 		$data["dbType"] = 0;
 		$data["connId"] = "internas_new_at_localhost";
-		$data["connName"] = "generales_2021 at localhost";
+		$data["connName"] = "cmlpc_generales2021 at 192.185.95.83";
 		$data["connStringType"] = "mysql";
-		$data["connectionString"] = "mysql;localhost;root;;;generales_2021;;1"; //currently unused
+		$data["connectionString"] = "mysql;192.185.95.83;cmlpc_jarias;@dmin123*#;;cmlpc_generales2021;;1"; //currently unused
 
-		$this->_connectionsIdByName["generales_2021 at localhost"] = "internas_new_at_localhost";
+		$this->_connectionsIdByName["cmlpc_generales2021 at 192.185.95.83"] = "internas_new_at_localhost";
 
 		$data["connInfo"] = array();
-		$data["ODBCUID"] = "root";
-		$data["ODBCPWD"] = "";
+		$data["ODBCUID"] = "cmlpc_jarias";
+		$data["ODBCPWD"] = "@dmin123*#";
 		$data["leftWrap"] = "`";
 		$data["rightWrap"] = "`";
 
 		$data["DBPath"] = "db"; //currently unused
 		$data["useServerMapPath"] = 1; //currently unused
 
-		$data["connInfo"][0] = "localhost";
-		$data["connInfo"][1] = "root";
-		$data["connInfo"][2] = "";
+		$data["connInfo"][0] = "192.185.95.83";
+		$data["connInfo"][1] = "cmlpc_jarias";
+		$data["connInfo"][2] = "@dmin123*#";
 		$data["connInfo"][3] = "";
-		$data["connInfo"][4] = "generales_2021";
+		$data["connInfo"][4] = "cmlpc_generales2021";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=;Database=generales_2021;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=192.185.95.83;Uid=cmlpc_jarias;Pwd=@dmin123*#;Database=cmlpc_generales2021;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;

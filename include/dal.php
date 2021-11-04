@@ -67,19 +67,19 @@ class tDAL
 	{
 		if($this->lstTables)
 			return;
-		$this->lstTables[] = array("name" => "candidatos", "varname" => "internas_new_at_localhost__candidatos", "altvarname" => "candidatos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "corporacion", "varname" => "internas_new_at_localhost__corporacion", "altvarname" => "corporacion", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "corporaciones", "varname" => "internas_new_at_localhost__corporaciones", "altvarname" => "corporaciones", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "distritos", "varname" => "internas_new_at_localhost__distritos", "altvarname" => "distritos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "estructura", "varname" => "internas_new_at_localhost__estructura", "altvarname" => "estructura", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "partido", "varname" => "internas_new_at_localhost__partido", "altvarname" => "partido", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "sectores", "varname" => "internas_new_at_localhost__sectores", "altvarname" => "sectores", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "urna", "varname" => "internas_new_at_localhost__urna", "altvarname" => "urna", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "usuario", "varname" => "internas_new_at_localhost__usuario", "altvarname" => "usuario", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "vdiputados", "varname" => "internas_new_at_localhost__vdiputados", "altvarname" => "vdiputados", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "voto_alcalde", "varname" => "internas_new_at_localhost__voto_alcalde", "altvarname" => "voto_alcalde", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "voto_diputado", "varname" => "internas_new_at_localhost__voto_diputado", "altvarname" => "voto_diputado", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
-		$this->lstTables[] = array("name" => "voto_presidente", "varname" => "internas_new_at_localhost__voto_presidente", "altvarname" => "voto_presidente", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "generales_2021 at localhost");
+		$this->lstTables[] = array("name" => "candidatos", "varname" => "internas_new_at_localhost__candidatos", "altvarname" => "candidatos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "corporacion", "varname" => "internas_new_at_localhost__corporacion", "altvarname" => "corporacion", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "corporaciones", "varname" => "internas_new_at_localhost__corporaciones", "altvarname" => "corporaciones", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "distritos", "varname" => "internas_new_at_localhost__distritos", "altvarname" => "distritos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "estructura", "varname" => "internas_new_at_localhost__estructura", "altvarname" => "estructura", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "partido", "varname" => "internas_new_at_localhost__partido", "altvarname" => "partido", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "sectores", "varname" => "internas_new_at_localhost__sectores", "altvarname" => "sectores", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "urna", "varname" => "internas_new_at_localhost__urna", "altvarname" => "urna", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "usuario", "varname" => "internas_new_at_localhost__usuario", "altvarname" => "usuario", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "vdiputados", "varname" => "internas_new_at_localhost__vdiputados", "altvarname" => "vdiputados", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "voto_alcalde", "varname" => "internas_new_at_localhost__voto_alcalde", "altvarname" => "voto_alcalde", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "voto_diputado", "varname" => "internas_new_at_localhost__voto_diputado", "altvarname" => "voto_diputado", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
+		$this->lstTables[] = array("name" => "voto_presidente", "varname" => "internas_new_at_localhost__voto_presidente", "altvarname" => "voto_presidente", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 	}
 
 	/**
