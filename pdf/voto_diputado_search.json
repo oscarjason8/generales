@@ -1,0 +1,843 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel voto_diputado search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$id_urna_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$dip61_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$dip62_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$dip63_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$dip64_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$dip65_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$dip66_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$dip67_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$dip68_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$dip69_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$dip70_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$dip71_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field12}","text":{$dip72_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$dip73_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$dip74_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field15}","text":{$dip75_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field16}","text":{$dip76_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field17}","text":{$dip77_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field18}","text":{$dip78_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field19}","text":{$dip79_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field20}","text":{$dip80_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field21}","text":{$dip81_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field22}","text":{$dip82_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field23}","text":{$dip83_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field24}","text":{$dip84_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field25}","text":{$dip85_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field26}","text":{$dip86_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field27}","text":{$dip87_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field28}","text":{$dip88_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field29}","text":{$dip89_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field30}","text":{$dip90_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field31}","text":{$dip91_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field32}","text":{$dip92_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field33}","text":{$dip93_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field34}","text":{$dip94_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field35}","text":{$dip95_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field36}","text":{$dip96_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field37}","text":{$dip97_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field38}","text":{$dip98_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field39}","text":{$dip99_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field40}","text":{$dip100_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field41}","text":{$dip101_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field42}","text":{$dip102_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field43}","text":{$dip103_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field44}","text":{$dip104_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field45}","text":{$dip105_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field46}","text":{$dip106_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field47}","text":{$dip107_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field48}","text":{$dip108_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field49}","text":{$dip109_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field50}","text":{$dip110_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field51}","text":{$dip111_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field52}","text":{$dip112_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field53}","text":{$dip113_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field54}","text":{$dip114_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field55}","text":{$dip115_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field56}","text":{$dip116_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field57}","text":{$dip117_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field58}","text":{$dip118_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field59}","text":{$dip119_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field60}","text":{$dip120_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field61}","text":{$dip121_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field62}","text":{$dip122_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field63}","text":{$dip123_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field64}","text":{$dip124_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field65}","text":{$dip125_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field66}","text":{$dip126_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field67}","text":{$dip127_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field68}","text":{$dip128_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field69}","text":{$dip129_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field70}","text":{$dip130_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field71}","text":{$dip131_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field72}","text":{$dip132_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field73}","text":{$dip133_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field74}","text":{$dip134_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field75}","text":{$dip135_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field76}","text":{$dip136_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field77}","text":{$dip137_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field78}","text":{$dip138_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field79}","text":{$dip139_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field80}","text":{$dip140_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field81}","text":{$dip141_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field82}","text":{$dip142_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field83}","text":{$dip143_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field84}","text":{$dip144_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field85}","text":{$dip145_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field86}","text":{$dip146_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field87}","text":{$dip147_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field88}","text":{$dip148_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field89}","text":{$dip149_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field90}","text":{$dip150_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field91}","text":{$dip151_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field92}","text":{$dip152_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field93}","text":{$dip153_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field94}","text":{$dip154_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field95}","text":{$dip155_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field96}","text":{$dip156_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field97}","text":{$dip157_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field98}","text":{$dip158_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field99}","text":{$dip159_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field100}","text":{$dip160_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field101}","text":{$dip161_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field102}","text":{$dip162_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field103}","text":{$dip163_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field104}","text":{$dip164_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field105}","text":{$dip165_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field106}","text":{$dip166_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field107}","text":{$dip167_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field108}","text":{$dip168_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field109}","text":{$dip169_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field110}","text":{$dip170_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field111}","text":{$dip171_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field112}","text":{$dip172_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field113}","text":{$dip173_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field114}","text":{$dip174_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field115}","text":{$dip175_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field116}","text":{$dip176_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field117}","text":{$dip177_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field118}","text":{$dip178_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field119}","text":{$dip179_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field120}","text":{$dip180_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field121}","text":{$dip181_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field122}","text":{$dip182_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field123}","text":{$dip183_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field124}","text":{$dip184_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field125}","text":{$dip185_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field126}","text":{$dip186_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field127}","text":{$dip187_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field128}","text":{$dip188_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field129}","text":{$dip189_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field130}","text":{$dip190_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field131}","text":{$dip191_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field132}","text":{$dip192_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field133}","text":{$dip193_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field134}","text":{$dip194_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field135}","text":{$dip195_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field136}","text":{$dip196_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field137}","text":{$dip197_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field138}","text":{$dip198_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field139}","text":{$dip199_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field140}","text":{$dip200_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field141}","text":{$dip201_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field142}","text":{$dip202_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field143}","text":{$dip203_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field144}","text":{$dip204_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field145}","text":{$dip205_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field146}","text":{$dip206_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field147}","text":{$dip207_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field148}","text":{$dip208_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field149}","text":{$dip209_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field150}","text":{$dip210_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field151}","text":{$dip211_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field152}","text":{$dip212_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field153}","text":{$dip213_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field154}","text":{$dip214_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field155}","text":{$dip216_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field156}","text":{$dip217_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field157}","text":{$dip218_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field158}","text":{$dip219_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field159}","text":{$dip220_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field160}","text":{$dip221_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field161}","text":{$dip222_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field162}","text":{$dip223_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field163}","text":{$dip224_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field164}","text":{$dip225_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field165}","text":{$dip226_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field166}","text":{$dip228_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field167}","text":{$dip229_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field168}","text":{$dip231_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field169}","text":{$dip232_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field170}","text":{$dip234_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field171}","text":{$dip235_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field172}","text":{$dip236_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field173}","text":{$dip237_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field174}","text":{$dip238_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field175}","text":{$dip239_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field176}","text":{$dip240_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field177}","text":{$dip241_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field178}","text":{$dip242_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field179}","text":{$dip243_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field180}","text":{$dip244_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field181}","text":{$dip245_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field182}","text":{$dip246_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field183}","text":{$dip247_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field184}","text":{$dip248_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field185}","text":{$dip249_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field186}","text":{$dip250_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field187}","text":{$dip251_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field188}","text":{$dip252_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field189}","text":{$dip253_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field190}","text":{$dip254_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field191}","text":{$dip255_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field192}","text":{$dip256_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field193}","text":{$dip257_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field194}","text":{$dip258_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field195}","text":{$dip259_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field196}","text":{$dip260_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field197}","text":{$dip262_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field198}","text":{$dip263_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field199}","text":{$dip264_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field200}","text":{$dip265_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field201}","text":{$dip266_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field202}","text":{$dip267_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field203}","text":{$dip268_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field204}","text":{$dip269_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field205}","text":{$dip270_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field206}","text":{$dip271_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field207}","text":{$dip272_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field208}","text":{$dip273_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field209}","text":{$dip274_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field210}","text":{$dip275_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field211}","text":{$dip276_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field212}","text":{$dip277_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field213}","text":{$dip278_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field214}","text":{$dip279_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field215}","text":{$dip280_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field216}","text":{$usuario_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field217}","text":{$editado_por_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field218}","text":{$fecha_edicion_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c1}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

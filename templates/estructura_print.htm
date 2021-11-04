@@ -1,0 +1,168 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base href="{$projectPath}">
+    <link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+			 type="text/css">
+    {END styleCSSFiles}
+  </head>
+  <BODY class="{$stylename} function-print" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <style>
+        {$containerCss}
+      </style>
+      {$locking}
+      <DIV class="r-small-page" data-body-align="center" data-body-width="compact">
+        {BEGIN top_block}
+          <DIV class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}">
+            <DIV class="row">
+              <DIV data-cellId="top_c2" data-pageid="{$pageid}" {$cell_top_c2} class="r-ori-vert col-md-12">
+                <DIV class="row">
+                  <DIV class="col-xs-12">
+                    <DIV class="col-xs-12 center-xs">
+                      <h1 style="font-weight: bold; font-size: 40px;">
+                        Sistema de Conteo de Votos
+                      </h1>
+                      <h1 style="font-weight: bold; font-size: 30px;">
+                        Profe. Tita Alcaldesa 2022-2026
+                      </h1>
+                      <h1 style="font-weight: bold; font-size: 27px;">
+                        Elecciones Internas 2021
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <DIV class="row">
+                  <DIV class="col-xs-12 center-xs">
+                    <h1 style="font-size: 25px;">
+                      Corporación Municipal
+                    </h1>
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        {END top_block}
+        {BEGIN above-grid_block}
+          <DIV class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}">
+            <DIV class="row">
+              <DIV data-cellId="above-grid_c1" data-pageid="{$pageid}" {$cell_above-grid_c1} class="r-ori-vert col-md-12">
+                {BEGIN firstAboveGridCell}
+                  <span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+                    {$print_pages_labelprint_pages}
+                  </span>
+                {END firstAboveGridCell}
+              </div>
+            </div>
+          </div>
+        {END above-grid_block}
+        {BEGIN grid_block}
+          <TABLE data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class="table {$grid_classes} rnr-b-grid rnr-gridtable" cellpadding="0" data-body-height="1">
+            <thead>
+              {BEGIN grid_header}
+                <TR {$rowattrs} {$row_grid_0} class="{$rowclass} {$gridHeader_class} r-gridrow">
+                  {BEGIN cellblock_grid_headcell_field}
+                    <TH {$cell_grid_headcell_field} {$recordattrs} class="r-ori-vert {$posicion_class}" data-field="posicion" data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}">
+                      {BEGIN posicion_fieldheadercolumn}
+                        <span data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="posicion">
+                          {$label estructura posicion}
+                        </span>
+                      {END posicion_fieldheadercolumn}
+                    </th>
+                  {END cellblock_grid_headcell_field}
+                  {BEGIN cellblock_grid_headcell_field1}
+                    <TH {$cell_grid_headcell_field1} {$recordattrs} class="r-ori-vert {$nombre_class}" data-field="nombre" data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}">
+                      {BEGIN nombre_fieldheadercolumn}
+                        <span data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre">
+                          {$label estructura nombre}
+                        </span>
+                      {END nombre_fieldheadercolumn}
+                    </th>
+                  {END cellblock_grid_headcell_field1}
+                  {BEGIN cellblock_grid_headcell_field2}
+                    <TH {$cell_grid_headcell_field2} {$recordattrs} class="r-ori-vert {$movimiento_class}" data-field="movimiento" data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}">
+                      {BEGIN movimiento_fieldheadercolumn}
+                        <span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="movimiento">
+                          {$label estructura movimiento}
+                        </span>
+                      {END movimiento_fieldheadercolumn}
+                    </th>
+                  {END cellblock_grid_headcell_field2}
+                </tr>
+              {END grid_header}
+            </thead>
+            {BEGIN grid_row}
+              <tbody>
+                <TR {$rowattrs} {$row_grid_1} class="{$rowclass} r-gridrow">
+                  {BEGIN cellblock_grid_cell_field}
+                    <TD {$cell_grid_cell_field} {$recordattrs} class="r-ori-vert {$posicion_class}" data-field="posicion" data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}">
+                      {BEGIN posicion_fieldcolumn}
+                        <span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="posicion" data-default-width >
+                          {$posicion_value}
+                        </span>
+                      {END posicion_fieldcolumn}
+                    </td>
+                  {END cellblock_grid_cell_field}
+                  {BEGIN cellblock_grid_cell_field1}
+                    <TD {$cell_grid_cell_field1} {$recordattrs} class="r-ori-vert {$nombre_class}" data-field="nombre" data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}">
+                      {BEGIN nombre_fieldcolumn}
+                        <span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre" data-default-width >
+                          {$nombre_value}
+                        </span>
+                      {END nombre_fieldcolumn}
+                    </td>
+                  {END cellblock_grid_cell_field1}
+                  {BEGIN cellblock_grid_cell_field2}
+                    <TD {$cell_grid_cell_field2} {$recordattrs} class="r-ori-vert {$movimiento_class}" data-field="movimiento" data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}">
+                      {BEGIN movimiento_fieldcolumn}
+                        <span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="movimiento" data-default-width >
+                          {$movimiento_value}
+                        </span>
+                      {END movimiento_fieldcolumn}
+                    </td>
+                  {END cellblock_grid_cell_field2}
+                </tr>
+              </tbody>
+            {END grid_row}
+            <tfoot>
+              <TR {$rowattrs} {$row_grid_2} class="{$rowclass} {$gridFooter_class} r-gridrow">
+                {BEGIN cellblock_grid_footcell_field}
+                  <TD {$cell_grid_footcell_field} {$recordattrs} class="r-ori-vert {$posicion_class}" data-field="posicion" data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="estructura_print">
+                  </td>
+                {END cellblock_grid_footcell_field}
+                {BEGIN cellblock_grid_footcell_field1}
+                  <TD {$cell_grid_footcell_field1} {$recordattrs} class="r-ori-vert {$nombre_class}" data-field="nombre" data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="estructura_print">
+                  </td>
+                {END cellblock_grid_footcell_field1}
+                {BEGIN cellblock_grid_footcell_field2}
+                  <TD {$cell_grid_footcell_field2} {$recordattrs} class="r-ori-vert {$movimiento_class}" data-field="movimiento" data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="estructura_print">
+                  </td>
+                {END cellblock_grid_footcell_field2}
+              </tr>
+            </tfoot>
+          </table>
+        {END grid_block}
+        {BEGIN below-grid_block}
+          <DIV class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}">
+          </div>
+        {END below-grid_block}
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

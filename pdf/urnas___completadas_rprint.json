@@ -1,0 +1,262 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+						pagesummary: {
+		fillColor: '#ffffbb',
+	},
+	globalsummary: {
+		fillColor: '#ffe0b0',
+	},
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption Urnas___Completadas}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0.1 : 0;
+					} else  {
+						return 0.1; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 7,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"text":"{$jspagetitlelabel Urnas___Completadas rprint}","hidden":"{$item_hide_print_header}","fontSize":30},
+				
+				
+			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"Página %current% / %total%","hidden":"{$item_hide_print_pages}","isHtml":true,"page_indicator":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+[	
+		{
+		text: '{$jslabel Urnas___Completadas id_distrito }',
+		alignment: '{$id_distrito_align}',
+	},
+		{
+		text: '{$jslabel Urnas___Completadas id_sector }',
+		alignment: '{$id_sector_align}',
+	},
+		{
+		text: '{$jslabel Urnas___Completadas ubicaci_n }',
+		alignment: '{$ubicaci_n_align}',
+	},
+		{
+		text: '{$jslabel Urnas___Completadas urna }',
+		alignment: '{$urna_align}',
+	},
+		{
+		text: '{$jslabel Urnas___Completadas presidente }',
+		alignment: '{$presidente_align}',
+	},
+		{
+		text: '{$jslabel Urnas___Completadas alcalde }',
+		alignment: '{$alcalde_align}',
+	},
+		{
+		text: '{$jslabel Urnas___Completadas diputado }',
+		alignment: '{$diputado_align}',
+	},
+	],
+
+{BEGIN grid_row}
+	{BEGIN row_data}
+[	
+		{	
+		text: {$id_distrito_value},
+		alignment: '{$id_distrito_align}',
+	},
+		{	
+		text: {$id_sector_value},
+		alignment: '{$id_sector_align}',
+	},
+		{	
+		text: {$ubicaci_n_value},
+		alignment: '{$ubicaci_n_align}',
+	},
+		{	
+		text: {$urna_value},
+		alignment: '{$urna_align}',
+	},
+		{	
+		text: {$presidente_value},
+		alignment: '{$presidente_align}',
+	},
+		{	
+		text: {$alcalde_value},
+		alignment: '{$alcalde_align}',
+	},
+		{	
+		text: {$diputado_value},
+		alignment: '{$diputado_align}',
+	},
+	],
+	{END row_data}
+{END grid_row}
+
+
+
+
+
+
+
+
+
+
+
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

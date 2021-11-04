@@ -1,0 +1,189 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel voto_alcalde import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_import_field2}","text":{$id_urna_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field3}","text":{$candidato1_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field4}","text":{$candidato2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field5}","text":{$candidato3_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field6}","text":{$validos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field7}","text":{$blancos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field8}","text":{$nulos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field9}","text":{$utilizados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field10}","text":{$no_utilizados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field11}","text":{$total_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field12}","text":{$usuario_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field13}","text":{$fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field}","text":{$candidato4_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field1}","text":{$candidato5_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field14}","text":{$candidato6_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field15}","text":{$candidato7_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field16}","text":{$candidato8_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field17}","text":{$candidato9_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field18}","text":{$candidato10_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field19}","text":{$candidato11_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field20}","text":{$candidato12_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field21}","text":{$editado_por_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field22}","text":{$fecha_edicion_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

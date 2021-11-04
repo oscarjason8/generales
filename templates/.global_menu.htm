@@ -1,0 +1,201 @@
+<!doctype html>
+<html {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base href="{$projectPath}">
+    <link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    {END styleCSSFiles}
+  </head>
+  <BODY class="{$stylename} function-menu" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <style>
+        {
+        $containerCss
+        }
+      </style>
+      <DIV class="r-topbar-page">
+        <DIV data-menu-width="full" class="r-topheader" data-resize-name="topbar" data-body-align="left">
+          {BEGIN supertop_block}
+            <NAV class="navbar navbar-default" data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}">
+              <SPAN data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+                {BEGIN logo_block}
+                  <A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+                    {$logo}
+                  </A>
+                {END logo_block}
+                <BUTTON data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">
+                  <SPAN class="sr-only">
+                    Toggle navigation
+                  </span>
+                  <SPAN class="icon-bar">
+                  </span>
+                </button>
+              </span>
+              <SPAN data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+                {$menu main horizontal}
+              </span>
+              <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login">
+                {BEGIN guestloginbutton}
+                  <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login}
+						data-pageid="{$pageid}" data-small data-button-item>
+                    <A type="button" title class="btn btn-primary" href="#" {$guestloginlink_attrs}>
+                      Conectar
+                    </a>
+                  </span>
+                {END guestloginbutton}
+              </span>
+              <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button">
+                {BEGIN loggedas_message}
+                  <span data-itemtype="username_button" data-itemid="username_button" {$item_username_button}
+						data-pageid="{$pageid}" data-small data-button-item>
+                    <SPAN class="dropdown">
+                      <BUTTON type="button" title class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <SPAN class="glyphicon glyphicon-user">
+                        </span>
+                        {$username}
+                        <SPAN class="caret">
+                        </span>
+                      </button>
+                      <UL class="dropdown-menu">
+                        {BEGIN logoutbutton}
+                          <li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}"
+									data-small>
+                            <a href="#" {$logoutlink_attrs} title="">
+                              Desconectarse
+                            </a>
+                          </li>
+                        {END logoutbutton}
+                        {BEGIN adminarea_link}
+                          <li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+                            <a  href="admin_rights_list.php"  title="" >
+                              Area Admin
+                            </a>
+                          </li>
+                        {END adminarea_link}
+                        {BEGIN changepwd_link}
+                          <li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+                            <a  href="#" {$changepwdlink_attrs}  title="" >
+                              Cambiar contraseña
+                            </a>
+                          </li>
+                        {END changepwd_link}
+                      </ul>
+                    </span>
+                  </span>
+                {END loggedas_message}
+              </span>
+            </nav>
+          {END supertop_block}
+          {$locking}
+        </div>
+        <DIV data-body-align="left" data-body-width="standard" class="r-body" data-resize-top="topbar">
+          <DIV class="r-top">
+          </div>
+          <DIV class="r-content">
+            <DIV class="r-data-block" data-body-width="standard">
+              {BEGIN above-grid_block}
+                <DIV class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}">
+                </div>
+              {END above-grid_block}
+              <DIV class="r-grid">
+                {BEGIN grid_block}
+                  <TABLE class="r-fluid r-form" data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}">
+                    <tbody>
+                      <tr>
+                        <TD class="r-ori-vert" data-cellId="grid_c1" data-pageid="{$pageid}">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                {END grid_block}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        html,
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        .hero-bkg-animated {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        height: auto;
+        box-sizing: border-box;
+        }
+        @-webkit-keyframes slide {
+        from {
+        background-position: 0 0;
+        }
+        to {
+        background-position: -400px 0;
+        }
+        }
+        /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+        @media screen and (min-width: 600px) {
+        .hero-bkg-animated h1 {
+        font-family: 'Roboto', sans-serif;
+        color: #E95420;
+        font-size: 35px;
+        }
+        .hero-bkg-animated img {
+        margin-top: 90px;
+        }
+        }
+        /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 600px) {
+        .hero-bkg-animated h1 {
+        font-family: 'Roboto', sans-serif;
+        color: #E95420;
+        font-size: 35px;
+        }
+        .hero-bkg-animated img {
+        margin-top: 90px;
+        width: 280px;
+        height: 130px;
+        }
+        }
+        /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+        @media screen and (max-width: 350px) {
+        .hero-bkg-animated h1 {
+        font-family: 'Roboto', sans-serif;
+        color: #E95420;
+        font-size: 15px;
+        }
+        .hero-bkg-animated img {
+        margin-top: 35px;
+        width: 180px;
+        height: 130px;
+        }
+        }
+      </style>
+      <DIV class="hero-bkg-animated">
+        <img src="images/lib.gif" alt="liberal">
+        <h1>
+          Bienvenido(a)&nbsp{$username}<br>Sistema de Conteo de Votos<br>Movimiento Liberal Yanista<br>Profe. Tita Alcaldesa 2022-2026
+        </h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>

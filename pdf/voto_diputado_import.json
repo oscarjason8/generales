@@ -1,0 +1,993 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel voto_diputado import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_import_field2}","text":{$id_urna_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field3}","text":{$dip1_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field4}","text":{$dip2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field5}","text":{$dip3_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field6}","text":{$dip4_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field7}","text":{$dip5_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field8}","text":{$dip6_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field9}","text":{$dip7_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field10}","text":{$dip8_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field11}","text":{$dip9_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field12}","text":{$dip10_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field13}","text":{$dip11_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field14}","text":{$dip12_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field15}","text":{$dip13_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field16}","text":{$dip14_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field17}","text":{$dip15_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field18}","text":{$dip16_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field19}","text":{$dip17_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field20}","text":{$dip18_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field21}","text":{$dip19_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field22}","text":{$dip20_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field23}","text":{$dip21_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field24}","text":{$dip22_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field25}","text":{$dip23_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field26}","text":{$dip24_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field27}","text":{$dip25_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field28}","text":{$dip26_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field29}","text":{$dip27_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field30}","text":{$dip28_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field31}","text":{$dip29_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field32}","text":{$dip30_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field33}","text":{$dip31_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field34}","text":{$dip32_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field35}","text":{$dip33_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field36}","text":{$dip34_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field37}","text":{$dip35_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field38}","text":{$dip36_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field39}","text":{$dip37_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field40}","text":{$dip38_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field41}","text":{$dip39_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field42}","text":{$dip40_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field43}","text":{$dip41_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field44}","text":{$dip42_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field45}","text":{$dip43_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field46}","text":{$dip44_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field47}","text":{$dip45_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field48}","text":{$dip46_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field49}","text":{$dip47_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field50}","text":{$dip48_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field51}","text":{$dip49_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field52}","text":{$dip50_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field53}","text":{$dip51_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field54}","text":{$dip52_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field55}","text":{$dip53_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field56}","text":{$dip54_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field57}","text":{$dip55_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field58}","text":{$dip56_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field59}","text":{$dip57_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field60}","text":{$dip58_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field61}","text":{$dip59_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field62}","text":{$dip60_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field63}","text":{$validos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field64}","text":{$blancos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field65}","text":{$nulos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field66}","text":{$utilizados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field67}","text":{$no_utilizados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field68}","text":{$total_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field69}","text":{$usuario_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field70}","text":{$fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field}","text":{$dip61_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field1}","text":{$dip62_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field71}","text":{$dip63_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field72}","text":{$dip64_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field73}","text":{$dip65_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field74}","text":{$dip66_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field75}","text":{$dip67_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field76}","text":{$dip68_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field77}","text":{$dip69_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field78}","text":{$dip70_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field79}","text":{$dip71_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field80}","text":{$dip72_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field81}","text":{$dip73_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field82}","text":{$dip74_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field83}","text":{$dip75_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field84}","text":{$dip76_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field85}","text":{$dip77_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field86}","text":{$dip78_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field87}","text":{$dip79_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field88}","text":{$dip80_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field89}","text":{$dip81_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field90}","text":{$dip82_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field91}","text":{$dip83_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field92}","text":{$dip84_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field93}","text":{$dip85_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field94}","text":{$dip86_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field95}","text":{$dip87_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field96}","text":{$dip88_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field97}","text":{$dip89_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field98}","text":{$dip90_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field99}","text":{$dip91_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field100}","text":{$dip92_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field101}","text":{$dip93_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field102}","text":{$dip94_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field103}","text":{$dip95_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field104}","text":{$dip96_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field105}","text":{$dip97_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field106}","text":{$dip98_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field107}","text":{$dip99_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field108}","text":{$dip100_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field109}","text":{$dip101_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field110}","text":{$dip102_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field111}","text":{$dip103_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field112}","text":{$dip104_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field113}","text":{$dip105_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field114}","text":{$dip106_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field115}","text":{$dip107_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field116}","text":{$dip108_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field117}","text":{$dip109_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field118}","text":{$dip110_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field119}","text":{$dip111_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field120}","text":{$dip112_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field121}","text":{$dip113_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field122}","text":{$dip114_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field123}","text":{$dip115_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field124}","text":{$dip116_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field125}","text":{$dip117_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field126}","text":{$dip118_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field127}","text":{$dip119_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field128}","text":{$dip120_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field129}","text":{$dip121_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field130}","text":{$dip122_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field131}","text":{$dip123_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field132}","text":{$dip124_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field133}","text":{$dip125_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field134}","text":{$dip126_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field135}","text":{$dip127_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field136}","text":{$dip128_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field137}","text":{$dip129_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field138}","text":{$dip130_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field139}","text":{$dip131_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field140}","text":{$dip132_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field141}","text":{$dip133_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field142}","text":{$dip134_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field143}","text":{$dip135_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field144}","text":{$dip136_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field145}","text":{$dip137_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field146}","text":{$dip138_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field147}","text":{$dip139_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field148}","text":{$dip140_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field149}","text":{$dip141_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field150}","text":{$dip142_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field151}","text":{$dip143_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field152}","text":{$dip144_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field153}","text":{$dip145_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field154}","text":{$dip146_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field155}","text":{$dip147_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field156}","text":{$dip148_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field157}","text":{$dip149_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field158}","text":{$dip150_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field159}","text":{$dip151_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field160}","text":{$dip152_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field161}","text":{$dip153_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field162}","text":{$dip154_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field163}","text":{$dip155_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field164}","text":{$dip156_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field165}","text":{$dip157_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field166}","text":{$dip158_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field167}","text":{$dip159_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field168}","text":{$dip160_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field169}","text":{$dip161_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field170}","text":{$dip162_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field171}","text":{$dip163_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field172}","text":{$dip164_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field173}","text":{$dip165_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field174}","text":{$dip166_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field175}","text":{$dip167_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field176}","text":{$dip168_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field177}","text":{$dip169_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field178}","text":{$dip170_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field179}","text":{$dip171_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field180}","text":{$dip172_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field181}","text":{$dip173_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field182}","text":{$dip174_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field183}","text":{$dip175_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field184}","text":{$dip176_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field185}","text":{$dip177_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field186}","text":{$dip178_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field187}","text":{$dip179_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field188}","text":{$dip180_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field189}","text":{$dip181_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field190}","text":{$dip182_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field191}","text":{$dip183_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field192}","text":{$dip184_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field193}","text":{$dip185_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field194}","text":{$dip186_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field195}","text":{$dip187_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field196}","text":{$dip188_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field197}","text":{$dip189_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field198}","text":{$dip190_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field199}","text":{$dip191_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field200}","text":{$dip192_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field201}","text":{$dip193_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field202}","text":{$dip194_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field203}","text":{$dip195_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field204}","text":{$dip196_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field205}","text":{$dip197_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field206}","text":{$dip198_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field207}","text":{$dip199_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field208}","text":{$dip200_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field209}","text":{$dip201_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field210}","text":{$dip202_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field211}","text":{$dip203_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field212}","text":{$dip204_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field213}","text":{$dip205_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field214}","text":{$dip206_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field215}","text":{$dip207_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field216}","text":{$dip208_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field217}","text":{$dip209_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field218}","text":{$dip210_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field219}","text":{$dip211_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field220}","text":{$dip212_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field221}","text":{$dip213_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field222}","text":{$dip214_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field223}","text":{$dip216_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field224}","text":{$dip217_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field225}","text":{$dip218_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field226}","text":{$dip219_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field227}","text":{$dip220_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field228}","text":{$dip221_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field229}","text":{$dip262_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field230}","text":{$dip263_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field231}","text":{$dip264_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field232}","text":{$dip265_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field233}","text":{$dip266_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field234}","text":{$dip267_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field235}","text":{$dip268_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field236}","text":{$dip269_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field237}","text":{$dip270_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field238}","text":{$dip271_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field239}","text":{$dip272_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field240}","text":{$dip273_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field241}","text":{$dip274_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field242}","text":{$dip275_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field243}","text":{$dip276_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field244}","text":{$dip277_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field245}","text":{$dip278_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field246}","text":{$dip279_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field247}","text":{$dip280_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field248}","text":{$dip222_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field249}","text":{$dip223_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field250}","text":{$dip224_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field251}","text":{$dip225_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field252}","text":{$dip226_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field253}","text":{$dip228_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field254}","text":{$dip229_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field255}","text":{$dip231_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field256}","text":{$dip232_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field257}","text":{$dip234_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field258}","text":{$dip235_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field259}","text":{$dip236_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field260}","text":{$dip237_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field261}","text":{$dip238_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field262}","text":{$dip239_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field263}","text":{$dip240_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field264}","text":{$dip241_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field265}","text":{$dip242_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field266}","text":{$dip243_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field267}","text":{$dip244_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field268}","text":{$dip245_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field269}","text":{$dip246_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field270}","text":{$dip247_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field271}","text":{$dip248_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field272}","text":{$dip249_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field273}","text":{$dip250_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field274}","text":{$dip251_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field275}","text":{$dip252_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field276}","text":{$dip253_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field277}","text":{$dip254_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field278}","text":{$dip255_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field279}","text":{$dip256_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field280}","text":{$dip257_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field281}","text":{$dip258_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field282}","text":{$dip259_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field283}","text":{$dip260_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field284}","text":{$dip215_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field285}","text":{$dip227_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field286}","text":{$dip230_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field287}","text":{$dip233_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field288}","text":{$dip261_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field289}","text":{$editado_por_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field290}","text":{$fecha_edicion_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

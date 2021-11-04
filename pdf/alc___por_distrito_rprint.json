@@ -1,0 +1,446 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+						pagesummary: {
+		fillColor: '#ffffbb',
+	},
+	globalsummary: {
+		fillColor: '#ffe0b0',
+	},
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption Alc___Por_Distrito}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0.1 : 0;
+					} else  {
+						return 0.1; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 10,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"text":"{$jspagetitlelabel Alc___Por_Distrito rprint}","hidden":"{$item_hide_print_header}","fontSize":30},
+				
+				
+			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"Página %current% / %total%","hidden":"{$item_hide_print_pages}","isHtml":true,"page_indicator":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+[	
+		{
+		text: '{$jslabel Alc___Por_Distrito id_distrito }',
+		alignment: '{$id_distrito_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Maria }',
+		alignment: '{$Maria_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Victor }',
+		alignment: '{$Victor_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Adolfo }',
+		alignment: '{$Adolfo_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Validos }',
+		alignment: '{$Validos_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Blancos }',
+		alignment: '{$Blancos_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Nulos }',
+		alignment: '{$Nulos_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Utilizados }',
+		alignment: '{$Utilizados_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito No_Utilizados }',
+		alignment: '{$No_Utilizados_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Total }',
+		alignment: '{$Total_align}',
+	},
+	],
+
+{BEGIN grid_row}
+	{BEGIN row_data}
+[	
+		{	
+		text: {$id_distrito_value},
+		alignment: '{$id_distrito_align}',
+	},
+		{	
+		text: {$Maria_value},
+		alignment: '{$Maria_align}',
+	},
+		{	
+		text: {$Victor_value},
+		alignment: '{$Victor_align}',
+	},
+		{	
+		text: {$Adolfo_value},
+		alignment: '{$Adolfo_align}',
+	},
+		{	
+		text: {$Validos_value},
+		alignment: '{$Validos_align}',
+	},
+		{	
+		text: {$Blancos_value},
+		alignment: '{$Blancos_align}',
+	},
+		{	
+		text: {$Nulos_value},
+		alignment: '{$Nulos_align}',
+	},
+		{	
+		text: {$Utilizados_value},
+		alignment: '{$Utilizados_align}',
+	},
+		{	
+		text: {$No_Utilizados_value},
+		alignment: '{$No_Utilizados_align}',
+	},
+		{	
+		text: {$Total_value},
+		alignment: '{$Total_align}',
+	},
+	],
+	{END row_data}
+{END grid_row}
+
+[
+		{	
+		text: '{$jslabel Alc___Por_Distrito id_distrito }',
+		alignment: '{$id_distrito_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Maria }',
+		alignment: '{$Maria_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Victor }',
+		alignment: '{$Victor_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Adolfo }',
+		alignment: '{$Adolfo_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Validos }',
+		alignment: '{$Validos_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Blancos }',
+		alignment: '{$Blancos_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Nulos }',
+		alignment: '{$Nulos_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Utilizados }',
+		alignment: '{$Utilizados_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito No_Utilizados }',
+		alignment: '{$No_Utilizados_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Total }',
+		alignment: '{$Total_align}',
+	},
+	],
+
+
+
+
+
+
+
+
+
+
+{BEGIN global_summary}
+	[
+		{
+			text: 'Resumen global {$global_total_cnt} - Registros totales',
+			colSpan: 10,
+			style: 'globalsummary',
+		}
+	],
+
+		[
+							{
+			text: [
+							'Sum ',
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							{$global_totalMaria_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Maria_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalVictor_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Victor_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalAdolfo_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Adolfo_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalValidos_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Validos_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalBlancos_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Blancos_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalNulos_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Nulos_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalUtilizados_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Utilizados_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalNo_Utilizados_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$No_Utilizados_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalTotal_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Total_align}',
+					},
+			],
+	
+	
+	
+	
+{END global_summary}
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

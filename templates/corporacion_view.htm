@@ -1,0 +1,400 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel corporacion view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_partido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_partido}  r-vertical-field" data-fieldname="id_partido" data-signal-error-for="id_partido{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_partido" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_partido}">
+		
+		{BEGIN id_partido_label}{$label corporacion id_partido }{END id_partido_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_partido_value}	</div>
+
+		
+</div>
+
+
+{END id_partido_fieldblock}
+											
+{BEGIN alcalde_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alcalde}  r-vertical-field" data-fieldname="alcalde" data-signal-error-for="alcalde{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="alcalde" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_alcalde}">
+		
+		{BEGIN alcalde_label}{$label corporacion alcalde }{END alcalde_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$alcalde_value}	</div>
+
+		
+</div>
+
+
+{END alcalde_fieldblock}
+											
+{BEGIN vice_alcalde_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vice_alcalde}  r-vertical-field" data-fieldname="vice_alcalde" data-signal-error-for="vice_alcalde{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="vice_alcalde" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_vice_alcalde}">
+		
+		{BEGIN vice_alcalde_label}{$label corporacion vice_alcalde }{END vice_alcalde_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$vice_alcalde_value}	</div>
+
+		
+</div>
+
+
+{END vice_alcalde_fieldblock}
+											
+{BEGIN regidor1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor1}  r-vertical-field" data-fieldname="regidor1" data-signal-error-for="regidor1{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="regidor1" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor1}">
+		
+		{BEGIN regidor1_label}{$label corporacion regidor1 }{END regidor1_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor1_value}	</div>
+
+		
+</div>
+
+
+{END regidor1_fieldblock}
+											
+{BEGIN regidor2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor2}  r-vertical-field" data-fieldname="regidor2" data-signal-error-for="regidor2{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="regidor2" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor2}">
+		
+		{BEGIN regidor2_label}{$label corporacion regidor2 }{END regidor2_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor2_value}	</div>
+
+		
+</div>
+
+
+{END regidor2_fieldblock}
+											
+{BEGIN regidor3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor3}  r-vertical-field" data-fieldname="regidor3" data-signal-error-for="regidor3{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="regidor3" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor3}">
+		
+		{BEGIN regidor3_label}{$label corporacion regidor3 }{END regidor3_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor3_value}	</div>
+
+		
+</div>
+
+
+{END regidor3_fieldblock}
+											
+{BEGIN regidor4_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor4}  r-vertical-field" data-fieldname="regidor4" data-signal-error-for="regidor4{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="regidor4" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor4}">
+		
+		{BEGIN regidor4_label}{$label corporacion regidor4 }{END regidor4_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor4_value}	</div>
+
+		
+</div>
+
+
+{END regidor4_fieldblock}
+											
+{BEGIN regidor5_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor5}  r-vertical-field" data-fieldname="regidor5" data-signal-error-for="regidor5{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="regidor5" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor5}">
+		
+		{BEGIN regidor5_label}{$label corporacion regidor5 }{END regidor5_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor5_value}	</div>
+
+		
+</div>
+
+
+{END regidor5_fieldblock}
+											
+{BEGIN regidor6_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor6}  r-vertical-field" data-fieldname="regidor6" data-signal-error-for="regidor6{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="regidor6" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor6}">
+		
+		{BEGIN regidor6_label}{$label corporacion regidor6 }{END regidor6_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor6_value}	</div>
+
+		
+</div>
+
+
+{END regidor6_fieldblock}
+											
+{BEGIN regidor7_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor7}  r-vertical-field" data-fieldname="regidor7" data-signal-error-for="regidor7{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="regidor7" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor7}">
+		
+		{BEGIN regidor7_label}{$label corporacion regidor7 }{END regidor7_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor7_value}	</div>
+
+		
+</div>
+
+
+{END regidor7_fieldblock}
+											
+{BEGIN regidor8_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor8}  r-vertical-field" data-fieldname="regidor8" data-signal-error-for="regidor8{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="regidor8" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor8}">
+		
+		{BEGIN regidor8_label}{$label corporacion regidor8 }{END regidor8_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor8_value}	</div>
+
+		
+</div>
+
+
+{END regidor8_fieldblock}
+											
+{BEGIN regidor9_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor9}  r-vertical-field" data-fieldname="regidor9" data-signal-error-for="regidor9{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="regidor9" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor9}">
+		
+		{BEGIN regidor9_label}{$label corporacion regidor9 }{END regidor9_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor9_value}	</div>
+
+		
+</div>
+
+
+{END regidor9_fieldblock}
+											
+{BEGIN regidor10_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_regidor10}  r-vertical-field" data-fieldname="regidor10" data-signal-error-for="regidor10{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="regidor10" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_regidor10}">
+		
+		{BEGIN regidor10_label}{$label corporacion regidor10 }{END regidor10_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$regidor10_value}	</div>
+
+		
+</div>
+
+
+{END regidor10_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c1}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="corporacion_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

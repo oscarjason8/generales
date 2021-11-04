@@ -1,0 +1,19 @@
+<?php
+$strTableName="Alc - Por Urna";
+$_SESSION["OwnerID"] = $_SESSION["_".$strTableName."_OwnerID"];
+
+$strOriginalTableName="voto_alcalde";
+
+$gstrOrderBy="order by ur.id_urna";
+if(strlen($gstrOrderBy) && strtolower(substr($gstrOrderBy,0,8))!="order by")
+	$gstrOrderBy="order by ".$gstrOrderBy;
+
+// alias for 'SQLQuery' object
+$gSettings = new ProjectSettings("Alc - Por Urna");
+$gQuery = $gSettings->getSQLQuery();
+$eventObj = &$tableEvents["Alc - Por Urna"];
+
+$reportCaseSensitiveGroupFields = false;
+
+$gstrSQL = $gQuery->gSQLWhere("");
+?>

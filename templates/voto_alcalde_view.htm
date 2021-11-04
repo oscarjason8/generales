@@ -1,0 +1,678 @@
+<!doctype html>
+<html {$html_attrs}>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+	<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+</head>
+
+<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+	{$header}
+	<style>
+		{
+			$containerCss
+		}
+	</style>
+	{$locking}
+	<div class="r-small-page" data-body-align="center" data-body-width="standard">
+		{BEGIN top_block}
+		<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top}
+			data-pageid="{$pageid}" data-v-width="4" data-v-margin="1">
+
+			<div class="row">
+
+				<div data-cellId="top_c1" data-pageid="{$pageid}" {$cell_top_c1} class=" r-ori-vert			col-md-12
+	">
+
+					<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}">
+						{$pagetitlelabel voto_alcalde view}</h2>
+				</div>
+			</div>
+		</div>
+		{END top_block}
+		{BEGIN above-grid_block}
+		<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid}
+			data-pageid="{$pageid}" data-v-width="4" data-v-margin="1">
+		</div>
+		{END above-grid_block}
+		{BEGIN grid_block}
+
+
+
+
+
+
+		<table data-body-align="center" data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid}
+			data-pageid="{$pageid}" class="r-edit-form" cellpadding="0" cellspacing="0" {$grid_hiddenattr} data-form-width="1"
+			data-v-width="4">
+			<tbody>
+				<tr>
+
+
+					{BEGIN cellblock_grid_c1}
+					<td {$cell_grid_c1} class=" r-ori-vert" data-fullwidth data-cellId="grid_c1" data-pageid="{$pageid}"
+						data-v-cell="4">
+						<div edit-form-cell class="clearfix">
+
+							{BEGIN id_urna_fieldblock}
+
+
+							<div class="r-integrated-field form-group clearfix {$fielddispclass_id_urna}  r-vertical-field"
+								data-fieldname="id_urna" data-signal-error-for="id_urna{$id}" data-itemtype="integrated_edit_field"
+								data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}"
+								data-field="id_urna">
+
+
+								<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_urna}">
+
+									{BEGIN id_urna_label}{$label voto_alcalde id_urna }{END id_urna_label}
+								</label>
+								<div class="col-md-offset-3 col-md-6">
+									{$id_urna_value} </div>
+
+
+							</div>
+
+
+							{END id_urna_fieldblock}
+							<hr>
+							<div class="row">
+								<div class="col-xs-3">
+									{BEGIN candidato1_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato1}  r-vertical-field"
+										data-fieldname="candidato1" data-signal-error-for="candidato1{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1"
+										{$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="candidato1">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato1}">
+		
+											{BEGIN candidato1_label}{$label voto_alcalde candidato1 }{END candidato1_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato1_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato1_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato2_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato2}  r-vertical-field"
+										data-fieldname="candidato2" data-signal-error-for="candidato2{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2"
+										{$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="candidato2">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato2}">
+		
+											{BEGIN candidato2_label}{$label voto_alcalde candidato2 }{END candidato2_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato2_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato2_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato3_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato3}  r-vertical-field"
+										data-fieldname="candidato3" data-signal-error-for="candidato3{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3"
+										{$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="candidato3">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato3}">
+		
+											{BEGIN candidato3_label}{$label voto_alcalde candidato3 }{END candidato3_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato3_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato3_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato4_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato4}  r-vertical-field"
+										data-fieldname="candidato4" data-signal-error-for="candidato4{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4"
+										{$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="candidato4">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato4}">
+		
+											{BEGIN candidato4_label}{$label voto_alcalde candidato4 }{END candidato4_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato4_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato4_fieldblock}
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">
+									{BEGIN candidato5_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato5}  r-vertical-field"
+										data-fieldname="candidato5" data-signal-error-for="candidato5{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5"
+										{$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="candidato5">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato5}">
+		
+											{BEGIN candidato5_label}{$label voto_alcalde candidato5 }{END candidato5_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato5_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato5_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato6_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato6}  r-vertical-field"
+										data-fieldname="candidato6" data-signal-error-for="candidato6{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6"
+										{$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="candidato6">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato6}">
+		
+											{BEGIN candidato6_label}{$label voto_alcalde candidato6 }{END candidato6_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato6_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato6_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato7_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato7}  r-vertical-field"
+										data-fieldname="candidato7" data-signal-error-for="candidato7{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7"
+										{$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="candidato7">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato7}">
+		
+											{BEGIN candidato7_label}{$label voto_alcalde candidato7 }{END candidato7_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato7_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato7_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato8_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato8}  r-vertical-field"
+										data-fieldname="candidato8" data-signal-error-for="candidato8{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8"
+										{$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="candidato8">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato8}">
+		
+											{BEGIN candidato8_label}{$label voto_alcalde candidato8 }{END candidato8_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato8_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato8_fieldblock}
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-3">
+									{BEGIN candidato9_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato9}  r-vertical-field"
+										data-fieldname="candidato9" data-signal-error-for="candidato9{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9"
+										{$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="candidato9">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato9}">
+		
+											{BEGIN candidato9_label}{$label voto_alcalde candidato9 }{END candidato9_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato9_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato9_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato10_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato10}  r-vertical-field"
+										data-fieldname="candidato10" data-signal-error-for="candidato10{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10"
+										{$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="candidato10">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato10}">
+		
+											{BEGIN candidato10_label}{$label voto_alcalde candidato10 }{END candidato10_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato10_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato10_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato11_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato11}  r-vertical-field"
+										data-fieldname="candidato11" data-signal-error-for="candidato11{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11"
+										{$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="candidato11">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato11}">
+		
+											{BEGIN candidato11_label}{$label voto_alcalde candidato11 }{END candidato11_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato11_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato11_fieldblock}
+								</div>
+								<div class="col-xs-3">
+									{BEGIN candidato12_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato12}  r-vertical-field"
+										data-fieldname="candidato12" data-signal-error-for="candidato12{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12"
+										{$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="candidato12">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_candidato12}">
+		
+											{BEGIN candidato12_label}{$label voto_alcalde candidato12 }{END candidato12_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$candidato12_value} </div>
+		
+		
+									</div>
+		
+		
+									{END candidato12_fieldblock}
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-4">
+									{BEGIN validos_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_validos}  r-vertical-field"
+										data-fieldname="validos" data-signal-error-for="validos{$id}" data-itemtype="integrated_edit_field"
+										data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}"
+										data-field="validos">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_validos}">
+		
+											{BEGIN validos_label}{$label voto_alcalde validos }{END validos_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$validos_value} </div>
+		
+		
+									</div>
+		
+		
+									{END validos_fieldblock}
+								</div>
+								<div class="col-xs-4">
+									{BEGIN blancos_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_blancos}  r-vertical-field"
+										data-fieldname="blancos" data-signal-error-for="blancos{$id}" data-itemtype="integrated_edit_field"
+										data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}"
+										data-field="blancos">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_blancos}">
+		
+											{BEGIN blancos_label}{$label voto_alcalde blancos }{END blancos_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$blancos_value} </div>
+		
+		
+									</div>
+		
+		
+									{END blancos_fieldblock}
+								</div>
+								<div class="col-xs-4">
+									{BEGIN nulos_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_nulos}  r-vertical-field"
+										data-fieldname="nulos" data-signal-error-for="nulos{$id}" data-itemtype="integrated_edit_field"
+										data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}"
+										data-field="nulos">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_nulos}">
+		
+											{BEGIN nulos_label}{$label voto_alcalde nulos }{END nulos_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$nulos_value} </div>
+		
+		
+									</div>
+		
+		
+									{END nulos_fieldblock}
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-4">
+									{BEGIN utilizados_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_utilizados}  r-vertical-field"
+										data-fieldname="utilizados" data-signal-error-for="utilizados{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16"
+										{$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="utilizados">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_utilizados}">
+		
+											{BEGIN utilizados_label}{$label voto_alcalde utilizados }{END utilizados_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$utilizados_value} </div>
+		
+		
+									</div>
+		
+		
+									{END utilizados_fieldblock}
+								</div>
+								<div class="col-xs-4">
+									{BEGIN no_utilizados_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_no_utilizados}  r-vertical-field"
+										data-fieldname="no_utilizados" data-signal-error-for="no_utilizados{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17"
+										{$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="no_utilizados">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_no_utilizados}">
+		
+											{BEGIN no_utilizados_label}{$label voto_alcalde no_utilizados }{END no_utilizados_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$no_utilizados_value} </div>
+		
+		
+									</div>
+		
+		
+									{END no_utilizados_fieldblock}
+								</div>
+								<div class="col-xs-4">
+									{BEGIN total_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_total}  r-vertical-field"
+										data-fieldname="total" data-signal-error-for="total{$id}" data-itemtype="integrated_edit_field"
+										data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}"
+										data-field="total">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_total}">
+		
+											{BEGIN total_label}{$label voto_alcalde total }{END total_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$total_value} </div>
+		
+		
+									</div>
+		
+		
+									{END total_fieldblock}
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-offset-1 col-xs-5">
+									{BEGIN usuario_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_usuario}  r-vertical-field"
+										data-fieldname="usuario" data-signal-error-for="usuario{$id}" data-itemtype="integrated_edit_field"
+										data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}"
+										data-field="usuario">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_usuario}">
+		
+											{BEGIN usuario_label}{$label voto_alcalde usuario }{END usuario_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$usuario_value} </div>
+		
+		
+									</div>
+		
+		
+									{END usuario_fieldblock}
+								</div>
+								<div class="col-xs-5">
+									{BEGIN editado_por_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_editado_por}  r-vertical-field"
+										data-fieldname="editado_por" data-signal-error-for="editado_por{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21"
+										{$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="editado_por">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_editado_por}">
+		
+											{BEGIN editado_por_label}{$label voto_alcalde editado_por }{END editado_por_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$editado_por_value} </div>
+		
+		
+									</div>
+		
+		
+									{END editado_por_fieldblock}
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-offset-1 col-xs-5">
+									{BEGIN fecha_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha}  r-vertical-field"
+										data-fieldname="fecha" data-signal-error-for="fecha{$id}" data-itemtype="integrated_edit_field"
+										data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}"
+										data-field="fecha">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha}">
+		
+											{BEGIN fecha_label}{$label voto_alcalde fecha }{END fecha_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$fecha_value} </div>
+		
+		
+									</div>
+		
+		
+									{END fecha_fieldblock}
+								</div>
+								<div class="col-xs-5">
+									{BEGIN fecha_edicion_fieldblock}
+
+
+									<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_edicion}  r-vertical-field"
+										data-fieldname="fecha_edicion" data-signal-error-for="fecha_edicion{$id}"
+										data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22"
+										{$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="fecha_edicion">
+		
+		
+										<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_edicion}">
+		
+											{BEGIN fecha_edicion_label}{$label voto_alcalde fecha_edicion }{END fecha_edicion_label}
+										</label>
+										<div class="col-md-offset-3 col-md-6">
+											{$fecha_edicion_value} </div>
+		
+		
+									</div>
+		
+		
+									{END fecha_edicion_fieldblock}
+								</div>
+							</div>
+					</td>
+					{END cellblock_grid_c1}
+				</tr>
+			</tbody>
+		</table>
+		{END grid_block}
+		{BEGIN below-grid_block}
+		<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid}
+			data-pageid="{$pageid}" data-v-width="4" data-v-margin="1">
+
+			<div class="row">
+
+				<div data-cellId="below-grid_c1" data-pageid="{$pageid}" {$cell_below-grid_c1} class="			col-md-6
+	">
+
+					{BEGIN back_button}
+					<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list}
+						data-pageid="{$pageid}" data-small data-button-item>
+						<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs}>
+							Volver a la lista </a>
+					</span>
+					{END back_button}
+
+					{BEGIN close_button}
+					<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}"
+						data-small data-button-item>
+						<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs}>
+							Cerrar ventana </a>
+					</span>
+					{END close_button}
+				</div>
+				<div data-cellId="below-grid_c2" data-pageid="{$pageid}" {$cell_below-grid_c2} class="r-align-right r-ori-vert			col-md-6
+	">
+
+					<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small
+						data-button-item>
+						<span class="dropdown dropup">
+							<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-menu-hamburger"></span>
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								{BEGIN edit_page_button}
+								<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}"
+									data-small>
+									<a href="voto_alcalde_edit.php?{$editlink}" {$edit_page_button_attrs} title="">
+
+										Editar
+									</a>
+								</li>
+								{END edit_page_button}
+							</ul>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		{END below-grid_block}
+	</div>
+	{$footer}
+	{END body}
+</body>
+
+</html>

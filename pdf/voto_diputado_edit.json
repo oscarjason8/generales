@@ -1,0 +1,1119 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel voto_diputado edit}","hidden":"{$item_hide_edit_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_message}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel voto_diputado id_urna }","bold":true},{"text":{$id_urna_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel voto_diputado dip1 }","bold":true},{"text":{$dip1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel voto_diputado dip2 }","bold":true},{"text":{$dip2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel voto_diputado dip3 }","bold":true},{"text":{$dip3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel voto_diputado dip4 }","bold":true},{"text":{$dip4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel voto_diputado dip5 }","bold":true},{"text":{$dip5_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel voto_diputado dip6 }","bold":true},{"text":{$dip6_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel voto_diputado dip7 }","bold":true},{"text":{$dip7_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel voto_diputado dip8 }","bold":true},{"text":{$dip8_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel voto_diputado dip9 }","bold":true},{"text":{$dip9_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel voto_diputado dip10 }","bold":true},{"text":{$dip10_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel voto_diputado dip11 }","bold":true},{"text":{$dip11_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel voto_diputado dip12 }","bold":true},{"text":{$dip12_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel voto_diputado dip13 }","bold":true},{"text":{$dip13_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel voto_diputado dip14 }","bold":true},{"text":{$dip14_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel voto_diputado dip15 }","bold":true},{"text":{$dip15_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel voto_diputado dip16 }","bold":true},{"text":{$dip16_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel voto_diputado dip17 }","bold":true},{"text":{$dip17_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel voto_diputado dip18 }","bold":true},{"text":{$dip18_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel voto_diputado dip19 }","bold":true},{"text":{$dip19_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel voto_diputado dip20 }","bold":true},{"text":{$dip20_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel voto_diputado dip21 }","bold":true},{"text":{$dip21_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel voto_diputado dip22 }","bold":true},{"text":{$dip22_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel voto_diputado dip23 }","bold":true},{"text":{$dip23_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel voto_diputado dip24 }","bold":true},{"text":{$dip24_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel voto_diputado dip25 }","bold":true},{"text":{$dip25_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel voto_diputado dip26 }","bold":true},{"text":{$dip26_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","stack":[{"text":"{$jslabel voto_diputado dip27 }","bold":true},{"text":{$dip27_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel voto_diputado dip28 }","bold":true},{"text":{$dip28_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field29}","stack":[{"text":"{$jslabel voto_diputado dip29 }","bold":true},{"text":{$dip29_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel voto_diputado dip30 }","bold":true},{"text":{$dip30_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel voto_diputado dip31 }","bold":true},{"text":{$dip31_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel voto_diputado dip32 }","bold":true},{"text":{$dip32_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field33}","stack":[{"text":"{$jslabel voto_diputado dip33 }","bold":true},{"text":{$dip33_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","stack":[{"text":"{$jslabel voto_diputado dip34 }","bold":true},{"text":{$dip34_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel voto_diputado dip35 }","bold":true},{"text":{$dip35_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel voto_diputado dip36 }","bold":true},{"text":{$dip36_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","stack":[{"text":"{$jslabel voto_diputado dip37 }","bold":true},{"text":{$dip37_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","stack":[{"text":"{$jslabel voto_diputado dip38 }","bold":true},{"text":{$dip38_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field39}","stack":[{"text":"{$jslabel voto_diputado dip39 }","bold":true},{"text":{$dip39_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field40}","stack":[{"text":"{$jslabel voto_diputado dip40 }","bold":true},{"text":{$dip40_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field41}","stack":[{"text":"{$jslabel voto_diputado dip41 }","bold":true},{"text":{$dip41_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field42}","stack":[{"text":"{$jslabel voto_diputado dip42 }","bold":true},{"text":{$dip42_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","stack":[{"text":"{$jslabel voto_diputado dip43 }","bold":true},{"text":{$dip43_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field44}","stack":[{"text":"{$jslabel voto_diputado dip44 }","bold":true},{"text":{$dip44_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field45}","stack":[{"text":"{$jslabel voto_diputado dip45 }","bold":true},{"text":{$dip45_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field46}","stack":[{"text":"{$jslabel voto_diputado dip46 }","bold":true},{"text":{$dip46_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field47}","stack":[{"text":"{$jslabel voto_diputado dip47 }","bold":true},{"text":{$dip47_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field48}","stack":[{"text":"{$jslabel voto_diputado dip48 }","bold":true},{"text":{$dip48_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field49}","stack":[{"text":"{$jslabel voto_diputado dip49 }","bold":true},{"text":{$dip49_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field50}","stack":[{"text":"{$jslabel voto_diputado dip50 }","bold":true},{"text":{$dip50_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field51}","stack":[{"text":"{$jslabel voto_diputado dip51 }","bold":true},{"text":{$dip51_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field52}","stack":[{"text":"{$jslabel voto_diputado dip52 }","bold":true},{"text":{$dip52_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel voto_diputado dip53 }","bold":true},{"text":{$dip53_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel voto_diputado dip54 }","bold":true},{"text":{$dip54_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field55}","stack":[{"text":"{$jslabel voto_diputado dip55 }","bold":true},{"text":{$dip55_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field56}","stack":[{"text":"{$jslabel voto_diputado dip56 }","bold":true},{"text":{$dip56_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field57}","stack":[{"text":"{$jslabel voto_diputado dip57 }","bold":true},{"text":{$dip57_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field58}","stack":[{"text":"{$jslabel voto_diputado dip58 }","bold":true},{"text":{$dip58_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field59}","stack":[{"text":"{$jslabel voto_diputado dip59 }","bold":true},{"text":{$dip59_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field60}","stack":[{"text":"{$jslabel voto_diputado dip60 }","bold":true},{"text":{$dip60_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field61}","stack":[{"text":"{$jslabel voto_diputado dip61 }","bold":true},{"text":{$dip61_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field62}","stack":[{"text":"{$jslabel voto_diputado dip62 }","bold":true},{"text":{$dip62_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field63}","stack":[{"text":"{$jslabel voto_diputado dip63 }","bold":true},{"text":{$dip63_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field64}","stack":[{"text":"{$jslabel voto_diputado dip64 }","bold":true},{"text":{$dip64_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field65}","stack":[{"text":"{$jslabel voto_diputado dip65 }","bold":true},{"text":{$dip65_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field66}","stack":[{"text":"{$jslabel voto_diputado dip66 }","bold":true},{"text":{$dip66_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field67}","stack":[{"text":"{$jslabel voto_diputado dip67 }","bold":true},{"text":{$dip67_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field68}","stack":[{"text":"{$jslabel voto_diputado dip68 }","bold":true},{"text":{$dip68_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field69}","stack":[{"text":"{$jslabel voto_diputado dip69 }","bold":true},{"text":{$dip69_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field70}","stack":[{"text":"{$jslabel voto_diputado dip70 }","bold":true},{"text":{$dip70_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field71}","stack":[{"text":"{$jslabel voto_diputado dip71 }","bold":true},{"text":{$dip71_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field72}","stack":[{"text":"{$jslabel voto_diputado dip72 }","bold":true},{"text":{$dip72_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field73}","stack":[{"text":"{$jslabel voto_diputado dip73 }","bold":true},{"text":{$dip73_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field74}","stack":[{"text":"{$jslabel voto_diputado dip74 }","bold":true},{"text":{$dip74_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field75}","stack":[{"text":"{$jslabel voto_diputado dip75 }","bold":true},{"text":{$dip75_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field76}","stack":[{"text":"{$jslabel voto_diputado dip76 }","bold":true},{"text":{$dip76_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field77}","stack":[{"text":"{$jslabel voto_diputado dip77 }","bold":true},{"text":{$dip77_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field78}","stack":[{"text":"{$jslabel voto_diputado dip78 }","bold":true},{"text":{$dip78_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field79}","stack":[{"text":"{$jslabel voto_diputado dip79 }","bold":true},{"text":{$dip79_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field80}","stack":[{"text":"{$jslabel voto_diputado dip80 }","bold":true},{"text":{$dip80_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field81}","stack":[{"text":"{$jslabel voto_diputado dip81 }","bold":true},{"text":{$dip81_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field82}","stack":[{"text":"{$jslabel voto_diputado dip82 }","bold":true},{"text":{$dip82_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field83}","stack":[{"text":"{$jslabel voto_diputado dip83 }","bold":true},{"text":{$dip83_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field84}","stack":[{"text":"{$jslabel voto_diputado dip84 }","bold":true},{"text":{$dip84_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field85}","stack":[{"text":"{$jslabel voto_diputado dip85 }","bold":true},{"text":{$dip85_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field86}","stack":[{"text":"{$jslabel voto_diputado dip86 }","bold":true},{"text":{$dip86_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field87}","stack":[{"text":"{$jslabel voto_diputado dip87 }","bold":true},{"text":{$dip87_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field88}","stack":[{"text":"{$jslabel voto_diputado dip88 }","bold":true},{"text":{$dip88_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field89}","stack":[{"text":"{$jslabel voto_diputado dip89 }","bold":true},{"text":{$dip89_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field90}","stack":[{"text":"{$jslabel voto_diputado dip90 }","bold":true},{"text":{$dip90_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field91}","stack":[{"text":"{$jslabel voto_diputado dip91 }","bold":true},{"text":{$dip91_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field92}","stack":[{"text":"{$jslabel voto_diputado dip92 }","bold":true},{"text":{$dip92_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field93}","stack":[{"text":"{$jslabel voto_diputado dip93 }","bold":true},{"text":{$dip93_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field94}","stack":[{"text":"{$jslabel voto_diputado dip94 }","bold":true},{"text":{$dip94_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field95}","stack":[{"text":"{$jslabel voto_diputado dip95 }","bold":true},{"text":{$dip95_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field96}","stack":[{"text":"{$jslabel voto_diputado dip96 }","bold":true},{"text":{$dip96_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field97}","stack":[{"text":"{$jslabel voto_diputado dip97 }","bold":true},{"text":{$dip97_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field98}","stack":[{"text":"{$jslabel voto_diputado dip98 }","bold":true},{"text":{$dip98_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field99}","stack":[{"text":"{$jslabel voto_diputado dip99 }","bold":true},{"text":{$dip99_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field100}","stack":[{"text":"{$jslabel voto_diputado dip100 }","bold":true},{"text":{$dip100_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field101}","stack":[{"text":"{$jslabel voto_diputado dip101 }","bold":true},{"text":{$dip101_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field102}","stack":[{"text":"{$jslabel voto_diputado dip102 }","bold":true},{"text":{$dip102_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field103}","stack":[{"text":"{$jslabel voto_diputado dip103 }","bold":true},{"text":{$dip103_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field104}","stack":[{"text":"{$jslabel voto_diputado dip104 }","bold":true},{"text":{$dip104_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field105}","stack":[{"text":"{$jslabel voto_diputado dip105 }","bold":true},{"text":{$dip105_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field106}","stack":[{"text":"{$jslabel voto_diputado dip106 }","bold":true},{"text":{$dip106_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field107}","stack":[{"text":"{$jslabel voto_diputado dip107 }","bold":true},{"text":{$dip107_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field108}","stack":[{"text":"{$jslabel voto_diputado dip108 }","bold":true},{"text":{$dip108_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field109}","stack":[{"text":"{$jslabel voto_diputado dip109 }","bold":true},{"text":{$dip109_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field110}","stack":[{"text":"{$jslabel voto_diputado dip110 }","bold":true},{"text":{$dip110_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field111}","stack":[{"text":"{$jslabel voto_diputado dip111 }","bold":true},{"text":{$dip111_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field112}","stack":[{"text":"{$jslabel voto_diputado dip112 }","bold":true},{"text":{$dip112_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field113}","stack":[{"text":"{$jslabel voto_diputado dip113 }","bold":true},{"text":{$dip113_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field114}","stack":[{"text":"{$jslabel voto_diputado dip114 }","bold":true},{"text":{$dip114_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field115}","stack":[{"text":"{$jslabel voto_diputado dip115 }","bold":true},{"text":{$dip115_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field116}","stack":[{"text":"{$jslabel voto_diputado dip116 }","bold":true},{"text":{$dip116_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field117}","stack":[{"text":"{$jslabel voto_diputado dip117 }","bold":true},{"text":{$dip117_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field118}","stack":[{"text":"{$jslabel voto_diputado dip118 }","bold":true},{"text":{$dip118_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field119}","stack":[{"text":"{$jslabel voto_diputado dip119 }","bold":true},{"text":{$dip119_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field120}","stack":[{"text":"{$jslabel voto_diputado dip120 }","bold":true},{"text":{$dip120_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field121}","stack":[{"text":"{$jslabel voto_diputado dip121 }","bold":true},{"text":{$dip121_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field122}","stack":[{"text":"{$jslabel voto_diputado dip122 }","bold":true},{"text":{$dip122_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field123}","stack":[{"text":"{$jslabel voto_diputado dip123 }","bold":true},{"text":{$dip123_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field124}","stack":[{"text":"{$jslabel voto_diputado dip124 }","bold":true},{"text":{$dip124_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field125}","stack":[{"text":"{$jslabel voto_diputado dip125 }","bold":true},{"text":{$dip125_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field126}","stack":[{"text":"{$jslabel voto_diputado dip126 }","bold":true},{"text":{$dip126_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field127}","stack":[{"text":"{$jslabel voto_diputado dip127 }","bold":true},{"text":{$dip127_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field128}","stack":[{"text":"{$jslabel voto_diputado dip128 }","bold":true},{"text":{$dip128_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field129}","stack":[{"text":"{$jslabel voto_diputado dip129 }","bold":true},{"text":{$dip129_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field130}","stack":[{"text":"{$jslabel voto_diputado dip130 }","bold":true},{"text":{$dip130_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field131}","stack":[{"text":"{$jslabel voto_diputado dip131 }","bold":true},{"text":{$dip131_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field132}","stack":[{"text":"{$jslabel voto_diputado dip132 }","bold":true},{"text":{$dip132_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field133}","stack":[{"text":"{$jslabel voto_diputado dip133 }","bold":true},{"text":{$dip133_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field134}","stack":[{"text":"{$jslabel voto_diputado dip134 }","bold":true},{"text":{$dip134_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field135}","stack":[{"text":"{$jslabel voto_diputado dip135 }","bold":true},{"text":{$dip135_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field136}","stack":[{"text":"{$jslabel voto_diputado dip136 }","bold":true},{"text":{$dip136_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field137}","stack":[{"text":"{$jslabel voto_diputado dip137 }","bold":true},{"text":{$dip137_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field138}","stack":[{"text":"{$jslabel voto_diputado dip138 }","bold":true},{"text":{$dip138_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field139}","stack":[{"text":"{$jslabel voto_diputado dip139 }","bold":true},{"text":{$dip139_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field140}","stack":[{"text":"{$jslabel voto_diputado dip140 }","bold":true},{"text":{$dip140_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field141}","stack":[{"text":"{$jslabel voto_diputado dip141 }","bold":true},{"text":{$dip141_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field142}","stack":[{"text":"{$jslabel voto_diputado dip142 }","bold":true},{"text":{$dip142_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field143}","stack":[{"text":"{$jslabel voto_diputado dip143 }","bold":true},{"text":{$dip143_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field144}","stack":[{"text":"{$jslabel voto_diputado dip144 }","bold":true},{"text":{$dip144_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field145}","stack":[{"text":"{$jslabel voto_diputado dip145 }","bold":true},{"text":{$dip145_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field146}","stack":[{"text":"{$jslabel voto_diputado dip146 }","bold":true},{"text":{$dip146_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field147}","stack":[{"text":"{$jslabel voto_diputado dip147 }","bold":true},{"text":{$dip147_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field148}","stack":[{"text":"{$jslabel voto_diputado dip148 }","bold":true},{"text":{$dip148_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field149}","stack":[{"text":"{$jslabel voto_diputado dip149 }","bold":true},{"text":{$dip149_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field150}","stack":[{"text":"{$jslabel voto_diputado dip150 }","bold":true},{"text":{$dip150_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field151}","stack":[{"text":"{$jslabel voto_diputado dip151 }","bold":true},{"text":{$dip151_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field152}","stack":[{"text":"{$jslabel voto_diputado dip152 }","bold":true},{"text":{$dip152_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field153}","stack":[{"text":"{$jslabel voto_diputado dip153 }","bold":true},{"text":{$dip153_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field154}","stack":[{"text":"{$jslabel voto_diputado dip154 }","bold":true},{"text":{$dip154_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field155}","stack":[{"text":"{$jslabel voto_diputado dip155 }","bold":true},{"text":{$dip155_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field156}","stack":[{"text":"{$jslabel voto_diputado dip156 }","bold":true},{"text":{$dip156_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field157}","stack":[{"text":"{$jslabel voto_diputado dip157 }","bold":true},{"text":{$dip157_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field158}","stack":[{"text":"{$jslabel voto_diputado dip158 }","bold":true},{"text":{$dip158_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field159}","stack":[{"text":"{$jslabel voto_diputado dip159 }","bold":true},{"text":{$dip159_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field160}","stack":[{"text":"{$jslabel voto_diputado dip160 }","bold":true},{"text":{$dip160_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field161}","stack":[{"text":"{$jslabel voto_diputado dip161 }","bold":true},{"text":{$dip161_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field162}","stack":[{"text":"{$jslabel voto_diputado dip162 }","bold":true},{"text":{$dip162_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field163}","stack":[{"text":"{$jslabel voto_diputado dip163 }","bold":true},{"text":{$dip163_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field164}","stack":[{"text":"{$jslabel voto_diputado dip164 }","bold":true},{"text":{$dip164_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field165}","stack":[{"text":"{$jslabel voto_diputado dip165 }","bold":true},{"text":{$dip165_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field166}","stack":[{"text":"{$jslabel voto_diputado dip166 }","bold":true},{"text":{$dip166_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field167}","stack":[{"text":"{$jslabel voto_diputado dip167 }","bold":true},{"text":{$dip167_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field168}","stack":[{"text":"{$jslabel voto_diputado dip168 }","bold":true},{"text":{$dip168_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field169}","stack":[{"text":"{$jslabel voto_diputado dip169 }","bold":true},{"text":{$dip169_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field170}","stack":[{"text":"{$jslabel voto_diputado dip170 }","bold":true},{"text":{$dip170_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field171}","stack":[{"text":"{$jslabel voto_diputado dip171 }","bold":true},{"text":{$dip171_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field172}","stack":[{"text":"{$jslabel voto_diputado dip172 }","bold":true},{"text":{$dip172_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field173}","stack":[{"text":"{$jslabel voto_diputado dip173 }","bold":true},{"text":{$dip173_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field174}","stack":[{"text":"{$jslabel voto_diputado dip174 }","bold":true},{"text":{$dip174_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field175}","stack":[{"text":"{$jslabel voto_diputado dip175 }","bold":true},{"text":{$dip175_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field176}","stack":[{"text":"{$jslabel voto_diputado dip176 }","bold":true},{"text":{$dip176_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field177}","stack":[{"text":"{$jslabel voto_diputado dip177 }","bold":true},{"text":{$dip177_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field178}","stack":[{"text":"{$jslabel voto_diputado dip178 }","bold":true},{"text":{$dip178_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field179}","stack":[{"text":"{$jslabel voto_diputado dip179 }","bold":true},{"text":{$dip179_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field180}","stack":[{"text":"{$jslabel voto_diputado dip180 }","bold":true},{"text":{$dip180_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field181}","stack":[{"text":"{$jslabel voto_diputado dip181 }","bold":true},{"text":{$dip181_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field182}","stack":[{"text":"{$jslabel voto_diputado dip182 }","bold":true},{"text":{$dip182_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field183}","stack":[{"text":"{$jslabel voto_diputado dip183 }","bold":true},{"text":{$dip183_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field184}","stack":[{"text":"{$jslabel voto_diputado dip184 }","bold":true},{"text":{$dip184_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field185}","stack":[{"text":"{$jslabel voto_diputado dip185 }","bold":true},{"text":{$dip185_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field186}","stack":[{"text":"{$jslabel voto_diputado dip186 }","bold":true},{"text":{$dip186_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field187}","stack":[{"text":"{$jslabel voto_diputado dip187 }","bold":true},{"text":{$dip187_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field188}","stack":[{"text":"{$jslabel voto_diputado dip188 }","bold":true},{"text":{$dip188_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field189}","stack":[{"text":"{$jslabel voto_diputado dip189 }","bold":true},{"text":{$dip189_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field190}","stack":[{"text":"{$jslabel voto_diputado dip190 }","bold":true},{"text":{$dip190_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field191}","stack":[{"text":"{$jslabel voto_diputado dip191 }","bold":true},{"text":{$dip191_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field192}","stack":[{"text":"{$jslabel voto_diputado dip192 }","bold":true},{"text":{$dip192_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field193}","stack":[{"text":"{$jslabel voto_diputado dip193 }","bold":true},{"text":{$dip193_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field194}","stack":[{"text":"{$jslabel voto_diputado dip194 }","bold":true},{"text":{$dip194_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field195}","stack":[{"text":"{$jslabel voto_diputado dip195 }","bold":true},{"text":{$dip195_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field196}","stack":[{"text":"{$jslabel voto_diputado dip196 }","bold":true},{"text":{$dip196_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field197}","stack":[{"text":"{$jslabel voto_diputado dip197 }","bold":true},{"text":{$dip197_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field198}","stack":[{"text":"{$jslabel voto_diputado dip198 }","bold":true},{"text":{$dip198_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field199}","stack":[{"text":"{$jslabel voto_diputado dip199 }","bold":true},{"text":{$dip199_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field200}","stack":[{"text":"{$jslabel voto_diputado dip200 }","bold":true},{"text":{$dip200_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field201}","stack":[{"text":"{$jslabel voto_diputado dip201 }","bold":true},{"text":{$dip201_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field202}","stack":[{"text":"{$jslabel voto_diputado dip202 }","bold":true},{"text":{$dip202_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field203}","stack":[{"text":"{$jslabel voto_diputado dip203 }","bold":true},{"text":{$dip203_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field204}","stack":[{"text":"{$jslabel voto_diputado dip204 }","bold":true},{"text":{$dip204_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field205}","stack":[{"text":"{$jslabel voto_diputado dip205 }","bold":true},{"text":{$dip205_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field206}","stack":[{"text":"{$jslabel voto_diputado dip206 }","bold":true},{"text":{$dip206_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field207}","stack":[{"text":"{$jslabel voto_diputado dip207 }","bold":true},{"text":{$dip207_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field208}","stack":[{"text":"{$jslabel voto_diputado dip208 }","bold":true},{"text":{$dip208_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field209}","stack":[{"text":"{$jslabel voto_diputado dip209 }","bold":true},{"text":{$dip209_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field210}","stack":[{"text":"{$jslabel voto_diputado dip210 }","bold":true},{"text":{$dip210_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field211}","stack":[{"text":"{$jslabel voto_diputado dip211 }","bold":true},{"text":{$dip211_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field212}","stack":[{"text":"{$jslabel voto_diputado dip212 }","bold":true},{"text":{$dip212_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field213}","stack":[{"text":"{$jslabel voto_diputado dip213 }","bold":true},{"text":{$dip213_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field214}","stack":[{"text":"{$jslabel voto_diputado dip214 }","bold":true},{"text":{$dip214_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field215}","stack":[{"text":"{$jslabel voto_diputado dip215 }","bold":true},{"text":{$dip215_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field216}","stack":[{"text":"{$jslabel voto_diputado dip216 }","bold":true},{"text":{$dip216_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field217}","stack":[{"text":"{$jslabel voto_diputado dip217 }","bold":true},{"text":{$dip217_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field218}","stack":[{"text":"{$jslabel voto_diputado dip218 }","bold":true},{"text":{$dip218_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field219}","stack":[{"text":"{$jslabel voto_diputado dip219 }","bold":true},{"text":{$dip219_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field220}","stack":[{"text":"{$jslabel voto_diputado dip220 }","bold":true},{"text":{$dip220_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field221}","stack":[{"text":"{$jslabel voto_diputado dip221 }","bold":true},{"text":{$dip221_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field222}","stack":[{"text":"{$jslabel voto_diputado dip222 }","bold":true},{"text":{$dip222_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field223}","stack":[{"text":"{$jslabel voto_diputado dip223 }","bold":true},{"text":{$dip223_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field224}","stack":[{"text":"{$jslabel voto_diputado dip224 }","bold":true},{"text":{$dip224_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field225}","stack":[{"text":"{$jslabel voto_diputado dip225 }","bold":true},{"text":{$dip225_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field226}","stack":[{"text":"{$jslabel voto_diputado dip226 }","bold":true},{"text":{$dip226_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field227}","stack":[{"text":"{$jslabel voto_diputado dip227 }","bold":true},{"text":{$dip227_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field228}","stack":[{"text":"{$jslabel voto_diputado dip228 }","bold":true},{"text":{$dip228_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field229}","stack":[{"text":"{$jslabel voto_diputado dip229 }","bold":true},{"text":{$dip229_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field230}","stack":[{"text":"{$jslabel voto_diputado dip230 }","bold":true},{"text":{$dip230_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field231}","stack":[{"text":"{$jslabel voto_diputado dip231 }","bold":true},{"text":{$dip231_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field232}","stack":[{"text":"{$jslabel voto_diputado dip232 }","bold":true},{"text":{$dip232_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field233}","stack":[{"text":"{$jslabel voto_diputado dip233 }","bold":true},{"text":{$dip233_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field234}","stack":[{"text":"{$jslabel voto_diputado dip234 }","bold":true},{"text":{$dip234_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field235}","stack":[{"text":"{$jslabel voto_diputado dip235 }","bold":true},{"text":{$dip235_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field236}","stack":[{"text":"{$jslabel voto_diputado dip236 }","bold":true},{"text":{$dip236_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field237}","stack":[{"text":"{$jslabel voto_diputado dip237 }","bold":true},{"text":{$dip237_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field238}","stack":[{"text":"{$jslabel voto_diputado dip238 }","bold":true},{"text":{$dip238_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field239}","stack":[{"text":"{$jslabel voto_diputado dip239 }","bold":true},{"text":{$dip239_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field240}","stack":[{"text":"{$jslabel voto_diputado dip240 }","bold":true},{"text":{$dip240_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field241}","stack":[{"text":"{$jslabel voto_diputado dip241 }","bold":true},{"text":{$dip241_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field242}","stack":[{"text":"{$jslabel voto_diputado dip242 }","bold":true},{"text":{$dip242_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field243}","stack":[{"text":"{$jslabel voto_diputado dip243 }","bold":true},{"text":{$dip243_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field244}","stack":[{"text":"{$jslabel voto_diputado dip244 }","bold":true},{"text":{$dip244_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field245}","stack":[{"text":"{$jslabel voto_diputado dip245 }","bold":true},{"text":{$dip245_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field246}","stack":[{"text":"{$jslabel voto_diputado dip246 }","bold":true},{"text":{$dip246_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field247}","stack":[{"text":"{$jslabel voto_diputado dip247 }","bold":true},{"text":{$dip247_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field248}","stack":[{"text":"{$jslabel voto_diputado dip248 }","bold":true},{"text":{$dip248_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field249}","stack":[{"text":"{$jslabel voto_diputado dip249 }","bold":true},{"text":{$dip249_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field250}","stack":[{"text":"{$jslabel voto_diputado dip250 }","bold":true},{"text":{$dip250_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field251}","stack":[{"text":"{$jslabel voto_diputado dip251 }","bold":true},{"text":{$dip251_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field252}","stack":[{"text":"{$jslabel voto_diputado dip252 }","bold":true},{"text":{$dip252_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field253}","stack":[{"text":"{$jslabel voto_diputado dip253 }","bold":true},{"text":{$dip253_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field254}","stack":[{"text":"{$jslabel voto_diputado dip254 }","bold":true},{"text":{$dip254_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field255}","stack":[{"text":"{$jslabel voto_diputado dip255 }","bold":true},{"text":{$dip255_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field256}","stack":[{"text":"{$jslabel voto_diputado dip256 }","bold":true},{"text":{$dip256_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field257}","stack":[{"text":"{$jslabel voto_diputado dip257 }","bold":true},{"text":{$dip257_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field258}","stack":[{"text":"{$jslabel voto_diputado dip258 }","bold":true},{"text":{$dip258_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field259}","stack":[{"text":"{$jslabel voto_diputado dip259 }","bold":true},{"text":{$dip259_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field260}","stack":[{"text":"{$jslabel voto_diputado dip260 }","bold":true},{"text":{$dip260_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field261}","stack":[{"text":"{$jslabel voto_diputado dip261 }","bold":true},{"text":{$dip261_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field262}","stack":[{"text":"{$jslabel voto_diputado dip262 }","bold":true},{"text":{$dip262_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field263}","stack":[{"text":"{$jslabel voto_diputado dip263 }","bold":true},{"text":{$dip263_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field264}","stack":[{"text":"{$jslabel voto_diputado dip264 }","bold":true},{"text":{$dip264_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field265}","stack":[{"text":"{$jslabel voto_diputado dip265 }","bold":true},{"text":{$dip265_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field266}","stack":[{"text":"{$jslabel voto_diputado dip266 }","bold":true},{"text":{$dip266_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field267}","stack":[{"text":"{$jslabel voto_diputado dip267 }","bold":true},{"text":{$dip267_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field268}","stack":[{"text":"{$jslabel voto_diputado dip268 }","bold":true},{"text":{$dip268_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field269}","stack":[{"text":"{$jslabel voto_diputado dip269 }","bold":true},{"text":{$dip269_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field270}","stack":[{"text":"{$jslabel voto_diputado dip270 }","bold":true},{"text":{$dip270_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field271}","stack":[{"text":"{$jslabel voto_diputado dip271 }","bold":true},{"text":{$dip271_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field272}","stack":[{"text":"{$jslabel voto_diputado dip272 }","bold":true},{"text":{$dip272_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field273}","stack":[{"text":"{$jslabel voto_diputado dip273 }","bold":true},{"text":{$dip273_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field274}","stack":[{"text":"{$jslabel voto_diputado dip274 }","bold":true},{"text":{$dip274_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field275}","stack":[{"text":"{$jslabel voto_diputado dip275 }","bold":true},{"text":{$dip275_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field276}","stack":[{"text":"{$jslabel voto_diputado dip276 }","bold":true},{"text":{$dip276_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field277}","stack":[{"text":"{$jslabel voto_diputado dip277 }","bold":true},{"text":{$dip277_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field278}","stack":[{"text":"{$jslabel voto_diputado dip278 }","bold":true},{"text":{$dip278_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field279}","stack":[{"text":"{$jslabel voto_diputado dip279 }","bold":true},{"text":{$dip279_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field280}","stack":[{"text":"{$jslabel voto_diputado dip280 }","bold":true},{"text":{$dip280_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field281}","stack":[{"text":"{$jslabel voto_diputado validos }","bold":true},{"text":{$validos_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field282}","stack":[{"text":"{$jslabel voto_diputado blancos }","bold":true},{"text":{$blancos_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field283}","stack":[{"text":"{$jslabel voto_diputado nulos }","bold":true},{"text":{$nulos_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field284}","stack":[{"text":"{$jslabel voto_diputado utilizados }","bold":true},{"text":{$utilizados_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field285}","stack":[{"text":"{$jslabel voto_diputado no_utilizados }","bold":true},{"text":{$no_utilizados_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field286}","stack":[{"text":"{$jslabel voto_diputado total }","bold":true},{"text":{$total_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field287}","stack":[{"text":"{$jslabel voto_diputado usuario }","bold":true},{"text":{$usuario_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field288}","stack":[{"text":"{$jslabel voto_diputado fecha }","bold":true},{"text":{$fecha_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field289}","stack":[{"text":"{$jslabel voto_diputado editado_por }","bold":true},{"text":{$editado_por_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field290}","stack":[{"text":"{$jslabel voto_diputado fecha_edicion }","bold":true},{"text":{$fecha_edicion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c1}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

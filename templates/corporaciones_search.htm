@@ -1,0 +1,316 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel corporaciones search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN dep_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dep}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dep" 
+	
+	data-signal-error-for="dep{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="dep" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dep}">
+		{$label corporaciones dep }	</label>
+	<div class="r-search-option">
+		{$searchtype_dep}
+	</div>
+	<div class="r-search-field">
+		{$dep_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dep_editcontrol1}
+	</div>
+	
+</div>
+
+{END dep_fieldblock}
+											
+{BEGIN mun_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mun}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="mun" 
+	
+	data-signal-error-for="mun{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="mun" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mun}">
+		{$label corporaciones mun }	</label>
+	<div class="r-search-option">
+		{$searchtype_mun}
+	</div>
+	<div class="r-search-field">
+		{$mun_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mun_editcontrol1}
+	</div>
+	
+</div>
+
+{END mun_fieldblock}
+											
+{BEGIN cantidad_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cantidad}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cantidad" 
+	
+	data-signal-error-for="cantidad{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="cantidad" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cantidad}">
+		{$label corporaciones cantidad }	</label>
+	<div class="r-search-option">
+		{$searchtype_cantidad}
+	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cantidad_editcontrol1}
+	</div>
+	
+</div>
+
+{END cantidad_fieldblock}
+											
+{BEGIN factor_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_factor}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="factor" 
+	
+	data-signal-error-for="factor{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="factor" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_factor}">
+		{$label corporaciones factor }	</label>
+	<div class="r-search-option">
+		{$searchtype_factor}
+	</div>
+	<div class="r-search-field">
+		{$factor_editcontrol}	</div>
+	<div class="r-search-field">
+		{$factor_editcontrol1}
+	</div>
+	
+</div>
+
+{END factor_fieldblock}
+											
+{BEGIN estructura_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estructura}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="estructura" 
+	
+	data-signal-error-for="estructura{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="estructura" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_estructura}">
+		{$label corporaciones estructura }	</label>
+	<div class="r-search-option">
+		{$searchtype_estructura}
+	</div>
+	<div class="r-search-field">
+		{$estructura_editcontrol}	</div>
+	<div class="r-search-field">
+		{$estructura_editcontrol1}
+	</div>
+	
+</div>
+
+{END estructura_fieldblock}
+											
+{BEGIN estructurac_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estructurac}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="estructurac" 
+	
+	data-signal-error-for="estructurac{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="estructurac" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_estructurac}">
+		{$label corporaciones estructurac }	</label>
+	<div class="r-search-option">
+		{$searchtype_estructurac}
+	</div>
+	<div class="r-search-field">
+		{$estructurac_editcontrol}	</div>
+	<div class="r-search-field">
+		{$estructurac_editcontrol1}
+	</div>
+	
+</div>
+
+{END estructurac_fieldblock}
+											
+{BEGIN diputados_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_diputados}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="diputados" 
+	
+	data-signal-error-for="diputados{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="diputados" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_diputados}">
+		{$label corporaciones diputados }	</label>
+	<div class="r-search-option">
+		{$searchtype_diputados}
+	</div>
+	<div class="r-search-field">
+		{$diputados_editcontrol}	</div>
+	<div class="r-search-field">
+		{$diputados_editcontrol1}
+	</div>
+	
+</div>
+
+{END diputados_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

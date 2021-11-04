@@ -1,0 +1,466 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel voto_alcalde search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c1" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_urna_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_urna}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_urna" 
+	
+	data-signal-error-for="id_urna{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_urna" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_urna}">
+		{$label voto_alcalde id_urna }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_urna}
+	</div>
+	<div class="r-search-field">
+		{$id_urna_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_urna_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_urna_fieldblock}
+											
+{BEGIN candidato4_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato4}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato4" 
+	
+	data-signal-error-for="candidato4{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="candidato4" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato4}">
+		{$label voto_alcalde candidato4 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato4}
+	</div>
+	<div class="r-search-field">
+		{$candidato4_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato4_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato4_fieldblock}
+											
+{BEGIN candidato5_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato5}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato5" 
+	
+	data-signal-error-for="candidato5{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="candidato5" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato5}">
+		{$label voto_alcalde candidato5 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato5}
+	</div>
+	<div class="r-search-field">
+		{$candidato5_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato5_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato5_fieldblock}
+											
+{BEGIN candidato6_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato6}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato6" 
+	
+	data-signal-error-for="candidato6{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="candidato6" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato6}">
+		{$label voto_alcalde candidato6 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato6}
+	</div>
+	<div class="r-search-field">
+		{$candidato6_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato6_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato6_fieldblock}
+											
+{BEGIN candidato7_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato7}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato7" 
+	
+	data-signal-error-for="candidato7{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="candidato7" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato7}">
+		{$label voto_alcalde candidato7 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato7}
+	</div>
+	<div class="r-search-field">
+		{$candidato7_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato7_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato7_fieldblock}
+											
+{BEGIN candidato8_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato8}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato8" 
+	
+	data-signal-error-for="candidato8{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="candidato8" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato8}">
+		{$label voto_alcalde candidato8 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato8}
+	</div>
+	<div class="r-search-field">
+		{$candidato8_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato8_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato8_fieldblock}
+											
+{BEGIN candidato9_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato9}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato9" 
+	
+	data-signal-error-for="candidato9{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="candidato9" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato9}">
+		{$label voto_alcalde candidato9 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato9}
+	</div>
+	<div class="r-search-field">
+		{$candidato9_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato9_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato9_fieldblock}
+											
+{BEGIN candidato10_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato10}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato10" 
+	
+	data-signal-error-for="candidato10{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="candidato10" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato10}">
+		{$label voto_alcalde candidato10 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato10}
+	</div>
+	<div class="r-search-field">
+		{$candidato10_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato10_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato10_fieldblock}
+											
+{BEGIN candidato11_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato11}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato11" 
+	
+	data-signal-error-for="candidato11{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="candidato11" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato11}">
+		{$label voto_alcalde candidato11 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato11}
+	</div>
+	<div class="r-search-field">
+		{$candidato11_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato11_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato11_fieldblock}
+											
+{BEGIN candidato12_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_candidato12}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="candidato12" 
+	
+	data-signal-error-for="candidato12{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="candidato12" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_candidato12}">
+		{$label voto_alcalde candidato12 }	</label>
+	<div class="r-search-option">
+		{$searchtype_candidato12}
+	</div>
+	<div class="r-search-field">
+		{$candidato12_editcontrol}	</div>
+	<div class="r-search-field">
+		{$candidato12_editcontrol1}
+	</div>
+	
+</div>
+
+{END candidato12_fieldblock}
+											
+{BEGIN usuario_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usuario}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usuario" 
+	
+	data-signal-error-for="usuario{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="usuario" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usuario}">
+		{$label voto_alcalde usuario }	</label>
+	<div class="r-search-option">
+		{$searchtype_usuario}
+	</div>
+	<div class="r-search-field">
+		{$usuario_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usuario_editcontrol1}
+	</div>
+	
+</div>
+
+{END usuario_fieldblock}
+											
+{BEGIN editado_por_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_editado_por}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="editado_por" 
+	
+	data-signal-error-for="editado_por{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="editado_por" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_editado_por}">
+		{$label voto_alcalde editado_por }	</label>
+	<div class="r-search-option">
+		{$searchtype_editado_por}
+	</div>
+	<div class="r-search-field">
+		{$editado_por_editcontrol}	</div>
+	<div class="r-search-field">
+		{$editado_por_editcontrol1}
+	</div>
+	
+</div>
+
+{END editado_por_fieldblock}
+											
+{BEGIN fecha_edicion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_edicion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_edicion" 
+	
+	data-signal-error-for="fecha_edicion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="fecha_edicion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_edicion}">
+		{$label voto_alcalde fecha_edicion }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_edicion}
+	</div>
+	<div class="r-search-field">
+		{$fecha_edicion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_edicion_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_edicion_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c1}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
