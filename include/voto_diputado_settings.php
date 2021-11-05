@@ -945,9 +945,9 @@ $pages = $tdatavoto_diputado[".defaultPages"];
 
 if( $pages[PAGE_EDIT] ) {
 	$tdatavoto_diputado[".edit"] = true;
-	$tdatavoto_diputado[".afterEditAction"] = 1;
+	$tdatavoto_diputado[".afterEditAction"] = 0;
 	$tdatavoto_diputado[".closePopupAfterEdit"] = 1;
-	$tdatavoto_diputado[".afterEditActionDetTable"] = "";
+	$tdatavoto_diputado[".afterEditActionDetTable"] = "Detail tables not found!";
 }
 
 if( $pages[PAGE_ADD] ) {

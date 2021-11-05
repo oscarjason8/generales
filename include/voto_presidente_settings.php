@@ -162,7 +162,7 @@ if( $pages[PAGE_ADD] ) {
 $tdatavoto_presidente[".add"] = true;
 $tdatavoto_presidente[".afterAddAction"] = 1;
 $tdatavoto_presidente[".closePopupAfterAdd"] = 1;
-$tdatavoto_presidente[".afterAddActionDetTable"] = "";
+$tdatavoto_presidente[".afterAddActionDetTable"] = "Detail tables not found!";
 }
 
 if( $pages[PAGE_LIST] ) {
