@@ -34,9 +34,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsdip___por_orden["Spanish"]["value"] = "Votos";
 	$fieldToolTipsdip___por_orden["Spanish"]["value"] = "";
 	$placeHoldersdip___por_orden["Spanish"]["value"] = "";
-	$fieldLabelsdip___por_orden["Spanish"]["Movimiento"] = "Movimiento";
-	$fieldToolTipsdip___por_orden["Spanish"]["Movimiento"] = "";
-	$placeHoldersdip___por_orden["Spanish"]["Movimiento"] = "";
+	$fieldLabelsdip___por_orden["Spanish"]["Partido"] = "Partido";
+	$fieldToolTipsdip___por_orden["Spanish"]["Partido"] = "";
+	$placeHoldersdip___por_orden["Spanish"]["Partido"] = "";
 	if (count($fieldToolTipsdip___por_orden["Spanish"]))
 		$tdatadip___por_orden[".isUseToolTips"] = true;
 }
@@ -163,7 +163,7 @@ $tdatadip___por_orden[".googleLikeFields"] = array();
 $tdatadip___por_orden[".googleLikeFields"][] = "Casilla";
 $tdatadip___por_orden[".googleLikeFields"][] = "Nombre";
 $tdatadip___por_orden[".googleLikeFields"][] = "value";
-$tdatadip___por_orden[".googleLikeFields"][] = "Movimiento";
+$tdatadip___por_orden[".googleLikeFields"][] = "Partido";
 
 
 
@@ -207,7 +207,7 @@ $tdatadip___por_orden[".reportLayout"] = 6;
 
 
 
-$tstrOrderBy = "order by casilla";
+$tstrOrderBy = "order by Casilla";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatadip___por_orden[".strOrderBy"] = $tstrOrderBy;
@@ -217,7 +217,7 @@ $tdatadip___por_orden[".orderindexes"] = array();
 
 
 
-$tdatadip___por_orden[".sqlHead"] = "SELECT Casilla,  	Nombre,  	`value`,  	Movimiento";
+$tdatadip___por_orden[".sqlHead"] = "SELECT Casilla,  	Nombre,  	`value`,  	Partido";
 $tdatadip___por_orden[".sqlFrom"] = "FROM vdiputados";
 $tdatadip___por_orden[".sqlWhereExpr"] = "";
 $tdatadip___por_orden[".sqlTail"] = "";
@@ -682,14 +682,14 @@ $tdatadip___por_orden[".hideMobileList"] = array();
 
 	$tdatadip___por_orden["value"] = $fdata;
 		$tdatadip___por_orden[".searchableFields"][] = "value";
-//	Movimiento
+//	Partido
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 4;
-	$fdata["strName"] = "Movimiento";
-	$fdata["GoodName"] = "Movimiento";
+	$fdata["strName"] = "Partido";
+	$fdata["GoodName"] = "Partido";
 	$fdata["ownerTable"] = "vdiputados";
-	$fdata["Label"] = GetFieldLabel("Dip___Por_Orden","Movimiento");
+	$fdata["Label"] = GetFieldLabel("Dip___Por_Orden","Partido");
 	$fdata["FieldType"] = 200;
 
 		// report field settings
@@ -699,11 +699,11 @@ $tdatadip___por_orden[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "Movimiento";
+		$fdata["strField"] = "Partido";
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Movimiento";
+	$fdata["FullName"] = "Partido";
 
 	
 	
@@ -767,7 +767,7 @@ $tdatadip___por_orden[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=26";
+			$edata["EditParams"].= " maxlength=34";
 
 		$edata["controlWidth"] = 200;
 
@@ -819,8 +819,8 @@ $tdatadip___por_orden[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatadip___por_orden["Movimiento"] = $fdata;
-		$tdatadip___por_orden[".searchableFields"][] = "Movimiento";
+	$tdatadip___por_orden["Partido"] = $fdata;
+		$tdatadip___por_orden[".searchableFields"][] = "Partido";
 
 
 $tables_data["Dip - Por Orden"]=&$tdatadip___por_orden;
@@ -858,10 +858,10 @@ function createSqlQuery_dip___por_orden()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "Casilla,  	Nombre,  	`value`,  	Movimiento";
+$proto0["m_strFieldList"] = "Casilla,  	Nombre,  	`value`,  	Partido";
 $proto0["m_strFrom"] = "FROM vdiputados";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "order by casilla";
+$proto0["m_strOrderBy"] = "order by Casilla";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -942,12 +942,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Movimiento",
+	"m_strName" => "Partido",
 	"m_strTable" => "vdiputados",
 	"m_srcTableName" => "Dip - Por Orden"
 ));
 
-$proto12["m_sql"] = "Movimiento";
+$proto12["m_sql"] = "Partido";
 $proto12["m_srcTableName"] = "Dip - Por Orden";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -964,7 +964,7 @@ $proto15["m_columns"] = array();
 $proto15["m_columns"][] = "Casilla";
 $proto15["m_columns"][] = "Nombre";
 $proto15["m_columns"][] = "value";
-$proto15["m_columns"][] = "Movimiento";
+$proto15["m_columns"][] = "Partido";
 $obj = new SQLTable($proto15);
 
 $proto14["m_table"] = $obj;

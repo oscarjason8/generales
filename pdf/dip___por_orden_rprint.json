@@ -188,8 +188,8 @@ pdfDocument = {
 		alignment: '{$value_align}',
 	},
 		{
-		text: '{$jslabel Dip___Por_Orden Movimiento }',
-		alignment: '{$Movimiento_align}',
+		text: '{$jslabel Dip___Por_Orden Partido }',
+		alignment: '{$Partido_align}',
 	},
 	],
 
@@ -209,8 +209,8 @@ pdfDocument = {
 		alignment: '{$value_align}',
 	},
 		{	
-		text: {$Movimiento_value},
-		alignment: '{$Movimiento_align}',
+		text: {$Partido_value},
+		alignment: '{$Partido_align}',
 	},
 	],
 	{END row_data}

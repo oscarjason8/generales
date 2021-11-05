@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Casilla}</span>
 						</div>
 		{END searchCtrlBlock_Casilla}
+																{BEGIN searchCtrlBlock_Partido}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Partido}" {$filterRow_attrs_Partido}>
+			<label>{$label Dip___Por_Orden Partido }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Partido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Partido}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Partido}</span>
+						</div>
+		{END searchCtrlBlock_Partido}
 																{BEGIN searchCtrlBlock_value}
 
 
@@ -139,19 +152,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Nombre}</span>
 						</div>
 		{END searchCtrlBlock_Nombre}
-																{BEGIN searchCtrlBlock_Movimiento}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_Movimiento}" {$filterRow_attrs_Movimiento}>
-			<label>{$label Dip___Por_Orden Movimiento }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_Movimiento}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_Movimiento}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Movimiento}</span>
-						</div>
-		{END searchCtrlBlock_Movimiento}
 		
 
 	</div>
@@ -404,7 +404,7 @@
 					<th class="{$fieldclass_Casilla}"> {$label Dip___Por_Orden Casilla }</th>
 					<th class="{$fieldclass_Nombre}"> {$label Dip___Por_Orden Nombre }</th>
 					<th class="{$fieldclass_value}"> {$label Dip___Por_Orden value }</th>
-					<th class="{$fieldclass_Movimiento}"> {$label Dip___Por_Orden Movimiento }</th>
+					<th class="{$fieldclass_Partido}"> {$label Dip___Por_Orden Partido }</th>
 				</tr>
 		{END grid_header}
 	</thead>
@@ -428,9 +428,9 @@
 {$value_value}
 </span>			</td>
 			
-			<td {$recordattrs} class="{$fieldclass_Movimiento}">
-						<span data-itemtype="grid_field" data-field="Movimiento" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
-{$Movimiento_value}
+			<td {$recordattrs} class="{$fieldclass_Partido}">
+						<span data-itemtype="grid_field" data-field="Partido" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$Partido_value}
 </span>			</td>
 				</tr>
 	{END row_data}

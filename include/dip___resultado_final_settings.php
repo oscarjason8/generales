@@ -34,9 +34,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsdip___resultado_final["Spanish"]["value"] = "Votos";
 	$fieldToolTipsdip___resultado_final["Spanish"]["value"] = "";
 	$placeHoldersdip___resultado_final["Spanish"]["value"] = "";
-	$fieldLabelsdip___resultado_final["Spanish"]["Movimiento"] = "Movimiento";
-	$fieldToolTipsdip___resultado_final["Spanish"]["Movimiento"] = "";
-	$placeHoldersdip___resultado_final["Spanish"]["Movimiento"] = "";
+	$fieldLabelsdip___resultado_final["Spanish"]["Partido"] = "Partido";
+	$fieldToolTipsdip___resultado_final["Spanish"]["Partido"] = "";
+	$placeHoldersdip___resultado_final["Spanish"]["Partido"] = "";
 	if (count($fieldToolTipsdip___resultado_final["Spanish"]))
 		$tdatadip___resultado_final[".isUseToolTips"] = true;
 }
@@ -163,7 +163,7 @@ $tdatadip___resultado_final[".googleLikeFields"] = array();
 $tdatadip___resultado_final[".googleLikeFields"][] = "Casilla";
 $tdatadip___resultado_final[".googleLikeFields"][] = "Nombre";
 $tdatadip___resultado_final[".googleLikeFields"][] = "value";
-$tdatadip___resultado_final[".googleLikeFields"][] = "Movimiento";
+$tdatadip___resultado_final[".googleLikeFields"][] = "Partido";
 
 
 
@@ -217,7 +217,7 @@ $tdatadip___resultado_final[".orderindexes"] = array();
 
 
 
-$tdatadip___resultado_final[".sqlHead"] = "SELECT Casilla,  	Nombre,  	`value`,  	Movimiento";
+$tdatadip___resultado_final[".sqlHead"] = "SELECT Casilla,  	Nombre,  	`value`,  	Partido";
 $tdatadip___resultado_final[".sqlFrom"] = "FROM vdiputados";
 $tdatadip___resultado_final[".sqlWhereExpr"] = "";
 $tdatadip___resultado_final[".sqlTail"] = "";
@@ -682,14 +682,14 @@ $tdatadip___resultado_final[".hideMobileList"] = array();
 
 	$tdatadip___resultado_final["value"] = $fdata;
 		$tdatadip___resultado_final[".searchableFields"][] = "value";
-//	Movimiento
+//	Partido
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 4;
-	$fdata["strName"] = "Movimiento";
-	$fdata["GoodName"] = "Movimiento";
+	$fdata["strName"] = "Partido";
+	$fdata["GoodName"] = "Partido";
 	$fdata["ownerTable"] = "vdiputados";
-	$fdata["Label"] = GetFieldLabel("Dip___Resultado_Final","Movimiento");
+	$fdata["Label"] = GetFieldLabel("Dip___Resultado_Final","Partido");
 	$fdata["FieldType"] = 200;
 
 		// report field settings
@@ -699,11 +699,11 @@ $tdatadip___resultado_final[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "Movimiento";
+		$fdata["strField"] = "Partido";
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Movimiento";
+	$fdata["FullName"] = "Partido";
 
 	
 	
@@ -767,7 +767,7 @@ $tdatadip___resultado_final[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=26";
+			$edata["EditParams"].= " maxlength=34";
 
 		$edata["controlWidth"] = 200;
 
@@ -819,8 +819,8 @@ $tdatadip___resultado_final[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatadip___resultado_final["Movimiento"] = $fdata;
-		$tdatadip___resultado_final[".searchableFields"][] = "Movimiento";
+	$tdatadip___resultado_final["Partido"] = $fdata;
+		$tdatadip___resultado_final[".searchableFields"][] = "Partido";
 
 
 $tables_data["Dip - Resultado Final"]=&$tdatadip___resultado_final;
@@ -858,7 +858,7 @@ function createSqlQuery_dip___resultado_final()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "Casilla,  	Nombre,  	`value`,  	Movimiento";
+$proto0["m_strFieldList"] = "Casilla,  	Nombre,  	`value`,  	Partido";
 $proto0["m_strFrom"] = "FROM vdiputados";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "order by value desc";
@@ -942,12 +942,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Movimiento",
+	"m_strName" => "Partido",
 	"m_strTable" => "vdiputados",
 	"m_srcTableName" => "Dip - Resultado Final"
 ));
 
-$proto12["m_sql"] = "Movimiento";
+$proto12["m_sql"] = "Partido";
 $proto12["m_srcTableName"] = "Dip - Resultado Final";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -964,7 +964,7 @@ $proto15["m_columns"] = array();
 $proto15["m_columns"][] = "Casilla";
 $proto15["m_columns"][] = "Nombre";
 $proto15["m_columns"][] = "value";
-$proto15["m_columns"][] = "Movimiento";
+$proto15["m_columns"][] = "Partido";
 $obj = new SQLTable($proto15);
 
 $proto14["m_table"] = $obj;

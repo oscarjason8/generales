@@ -123,7 +123,7 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_search_field1}","text":{$Nombre_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_integrated_search_field3}","text":{$Movimiento_pdfvalue}},
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$Partido_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],
