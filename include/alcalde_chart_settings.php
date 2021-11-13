@@ -76,7 +76,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsalcalde_chart["Spanish"]["candidato8"] = "Anibal Nuñez";
 	$fieldToolTipsalcalde_chart["Spanish"]["candidato8"] = "";
 	$placeHoldersalcalde_chart["Spanish"]["candidato8"] = "";
-	$fieldLabelsalcalde_chart["Spanish"]["candidato9"] = "TSH";
+	$fieldLabelsalcalde_chart["Spanish"]["candidato9"] = "Ingris Martinez";
 	$fieldToolTipsalcalde_chart["Spanish"]["candidato9"] = "";
 	$placeHoldersalcalde_chart["Spanish"]["candidato9"] = "";
 	$fieldLabelsalcalde_chart["Spanish"]["candidato10"] = "Maria Luisa Martell";
@@ -85,13 +85,13 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsalcalde_chart["Spanish"]["candidato11"] = "Elmer Guerrero";
 	$fieldToolTipsalcalde_chart["Spanish"]["candidato11"] = "";
 	$placeHoldersalcalde_chart["Spanish"]["candidato11"] = "";
-	$fieldLabelsalcalde_chart["Spanish"]["candidato12"] = "PINU";
+	$fieldLabelsalcalde_chart["Spanish"]["candidato12"] = "Tatina Perez";
 	$fieldToolTipsalcalde_chart["Spanish"]["candidato12"] = "";
 	$placeHoldersalcalde_chart["Spanish"]["candidato12"] = "";
 	$fieldLabelsalcalde_chart["Spanish"]["editado_por"] = "Editado Por";
 	$fieldToolTipsalcalde_chart["Spanish"]["editado_por"] = "";
 	$placeHoldersalcalde_chart["Spanish"]["editado_por"] = "";
-	$fieldLabelsalcalde_chart["Spanish"]["fecha_edicion"] = "Fecha Edicion";
+	$fieldLabelsalcalde_chart["Spanish"]["fecha_edicion"] = "Fecha de Edición";
 	$fieldToolTipsalcalde_chart["Spanish"]["fecha_edicion"] = "";
 	$placeHoldersalcalde_chart["Spanish"]["fecha_edicion"] = "";
 	$fieldLabelsalcalde_chart["Spanish"]["elecciones"] = "Elecciones";

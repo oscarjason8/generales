@@ -14,6 +14,8 @@
     {END rtlCSS}
     {BEGIN styleCSSFiles}
       <link REL="stylesheet" href="{$stylepath}" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+	type="text/css">
     {END styleCSSFiles}
   </head>
   <BODY class="{$stylename} function-report" {$bodyattrs}>
@@ -312,7 +314,7 @@
             {END supertop_block}
             {$locking}
           </div>
-          <DIV class="r-body" data-resize-top="topbar" data-body-width="standard">
+          <DIV class="r-body" data-resize-top="topbar" data-body-width="full">
             {$header}
             <DIV class="r-top">
               {BEGIN top_block}
@@ -427,14 +429,17 @@
                         <TH class="{$fieldclass_id_distrito}">
                           {$label Alc___Por_Distrito id_distrito}
                         </th>
-                        <TH class="{$fieldclass_Maria}">
-                          {$label Alc___Por_Distrito Maria}
+                        <TH class="{$fieldclass_LIBERAL}">
+                          {$label Alc___Por_Distrito LIBERAL}
                         </th>
-                        <TH class="{$fieldclass_Victor}">
-                          {$label Alc___Por_Distrito Victor}
+                        <TH class="{$fieldclass_NACIONAL}">
+                          {$label Alc___Por_Distrito NACIONAL}
                         </th>
-                        <TH class="{$fieldclass_Adolfo}">
-                          {$label Alc___Por_Distrito Adolfo}
+                        <TH class="{$fieldclass_LIBRE}">
+                          {$label Alc___Por_Distrito LIBRE}
+                        </th>
+                        <TH class="{$fieldclass_Otros}">
+                          {$label Alc___Por_Distrito Otros}
                         </th>
                       </tr>
                     {END grid_header}
@@ -448,24 +453,50 @@
                               {$id_distrito_value}
                             </span>
                           </td>
-                          <TD {$recordattrs} class="{$fieldclass_Maria}">
-                            <span data-itemtype="grid_field" data-field="Maria" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
-                              {$Maria_value}
+                          <TD {$recordattrs} class="{$fieldclass_LIBERAL}">
+                            <span data-itemtype="grid_field" data-field="LIBERAL" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$LIBERAL_value}
                             </span>
                           </td>
-                          <TD {$recordattrs} class="{$fieldclass_Victor}">
-                            <span data-itemtype="grid_field" data-field="Victor" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
-                              {$Victor_value}
+                          <TD {$recordattrs} class="{$fieldclass_NACIONAL}">
+                            <span data-itemtype="grid_field" data-field="NACIONAL" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$NACIONAL_value}
                             </span>
                           </td>
-                          <TD {$recordattrs} class="{$fieldclass_Adolfo}">
-                            <span data-itemtype="grid_field" data-field="Adolfo" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
-                              {$Adolfo_value}
+                          <TD {$recordattrs} class="{$fieldclass_LIBRE}">
+                            <span data-itemtype="grid_field" data-field="LIBRE" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$LIBRE_value}
+                            </span>
+                          </td>
+                          <TD {$recordattrs} class="{$fieldclass_Otros}">
+                            <span data-itemtype="grid_field" data-field="Otros" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$Otros_value}
                             </span>
                           </td>
                         </tr>
                       {END row_data}
                     {END grid_row}
+                    <TR class="rnr-row style1" style="font-weight: bold;">
+                      <TD class="globalsummary 0 center-xs">
+                        Total de Votos&nbsp; &nbsp;
+                      </td>
+                      <TD class="globalsummary 0 {$fieldclass_LIBERAL}">
+                        {$global_totalLIBERAL_sum}
+                        votos&nbsp({$can10}%)
+                      </td>
+                      <TD class="globalsummary 0 {$fieldclass_NACIONAL}">
+                        {$global_totalNACIONAL_sum}
+                        votos&nbsp({$can11}%)
+                      </td>
+                      <TD class="globalsummary 0 {$fieldclass_LIBRE}">
+                        {$global_totalLIBRE_sum}
+                        votos&nbsp({$can5}%)
+                      </td>
+                      <TD class="globalsummary rnr-edge {$fieldclass_Otros}">
+                        {$global_totalOtros_sum}
+                        votos&nbsp({$otros}%)
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               {END grid_block}

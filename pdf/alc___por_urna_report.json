@@ -65,13 +65,14 @@ pdfDocument = {
 										"%",
 										"%",
 										"%",
+										"%",
 															],
 							
 				body: [
 				{BEGIN standalone_page}
 					[
 						{
-							colSpan: 7,
+							colSpan: 8,
 							border:[false, false,false,false],
 							stack: [
 
@@ -178,16 +179,20 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Urna Maria }',
-		alignment: '{$Maria_align}',
+		text: '{$jslabel Alc___Por_Urna LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Urna Victor }',
-		alignment: '{$Victor_align}',
+		text: '{$jslabel Alc___Por_Urna NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Urna Adolfo }',
-		alignment: '{$Adolfo_align}',
+		text: '{$jslabel Alc___Por_Urna LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -211,16 +216,20 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{	
-		text: {$Maria_value},
-		alignment: '{$Maria_align}',
+		text: {$LIBERAL_value},
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: {$Victor_value},
-		alignment: '{$Victor_align}',
+		text: {$NACIONAL_value},
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: {$Adolfo_value},
-		alignment: '{$Adolfo_align}',
+		text: {$LIBRE_value},
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: {$Otros_value},
+		alignment: '{$Otros_align}',
 	},
 	],
 	{END row_data}
@@ -244,16 +253,20 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Urna Maria }',
-		alignment: '{$Maria_align}',
+		text: '{$jslabel Alc___Por_Urna LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Urna Victor }',
-		alignment: '{$Victor_align}',
+		text: '{$jslabel Alc___Por_Urna NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Urna Adolfo }',
-		alignment: '{$Adolfo_align}',
+		text: '{$jslabel Alc___Por_Urna LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -270,7 +283,7 @@ pdfDocument = {
 	[
 		{
 			text: 'Resumen global {$global_total_cnt} - Registros totales',
-			colSpan: 7,
+			colSpan: 8,
 			style: 'globalsummary',
 		}
 	],
@@ -312,32 +325,42 @@ pdfDocument = {
 							{
 			text: [
 			
-							{$global_totalMaria_sum},
+							{$global_totalLIBERAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Maria_align}',
+			alignment: '{$LIBERAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalVictor_sum},
+							{$global_totalNACIONAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Victor_align}',
+			alignment: '{$NACIONAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalAdolfo_sum},
+							{$global_totalLIBRE_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Adolfo_align}',
+			alignment: '{$LIBRE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalOtros_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Otros_align}',
 					},
 			],
 	

@@ -77,13 +77,22 @@ pdfDocument = {
 										"%",
 										"%",
 										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
 															],
 							
 				body: [
 				{BEGIN standalone_page}
 					[
 						{
-							colSpan: 13,
+							colSpan: 22,
 							border:[false, false,false,false],
 							stack: [
 
@@ -201,16 +210,52 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Urna Maria }',
-		alignment: '{$Maria_align}',
+		text: '{$jslabel Alc___Por_Urna PAC }',
+		alignment: '{$PAC_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Urna Victor }',
-		alignment: '{$Victor_align}',
+		text: '{$jslabel Alc___Por_Urna FAPER }',
+		alignment: '{$FAPER_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Urna Adolfo }',
-		alignment: '{$Adolfo_align}',
+		text: '{$jslabel Alc___Por_Urna NUEVA_RUTA }',
+		alignment: '{$NUEVA_RUTA_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna ALIANZA_PAT }',
+		alignment: '{$ALIANZA_PAT_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna PSH }',
+		alignment: '{$PSH_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna LIDEHR }',
+		alignment: '{$LIDEHR_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna DC }',
+		alignment: '{$DC_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna TSH }',
+		alignment: '{$TSH_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna LIBERAL }',
+		alignment: '{$LIBERAL_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna NACIONAL }',
+		alignment: '{$NACIONAL_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Urna PINU }',
+		alignment: '{$PINU_align}',
 	},
 		{
 		text: '{$jslabel Alc___Por_Urna Validos }',
@@ -258,16 +303,52 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{	
-		text: {$Maria_value},
-		alignment: '{$Maria_align}',
+		text: {$PAC_value},
+		alignment: '{$PAC_align}',
 	},
 		{	
-		text: {$Victor_value},
-		alignment: '{$Victor_align}',
+		text: {$FAPER_value},
+		alignment: '{$FAPER_align}',
 	},
 		{	
-		text: {$Adolfo_value},
-		alignment: '{$Adolfo_align}',
+		text: {$NUEVA_RUTA_value},
+		alignment: '{$NUEVA_RUTA_align}',
+	},
+		{	
+		text: {$ALIANZA_PAT_value},
+		alignment: '{$ALIANZA_PAT_align}',
+	},
+		{	
+		text: {$LIBRE_value},
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: {$PSH_value},
+		alignment: '{$PSH_align}',
+	},
+		{	
+		text: {$LIDEHR_value},
+		alignment: '{$LIDEHR_align}',
+	},
+		{	
+		text: {$DC_value},
+		alignment: '{$DC_align}',
+	},
+		{	
+		text: {$TSH_value},
+		alignment: '{$TSH_align}',
+	},
+		{	
+		text: {$LIBERAL_value},
+		alignment: '{$LIBERAL_align}',
+	},
+		{	
+		text: {$NACIONAL_value},
+		alignment: '{$NACIONAL_align}',
+	},
+		{	
+		text: {$PINU_value},
+		alignment: '{$PINU_align}',
 	},
 		{	
 		text: {$Validos_value},
@@ -315,16 +396,52 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Urna Maria }',
-		alignment: '{$Maria_align}',
+		text: '{$jslabel Alc___Por_Urna PAC }',
+		alignment: '{$PAC_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Urna Victor }',
-		alignment: '{$Victor_align}',
+		text: '{$jslabel Alc___Por_Urna FAPER }',
+		alignment: '{$FAPER_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Urna Adolfo }',
-		alignment: '{$Adolfo_align}',
+		text: '{$jslabel Alc___Por_Urna NUEVA_RUTA }',
+		alignment: '{$NUEVA_RUTA_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna ALIANZA_PAT }',
+		alignment: '{$ALIANZA_PAT_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna PSH }',
+		alignment: '{$PSH_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna LIDEHR }',
+		alignment: '{$LIDEHR_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna DC }',
+		alignment: '{$DC_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna TSH }',
+		alignment: '{$TSH_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna LIBERAL }',
+		alignment: '{$LIBERAL_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna NACIONAL }',
+		alignment: '{$NACIONAL_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Urna PINU }',
+		alignment: '{$PINU_align}',
 	},
 		{	
 		text: '{$jslabel Alc___Por_Urna Validos }',
@@ -365,7 +482,7 @@ pdfDocument = {
 	[
 		{
 			text: 'Resumen global {$global_total_cnt} - Registros totales',
-			colSpan: 13,
+			colSpan: 22,
 			style: 'globalsummary',
 		}
 	],
@@ -407,32 +524,122 @@ pdfDocument = {
 							{
 			text: [
 			
-							{$global_totalMaria_sum},
+							{$global_totalPAC_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Maria_align}',
+			alignment: '{$PAC_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalVictor_sum},
+							{$global_totalFAPER_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Victor_align}',
+			alignment: '{$FAPER_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalAdolfo_sum},
+							{$global_totalNUEVA_RUTA_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Adolfo_align}',
+			alignment: '{$NUEVA_RUTA_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalALIANZA_PAT_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$ALIANZA_PAT_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalLIBRE_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$LIBRE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalPSH_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$PSH_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalLIDEHR_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$LIDEHR_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalDC_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$DC_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalTSH_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$TSH_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalLIBERAL_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$LIBERAL_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalNACIONAL_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$NACIONAL_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalPINU_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$PINU_align}',
 					},
 							{
 			text: [

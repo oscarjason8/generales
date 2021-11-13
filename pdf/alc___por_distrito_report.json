@@ -62,13 +62,14 @@ pdfDocument = {
 										"%",
 										"%",
 										"%",
+										"%",
 															],
 							
 				body: [
 				{BEGIN standalone_page}
 					[
 						{
-							colSpan: 4,
+							colSpan: 5,
 							border:[false, false,false,false],
 							stack: [
 
@@ -158,16 +159,20 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Distrito Maria }',
-		alignment: '{$Maria_align}',
+		text: '{$jslabel Alc___Por_Distrito LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Distrito Victor }',
-		alignment: '{$Victor_align}',
+		text: '{$jslabel Alc___Por_Distrito NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{
-		text: '{$jslabel Alc___Por_Distrito Adolfo }',
-		alignment: '{$Adolfo_align}',
+		text: '{$jslabel Alc___Por_Distrito LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{
+		text: '{$jslabel Alc___Por_Distrito Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -179,16 +184,20 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{	
-		text: {$Maria_value},
-		alignment: '{$Maria_align}',
+		text: {$LIBERAL_value},
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: {$Victor_value},
-		alignment: '{$Victor_align}',
+		text: {$NACIONAL_value},
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: {$Adolfo_value},
-		alignment: '{$Adolfo_align}',
+		text: {$LIBRE_value},
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: {$Otros_value},
+		alignment: '{$Otros_align}',
 	},
 	],
 	{END row_data}
@@ -200,16 +209,20 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Distrito Maria }',
-		alignment: '{$Maria_align}',
+		text: '{$jslabel Alc___Por_Distrito LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Distrito Victor }',
-		alignment: '{$Victor_align}',
+		text: '{$jslabel Alc___Por_Distrito NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: '{$jslabel Alc___Por_Distrito Adolfo }',
-		alignment: '{$Adolfo_align}',
+		text: '{$jslabel Alc___Por_Distrito LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: '{$jslabel Alc___Por_Distrito Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -226,7 +239,7 @@ pdfDocument = {
 	[
 		{
 			text: 'Resumen global {$global_total_cnt} - Registros totales',
-			colSpan: 4,
+			colSpan: 5,
 			style: 'globalsummary',
 		}
 	],
@@ -244,32 +257,42 @@ pdfDocument = {
 							{
 			text: [
 			
-							{$global_totalMaria_sum},
+							{$global_totalLIBERAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Maria_align}',
+			alignment: '{$LIBERAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalVictor_sum},
+							{$global_totalNACIONAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Victor_align}',
+			alignment: '{$NACIONAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalAdolfo_sum},
+							{$global_totalLIBRE_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Adolfo_align}',
+			alignment: '{$LIBRE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalOtros_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Otros_align}',
 					},
 			],
 	

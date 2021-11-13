@@ -128,6 +128,45 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field12}","text":{$ubicaci_n_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$PAC_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$FAPER_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$NUEVA_RUTA_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$ALIANZA_PAT_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$LIBRE_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$PSH_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$LIDEHR_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$DC_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$TSH_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$LIBERAL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$NACIONAL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field15}","text":{$PINU_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field16}","text":{$Otros_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

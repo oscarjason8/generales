@@ -76,7 +76,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsvoto_alcalde["Spanish"]["candidato8"] = "Anibal Nuñez";
 	$fieldToolTipsvoto_alcalde["Spanish"]["candidato8"] = "";
 	$placeHoldersvoto_alcalde["Spanish"]["candidato8"] = "";
-	$fieldLabelsvoto_alcalde["Spanish"]["candidato9"] = "TSH";
+	$fieldLabelsvoto_alcalde["Spanish"]["candidato9"] = "Ingris Martinez";
 	$fieldToolTipsvoto_alcalde["Spanish"]["candidato9"] = "";
 	$placeHoldersvoto_alcalde["Spanish"]["candidato9"] = "";
 	$fieldLabelsvoto_alcalde["Spanish"]["candidato10"] = "Maria Luisa Martell";
@@ -85,7 +85,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsvoto_alcalde["Spanish"]["candidato11"] = "Elmer Guerrero";
 	$fieldToolTipsvoto_alcalde["Spanish"]["candidato11"] = "";
 	$placeHoldersvoto_alcalde["Spanish"]["candidato11"] = "";
-	$fieldLabelsvoto_alcalde["Spanish"]["candidato12"] = "PINU";
+	$fieldLabelsvoto_alcalde["Spanish"]["candidato12"] = "Tatiana Perez";
 	$fieldToolTipsvoto_alcalde["Spanish"]["candidato12"] = "";
 	$placeHoldersvoto_alcalde["Spanish"]["candidato12"] = "";
 	$fieldLabelsvoto_alcalde["Spanish"]["editado_por"] = "Editado Por";
