@@ -117,16 +117,16 @@ pdfDocument = {
 			"stack": [
 		
 				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$id_urna_pdfvalue}},
+				
+				
 			{"hidden":"{$item_hide_integrated_search_field}","text":{$id_distrito_pdfvalue}},
 				
 				
 			{"hidden":"{$item_hide_integrated_search_field2}","text":{$id_sector_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_integrated_search_field1}","text":{$id_urna_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field12}","text":{$ubicaci_n_pdfvalue}},
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$ubicaci_n_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],

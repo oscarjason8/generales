@@ -65,13 +65,14 @@ pdfDocument = {
 										"%",
 										"%",
 										"%",
+										"%",
 															],
 							
 				body: [
 				{BEGIN standalone_page}
 					[
 						{
-							colSpan: 7,
+							colSpan: 8,
 							border:[false, false,false,false],
 							stack: [
 
@@ -178,16 +179,20 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Urna Yani }',
-		alignment: '{$Yani_align}',
+		text: '{$jslabel Pres___Por_Urna LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Urna Banegas }',
-		alignment: '{$Banegas_align}',
+		text: '{$jslabel Pres___Por_Urna NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Urna Luis }',
-		alignment: '{$Luis_align}',
+		text: '{$jslabel Pres___Por_Urna LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Urna Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -211,16 +216,20 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{	
-		text: {$Yani_value},
-		alignment: '{$Yani_align}',
+		text: {$LIBERAL_value},
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: {$Banegas_value},
-		alignment: '{$Banegas_align}',
+		text: {$NACIONAL_value},
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: {$Luis_value},
-		alignment: '{$Luis_align}',
+		text: {$LIBRE_value},
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: {$Otros_value},
+		alignment: '{$Otros_align}',
 	},
 	],
 	{END row_data}
@@ -244,16 +253,20 @@ pdfDocument = {
 		alignment: '{$ubicaci_n_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Urna Yani }',
-		alignment: '{$Yani_align}',
+		text: '{$jslabel Pres___Por_Urna LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Urna Banegas }',
-		alignment: '{$Banegas_align}',
+		text: '{$jslabel Pres___Por_Urna NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Urna Luis }',
-		alignment: '{$Luis_align}',
+		text: '{$jslabel Pres___Por_Urna LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Urna Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -270,7 +283,7 @@ pdfDocument = {
 	[
 		{
 			text: 'Resumen global {$global_total_cnt} - Registros totales',
-			colSpan: 7,
+			colSpan: 8,
 			style: 'globalsummary',
 		}
 	],
@@ -312,32 +325,42 @@ pdfDocument = {
 							{
 			text: [
 			
-							{$global_totalYani_sum},
+							{$global_totalLIBERAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Yani_align}',
+			alignment: '{$LIBERAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalBanegas_sum},
+							{$global_totalNACIONAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Banegas_align}',
+			alignment: '{$NACIONAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalLuis_sum},
+							{$global_totalLIBRE_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Luis_align}',
+			alignment: '{$LIBRE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalOtros_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Otros_align}',
 					},
 			],
 	

@@ -659,9 +659,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "484_1636783580";
+$projectBuildKey = "504_1636948520";
 $wizardBuildKey = "35214";
-$projectBuildNumber = "484";
+$projectBuildNumber = "504";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -706,7 +706,7 @@ $tableCaptions["Spanish"]["Urnas___Pendientes"] = "Urnas Pendientes - Elecciones
 $tableCaptions["Spanish"]["Urnas___Completadas"] = "Urnas Completadas - Elecciones Generales 2021";
 $tableCaptions["Spanish"]["partido"] = "Partido - Elecciones Generales 2021";
 $tableCaptions["Spanish"]["corporaciones"] = "Corporaciones";
-$tableCaptions["Spanish"]["estructura"] = "Estructura";
+$tableCaptions["Spanish"]["estructura"] = "Corporación Municipal - Elecciones Generales 2021";
 $tableCaptions["Spanish"]["admin_rights"] = "Admin Rights";
 $tableCaptions["Spanish"]["admin_members"] = "Admin Members";
 $tableCaptions["Spanish"]["admin_users"] = "Add/Edit users";

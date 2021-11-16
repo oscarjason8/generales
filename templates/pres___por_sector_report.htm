@@ -14,6 +14,8 @@
     {END rtlCSS}
     {BEGIN styleCSSFiles}
       <link REL="stylesheet" href="{$stylepath}" type="text/css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+			type="text/css">
     {END styleCSSFiles}
   </head>
   <BODY class="{$stylename} function-report" {$bodyattrs}>
@@ -119,23 +121,6 @@
                         </span>
                       </div>
                     {END searchCtrlBlock}
-                    {BEGIN searchCtrlBlock_id_sector}
-                      <DIV class="form-group srchPanelRow {$filterRow_class_id_sector}" {$filterRow_attrs_id_sector}>
-                        <label>
-                          {$label Pres___Por_Sector id_sector}
-                        </label>
-                        {$delCtrlButt}
-                        <SPAN class="rnr-searchtype">
-                          {$searchtype_id_sector}
-                        </span>
-                        <SPAN class="rnr-searchcontrol">
-                          {$searchcontrol_id_sector}
-                        </span>
-                        <SPAN class="rnr-searchcontrol">
-                          {$searchcontrol1_id_sector}
-                        </span>
-                      </div>
-                    {END searchCtrlBlock_id_sector}
                     {BEGIN searchCtrlBlock_id_distrito}
                       <DIV class="form-group srchPanelRow {$filterRow_class_id_distrito}" {$filterRow_attrs_id_distrito}>
                         <label>
@@ -153,6 +138,23 @@
                         </span>
                       </div>
                     {END searchCtrlBlock_id_distrito}
+                    {BEGIN searchCtrlBlock_id_sector}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_id_sector}" {$filterRow_attrs_id_sector}>
+                        <label>
+                          {$label Pres___Por_Sector id_sector}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_id_sector}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_id_sector}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_id_sector}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_id_sector}
                   </div>
                   <DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
                     <BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>
@@ -329,7 +331,7 @@
             {END supertop_block}
             {$locking}
           </div>
-          <DIV class="r-body" data-resize-top="topbar" data-body-width="standard">
+          <DIV class="r-body" data-resize-top="topbar" data-body-width="full">
             {$header}
             <DIV class="r-top">
               {BEGIN top_block}
@@ -447,14 +449,17 @@
                         <TH class="{$fieldclass_id_sector}">
                           {$label Pres___Por_Sector id_sector}
                         </th>
-                        <TH class="{$fieldclass_Yani}">
-                          {$label Pres___Por_Sector Yani}
+                        <TH class="{$fieldclass_LIBERAL}">
+                          {$label Pres___Por_Sector LIBERAL}
                         </th>
-                        <TH class="{$fieldclass_Banegas}">
-                          {$label Pres___Por_Sector Banegas}
+                        <TH class="{$fieldclass_NACIONAL}">
+                          {$label Pres___Por_Sector NACIONAL}
                         </th>
-                        <TH class="{$fieldclass_Luis}">
-                          {$label Pres___Por_Sector Luis}
+                        <TH class="{$fieldclass_LIBRE}">
+                          {$label Pres___Por_Sector LIBRE}
+                        </th>
+                        <TH class="{$fieldclass_Otros}">
+                          {$label Pres___Por_Sector Otros}
                         </th>
                       </tr>
                     {END grid_header}
@@ -473,24 +478,54 @@
                               {$id_sector_value}
                             </span>
                           </td>
-                          <TD {$recordattrs} class="{$fieldclass_Yani}">
-                            <span data-itemtype="grid_field" data-field="Yani" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
-                              {$Yani_value}
+                          <TD {$recordattrs} class="{$fieldclass_LIBERAL}">
+                            <span data-itemtype="grid_field" data-field="LIBERAL" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$LIBERAL_value}
                             </span>
                           </td>
-                          <TD {$recordattrs} class="{$fieldclass_Banegas}">
-                            <span data-itemtype="grid_field" data-field="Banegas" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
-                              {$Banegas_value}
+                          <TD {$recordattrs} class="{$fieldclass_NACIONAL}">
+                            <span data-itemtype="grid_field" data-field="NACIONAL" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$NACIONAL_value}
                             </span>
                           </td>
-                          <TD {$recordattrs} class="{$fieldclass_Luis}">
-                            <span data-itemtype="grid_field" data-field="Luis" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
-                              {$Luis_value}
+                          <TD {$recordattrs} class="{$fieldclass_LIBRE}">
+                            <span data-itemtype="grid_field" data-field="LIBRE" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$LIBRE_value}
+                            </span>
+                          </td>
+                          <TD {$recordattrs} class="{$fieldclass_Otros}">
+                            <span data-itemtype="grid_field" data-field="Otros" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+                              {$Otros_value}
                             </span>
                           </td>
                         </tr>
                       {END row_data}
                     {END grid_row}
+                    <!-- global summary-->
+                    {BEGIN global_summary}
+                      <!--  Sum -->
+                      <TR class="rnr-row style1" style="font-weight: bold;">
+                        <TD class="globalsummary 0 center-xs" colspan="2">
+                          Total de Votos&nbsp;
+                        </td>
+                        <TD class="globalsummary 0 {$fieldclass_LIBERAL}">
+                          {$global_totalLIBERAL_sum}
+													votos&nbsp({$can14}%)
+                        </td>
+                        <TD class="globalsummary 0 {$fieldclass_NACIONAL}">
+                          {$global_totalNACIONAL_sum}
+													votos&nbsp({$can15}%)
+                        </td>
+                        <TD class="globalsummary 0 {$fieldclass_LIBRE}">
+                          {$global_totalLIBRE_sum}
+													votos&nbsp({$can7}%)
+                        </td>
+                        <TD class="globalsummary rnr-edge {$fieldclass_Otros}">
+                          {$global_totalOtros_sum}
+													votos&nbsp({$otros}%)
+                        </td>
+                      </tr>
+                    {END global_summary}
                   </tbody>
                 </table>
               {END grid_block}

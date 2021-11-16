@@ -52,6 +52,8 @@ include_once(getabspath("include/alc___por_urna_events.php"));
 $tableEvents["Alc - Por Urna"] = new eventclass_alc___por_urna;
 include_once(getabspath("include/dashboard_events.php"));
 $tableEvents["Dashboard"] = new eventclass_dashboard;
+include_once(getabspath("include/estructura_events.php"));
+$tableEvents["estructura"] = new eventclass_estructura;
 
 $xt = new Xtempl();
 

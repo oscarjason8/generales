@@ -85,6 +85,31 @@
 >
 	<div edit-form-cell class="clearfix">
 				
+{BEGIN id_urna_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_urna}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_urna" 
+	
+	data-signal-error-for="id_urna{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="id_urna" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_urna}">
+		{$label Pres___Por_Urna id_urna }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_urna}
+	</div>
+	<div class="r-search-field">
+		{$id_urna_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_urna_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_urna_fieldblock}
+											
 {BEGIN id_distrito_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_id_distrito}  r-horizontal-field form-horizontal" 
@@ -135,31 +160,6 @@
 
 {END id_sector_fieldblock}
 											
-{BEGIN id_urna_fieldblock}
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_id_urna}  r-horizontal-field form-horizontal" 
-	
-		data-fieldname="id_urna" 
-	
-	data-signal-error-for="id_urna{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="id_urna" >
-
-
-	<label class="r-search-label control-label" for="{$labelfor_id_urna}">
-		{$label Pres___Por_Urna id_urna }	</label>
-	<div class="r-search-option">
-		{$searchtype_id_urna}
-	</div>
-	<div class="r-search-field">
-		{$id_urna_editcontrol}	</div>
-	<div class="r-search-field">
-		{$id_urna_editcontrol1}
-	</div>
-	
-</div>
-
-{END id_urna_fieldblock}
-											
 {BEGIN ubicaci_n_fieldblock}
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_ubicaci_n}  r-horizontal-field form-horizontal" 
@@ -167,7 +167,7 @@
 		data-fieldname="ubicación" 
 	
 	data-signal-error-for="ubicaci_n{$id}" 
-	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="ubicaci_n" >
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="ubicaci_n" >
 
 
 	<label class="r-search-label control-label" for="{$labelfor_ubicaci_n}">

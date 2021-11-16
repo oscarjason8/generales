@@ -222,6 +222,13 @@ function InitLookupLinks()
 			$lookupTableLinks["sectores"]["urnas___completadas.id_sector"] = array();
 		}
 		$lookupTableLinks["sectores"]["urnas___completadas.id_sector"]["search"] = array("table" => "Urnas - Completadas", "field" => "id_sector", "page" => "search");
+		if( !isset( $lookupTableLinks["partido"] ) ) {
+			$lookupTableLinks["partido"] = array();
+		}
+		if( !isset( $lookupTableLinks["partido"]["estructura.partido"] )) {
+			$lookupTableLinks["partido"]["estructura.partido"] = array();
+		}
+		$lookupTableLinks["partido"]["estructura.partido"]["edit"] = array("table" => "estructura", "field" => "partido", "page" => "edit");
 }
 
 ?>

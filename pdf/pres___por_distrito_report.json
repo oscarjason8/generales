@@ -62,13 +62,14 @@ pdfDocument = {
 										"%",
 										"%",
 										"%",
+										"%",
 															],
 							
 				body: [
 				{BEGIN standalone_page}
 					[
 						{
-							colSpan: 4,
+							colSpan: 5,
 							border:[false, false,false,false],
 							stack: [
 
@@ -163,16 +164,20 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Distrito Yani }',
-		alignment: '{$Yani_align}',
+		text: '{$jslabel Pres___Por_Distrito LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Distrito Banegas }',
-		alignment: '{$Banegas_align}',
+		text: '{$jslabel Pres___Por_Distrito NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Distrito Luis }',
-		alignment: '{$Luis_align}',
+		text: '{$jslabel Pres___Por_Distrito LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -184,16 +189,20 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{	
-		text: {$Yani_value},
-		alignment: '{$Yani_align}',
+		text: {$LIBERAL_value},
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: {$Banegas_value},
-		alignment: '{$Banegas_align}',
+		text: {$NACIONAL_value},
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: {$Luis_value},
-		alignment: '{$Luis_align}',
+		text: {$LIBRE_value},
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: {$Otros_value},
+		alignment: '{$Otros_align}',
 	},
 	],
 	{END row_data}
@@ -205,16 +214,20 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Distrito Yani }',
-		alignment: '{$Yani_align}',
+		text: '{$jslabel Pres___Por_Distrito LIBERAL }',
+		alignment: '{$LIBERAL_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Distrito Banegas }',
-		alignment: '{$Banegas_align}',
+		text: '{$jslabel Pres___Por_Distrito NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Distrito Luis }',
-		alignment: '{$Luis_align}',
+		text: '{$jslabel Pres___Por_Distrito LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito Otros }',
+		alignment: '{$Otros_align}',
 	},
 	],
 
@@ -231,7 +244,7 @@ pdfDocument = {
 	[
 		{
 			text: 'Resumen global {$global_total_cnt} - Registros totales',
-			colSpan: 4,
+			colSpan: 5,
 			style: 'globalsummary',
 		}
 	],
@@ -249,32 +262,42 @@ pdfDocument = {
 							{
 			text: [
 			
-							{$global_totalYani_sum},
+							{$global_totalLIBERAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Yani_align}',
+			alignment: '{$LIBERAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalBanegas_sum},
+							{$global_totalNACIONAL_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Banegas_align}',
+			alignment: '{$NACIONAL_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalLuis_sum},
+							{$global_totalLIBRE_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Luis_align}',
+			alignment: '{$LIBRE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalOtros_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$Otros_align}',
 					},
 			],
 	

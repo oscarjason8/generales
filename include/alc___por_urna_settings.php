@@ -248,7 +248,7 @@ $tdataalc___por_urna[".tableType"] = "report";
 $tdataalc___por_urna[".printerPageOrientation"] = 1;
 $tdataalc___por_urna[".nPrinterPageScale"] = 100;
 
-$tdataalc___por_urna[".nPrinterSplitRecords"] = 25;
+$tdataalc___por_urna[".nPrinterSplitRecords"] = 20;
 
 $tdataalc___por_urna[".geocodingEnabled"] = false;
 
@@ -256,7 +256,7 @@ $tdataalc___por_urna[".geocodingEnabled"] = false;
 $tdataalc___por_urna[".printReportLayout"] = 6;
 
 $tdataalc___por_urna[".reportPrintPartitionType"] = 1;
-$tdataalc___por_urna[".reportPrintGroupsPerPage"] = 25;
+$tdataalc___por_urna[".reportPrintGroupsPerPage"] = 20;
 $tdataalc___por_urna[".lowGroup"] = 0;
 
 

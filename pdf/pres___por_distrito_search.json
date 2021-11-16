@@ -117,7 +117,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_search_field1}","text":{$id_distrito_pdfvalue}},
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$id_distrito_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],

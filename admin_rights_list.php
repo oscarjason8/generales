@@ -423,7 +423,7 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 	$mask .= "P";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("estructura", " " . "Estructura");
+$tables[$table] = array("estructura", " " . "Corporación Municipal - Elecciones Generales 2021");
 
 require_once('include/xtempl.php');
 require_once('classes/listpage.php');

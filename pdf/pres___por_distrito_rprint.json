@@ -74,13 +74,25 @@ pdfDocument = {
 										"%",
 										"%",
 										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
 															],
 							
 				body: [
 				{BEGIN standalone_page}
 					[
 						{
-							colSpan: 10,
+							colSpan: 22,
 							border:[false, false,false,false],
 							stack: [
 
@@ -186,16 +198,64 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Distrito Yani }',
-		alignment: '{$Yani_align}',
+		text: '{$jslabel Pres___Por_Distrito PAC }',
+		alignment: '{$PAC_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Distrito Banegas }',
-		alignment: '{$Banegas_align}',
+		text: '{$jslabel Pres___Por_Distrito FAPER }',
+		alignment: '{$FAPER_align}',
 	},
 		{
-		text: '{$jslabel Pres___Por_Distrito Luis }',
-		alignment: '{$Luis_align}',
+		text: '{$jslabel Pres___Por_Distrito NUEVA_RUTA }',
+		alignment: '{$NUEVA_RUTA_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito ALIANZA_PAT }',
+		alignment: '{$ALIANZA_PAT_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito MIDE }',
+		alignment: '{$MIDE_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito VAMOS }',
+		alignment: '{$VAMOS_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito PSH }',
+		alignment: '{$PSH_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito LIDEHR }',
+		alignment: '{$LIDEHR_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito UD }',
+		alignment: '{$UD_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito DC }',
+		alignment: '{$DC_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito TSH }',
+		alignment: '{$TSH_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito HON_HUMANA }',
+		alignment: '{$HON_HUMANA_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito LIBERAL }',
+		alignment: '{$LIBERAL_align}',
+	},
+		{
+		text: '{$jslabel Pres___Por_Distrito NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{
 		text: '{$jslabel Pres___Por_Distrito Validos }',
@@ -231,16 +291,64 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{	
-		text: {$Yani_value},
-		alignment: '{$Yani_align}',
+		text: {$PAC_value},
+		alignment: '{$PAC_align}',
 	},
 		{	
-		text: {$Banegas_value},
-		alignment: '{$Banegas_align}',
+		text: {$FAPER_value},
+		alignment: '{$FAPER_align}',
 	},
 		{	
-		text: {$Luis_value},
-		alignment: '{$Luis_align}',
+		text: {$NUEVA_RUTA_value},
+		alignment: '{$NUEVA_RUTA_align}',
+	},
+		{	
+		text: {$ALIANZA_PAT_value},
+		alignment: '{$ALIANZA_PAT_align}',
+	},
+		{	
+		text: {$MIDE_value},
+		alignment: '{$MIDE_align}',
+	},
+		{	
+		text: {$VAMOS_value},
+		alignment: '{$VAMOS_align}',
+	},
+		{	
+		text: {$LIBRE_value},
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: {$PSH_value},
+		alignment: '{$PSH_align}',
+	},
+		{	
+		text: {$LIDEHR_value},
+		alignment: '{$LIDEHR_align}',
+	},
+		{	
+		text: {$UD_value},
+		alignment: '{$UD_align}',
+	},
+		{	
+		text: {$DC_value},
+		alignment: '{$DC_align}',
+	},
+		{	
+		text: {$TSH_value},
+		alignment: '{$TSH_align}',
+	},
+		{	
+		text: {$HON_HUMANA_value},
+		alignment: '{$HON_HUMANA_align}',
+	},
+		{	
+		text: {$LIBERAL_value},
+		alignment: '{$LIBERAL_align}',
+	},
+		{	
+		text: {$NACIONAL_value},
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
 		text: {$Validos_value},
@@ -276,16 +384,64 @@ pdfDocument = {
 		alignment: '{$id_distrito_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Distrito Yani }',
-		alignment: '{$Yani_align}',
+		text: '{$jslabel Pres___Por_Distrito PAC }',
+		alignment: '{$PAC_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Distrito Banegas }',
-		alignment: '{$Banegas_align}',
+		text: '{$jslabel Pres___Por_Distrito FAPER }',
+		alignment: '{$FAPER_align}',
 	},
 		{	
-		text: '{$jslabel Pres___Por_Distrito Luis }',
-		alignment: '{$Luis_align}',
+		text: '{$jslabel Pres___Por_Distrito NUEVA_RUTA }',
+		alignment: '{$NUEVA_RUTA_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito ALIANZA_PAT }',
+		alignment: '{$ALIANZA_PAT_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito MIDE }',
+		alignment: '{$MIDE_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito VAMOS }',
+		alignment: '{$VAMOS_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito LIBRE }',
+		alignment: '{$LIBRE_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito PSH }',
+		alignment: '{$PSH_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito LIDEHR }',
+		alignment: '{$LIDEHR_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito UD }',
+		alignment: '{$UD_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito DC }',
+		alignment: '{$DC_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito TSH }',
+		alignment: '{$TSH_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito HON_HUMANA }',
+		alignment: '{$HON_HUMANA_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito LIBERAL }',
+		alignment: '{$LIBERAL_align}',
+	},
+		{	
+		text: '{$jslabel Pres___Por_Distrito NACIONAL }',
+		alignment: '{$NACIONAL_align}',
 	},
 		{	
 		text: '{$jslabel Pres___Por_Distrito Validos }',
@@ -326,7 +482,7 @@ pdfDocument = {
 	[
 		{
 			text: 'Resumen global {$global_total_cnt} - Registros totales',
-			colSpan: 10,
+			colSpan: 22,
 			style: 'globalsummary',
 		}
 	],
@@ -344,32 +500,152 @@ pdfDocument = {
 							{
 			text: [
 			
-							{$global_totalYani_sum},
+							{$global_totalPAC_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Yani_align}',
+			alignment: '{$PAC_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalBanegas_sum},
+							{$global_totalFAPER_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Banegas_align}',
+			alignment: '{$FAPER_align}',
 					},
 							{
 			text: [
 			
-							{$global_totalLuis_sum},
+							{$global_totalNUEVA_RUTA_sum},
 						],
 			style: 'globalsummary',
 
 			 
-			alignment: '{$Luis_align}',
+			alignment: '{$NUEVA_RUTA_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalALIANZA_PAT_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$ALIANZA_PAT_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalMIDE_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$MIDE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalVAMOS_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$VAMOS_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalLIBRE_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$LIBRE_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalPSH_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$PSH_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalLIDEHR_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$LIDEHR_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalUD_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$UD_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalDC_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$DC_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalTSH_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$TSH_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalHON_HUMANA_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$HON_HUMANA_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalLIBERAL_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$LIBERAL_align}',
+					},
+							{
+			text: [
+			
+							{$global_totalNACIONAL_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$NACIONAL_align}',
 					},
 							{
 			text: [

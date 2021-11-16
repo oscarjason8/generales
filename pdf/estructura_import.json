@@ -108,13 +108,34 @@ pdfDocument = {
 			{"hidden":"{$item_hide_import_field}","text":{$cor_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_import_field1}","text":{$posicion_pdfvalue}},
-				
-				
 			{"hidden":"{$item_hide_import_field2}","text":{$nombre_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_import_field3}","text":{$movimiento_pdfvalue}},
+			{"hidden":"{$item_hide_import_field1}","text":{$cargo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field3}","text":{$dep_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field4}","text":{$mun_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field5}","text":{$Usuario_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field6}","text":{$id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field7}","text":{$partido_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field8}","text":{$tot_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field9}","text":{$factor_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field10}","text":{$restante_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],
