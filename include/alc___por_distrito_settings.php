@@ -283,7 +283,7 @@ $tdataalc___por_distrito[".orderindexes"] = array();
 
 
 
-$tdataalc___por_distrito[".sqlHead"] = "select ur.id_distrito,   (select concat(sum(a.candidato1), \" votos (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PAC,  (select concat(sum(a.candidato2), \" votos (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as FAPER,  (select concat(sum(a.candidato3), \" votos (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NUEVA_RUTA,  (select concat(sum(a.candidato4), \" votos (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as ALIANZA_PAT,  (select concat(sum(a.candidato5), \" votos (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBRE,  (select concat(sum(a.candidato6), \" votos (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PSH,  (select concat(sum(a.candidato7), \" votos (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIDEHR,  (select concat(sum(a.candidato8), \" votos (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as DC,  (select concat(sum(a.candidato9), \" votos (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as TSH,  (select concat(sum(a.candidato10), \" votos (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBERAL,  (select concat(sum(a.candidato11), \" votos (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NACIONAL,  (select concat(sum(a.candidato12), \" votos (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PINU,  (select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" votos (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Otros,  (select sum(a.validos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Validos,  (select sum(a.blancos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Blancos,  (select sum(a.nulos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Nulos,  (select sum(a.utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Utilizados,  (select sum(a.no_utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as No_Utilizados,  (select sum(a.total) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Total";
+$tdataalc___por_distrito[".sqlHead"] = "select ur.id_distrito,   (select concat(sum(a.candidato1), \" (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PAC,  (select concat(sum(a.candidato2), \" (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as FAPER,  (select concat(sum(a.candidato3), \" (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NUEVA_RUTA,  (select concat(sum(a.candidato4), \" (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as ALIANZA_PAT,  (select concat(sum(a.candidato5), \" (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBRE,  (select concat(sum(a.candidato6), \" (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PSH,  (select concat(sum(a.candidato7), \" (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIDEHR,  (select concat(sum(a.candidato8), \" (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as DC,  (select concat(sum(a.candidato9), \" (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as TSH,  (select concat(sum(a.candidato10), \" (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBERAL,  (select concat(sum(a.candidato11), \" (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NACIONAL,  (select concat(sum(a.candidato12), \" (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PINU,  (select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Otros,  (select sum(a.validos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Validos,  (select sum(a.blancos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Blancos,  (select sum(a.nulos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Nulos,  (select sum(a.utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Utilizados,  (select sum(a.no_utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as No_Utilizados,  (select sum(a.total) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Total";
 $tdataalc___por_distrito[".sqlFrom"] = "from voto_alcalde as va  inner join urna as ur on va.id_urna = ur.id_urna";
 $tdataalc___por_distrito[".sqlWhereExpr"] = "";
 $tdataalc___por_distrito[".sqlTail"] = "";
@@ -518,7 +518,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato1), \" votos (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato1), \" (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -657,7 +657,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato2), \" votos (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato2), \" (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -796,7 +796,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato3), \" votos (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato3), \" (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -935,7 +935,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato4), \" votos (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato4), \" (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1074,7 +1074,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato5), \" votos (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato5), \" (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1213,7 +1213,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato6), \" votos (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato6), \" (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1352,7 +1352,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato7), \" votos (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato7), \" (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1491,7 +1491,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato8), \" votos (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato8), \" (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1630,7 +1630,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato9), \" votos (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato9), \" (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1769,7 +1769,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato10), \" votos (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato10), \" (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -1908,7 +1908,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato11), \" votos (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato11), \" (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -2047,7 +2047,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(sum(a.candidato12), \" votos (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(sum(a.candidato12), \" (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -2186,7 +2186,7 @@ $tdataalc___por_distrito[".hideMobileList"] = array();
 
 	
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "(select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" votos (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+	$fdata["FullName"] = "(select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 
 	
 	
@@ -3198,7 +3198,7 @@ function createSqlQuery_alc___por_distrito()
 {
 $proto0=array();
 $proto0["m_strHead"] = "select";
-$proto0["m_strFieldList"] = "ur.id_distrito,   (select concat(sum(a.candidato1), \" votos (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PAC,  (select concat(sum(a.candidato2), \" votos (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as FAPER,  (select concat(sum(a.candidato3), \" votos (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NUEVA_RUTA,  (select concat(sum(a.candidato4), \" votos (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as ALIANZA_PAT,  (select concat(sum(a.candidato5), \" votos (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBRE,  (select concat(sum(a.candidato6), \" votos (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PSH,  (select concat(sum(a.candidato7), \" votos (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIDEHR,  (select concat(sum(a.candidato8), \" votos (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as DC,  (select concat(sum(a.candidato9), \" votos (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as TSH,  (select concat(sum(a.candidato10), \" votos (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBERAL,  (select concat(sum(a.candidato11), \" votos (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NACIONAL,  (select concat(sum(a.candidato12), \" votos (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PINU,  (select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" votos (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Otros,  (select sum(a.validos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Validos,  (select sum(a.blancos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Blancos,  (select sum(a.nulos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Nulos,  (select sum(a.utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Utilizados,  (select sum(a.no_utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as No_Utilizados,  (select sum(a.total) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Total";
+$proto0["m_strFieldList"] = "ur.id_distrito,   (select concat(sum(a.candidato1), \" (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PAC,  (select concat(sum(a.candidato2), \" (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as FAPER,  (select concat(sum(a.candidato3), \" (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NUEVA_RUTA,  (select concat(sum(a.candidato4), \" (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as ALIANZA_PAT,  (select concat(sum(a.candidato5), \" (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBRE,  (select concat(sum(a.candidato6), \" (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PSH,  (select concat(sum(a.candidato7), \" (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIDEHR,  (select concat(sum(a.candidato8), \" (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as DC,  (select concat(sum(a.candidato9), \" (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as TSH,  (select concat(sum(a.candidato10), \" (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as LIBERAL,  (select concat(sum(a.candidato11), \" (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as NACIONAL,  (select concat(sum(a.candidato12), \" (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as PINU,  (select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Otros,  (select sum(a.validos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Validos,  (select sum(a.blancos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Blancos,  (select sum(a.nulos) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Nulos,  (select sum(a.utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Utilizados,  (select sum(a.no_utilizados) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as No_Utilizados,  (select sum(a.total) from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito) as Total";
 $proto0["m_strFrom"] = "from voto_alcalde as va  inner join urna as ur on va.id_urna = ur.id_urna";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "order by ur.id_distrito";
@@ -3255,7 +3255,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto8=array();
 			$proto9=array();
 $proto9["m_strHead"] = "select";
-$proto9["m_strFieldList"] = "concat(sum(a.candidato1), \" votos (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")";
+$proto9["m_strFieldList"] = "concat(sum(a.candidato1), \" (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")";
 $proto9["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto9["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto9["m_strOrderBy"] = "";
@@ -3307,7 +3307,7 @@ $proto16["m_arguments"] = array();
 
 $proto16["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto16["m_arguments"][]=$obj;
@@ -3324,7 +3324,7 @@ $proto16["m_arguments"][]=$obj;
 $proto16["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto16);
 
-$proto15["m_sql"] = "concat(sum(a.candidato1), \" votos (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")";
+$proto15["m_sql"] = "concat(sum(a.candidato1), \" (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")";
 $proto15["m_srcTableName"] = "Alc - Por Distrito";
 $proto15["m_expr"]=$obj;
 $proto15["m_alias"] = "";
@@ -3431,7 +3431,7 @@ $proto9["m_orderby"] = array();
 $proto9["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto9);
 
-$proto8["m_sql"] = "(select concat(sum(a.candidato1), \" votos (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto8["m_sql"] = "(select concat(sum(a.candidato1), \" (\", ROUND(((((sum(a.candidato1)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)) ))))*100),1), \"%)\")    from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto8["m_srcTableName"] = "Alc - Por Distrito";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "PAC";
@@ -3441,7 +3441,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto29=array();
 			$proto30=array();
 $proto30["m_strHead"] = "select";
-$proto30["m_strFieldList"] = "concat(sum(a.candidato2), \" votos (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto30["m_strFieldList"] = "concat(sum(a.candidato2), \" (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto30["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto30["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto30["m_strOrderBy"] = "";
@@ -3493,7 +3493,7 @@ $proto37["m_arguments"] = array();
 
 $proto37["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto37["m_arguments"][]=$obj;
@@ -3510,7 +3510,7 @@ $proto37["m_arguments"][]=$obj;
 $proto37["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto37);
 
-$proto36["m_sql"] = "concat(sum(a.candidato2), \" votos (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto36["m_sql"] = "concat(sum(a.candidato2), \" (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto36["m_srcTableName"] = "Alc - Por Distrito";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
@@ -3617,7 +3617,7 @@ $proto30["m_orderby"] = array();
 $proto30["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto30);
 
-$proto29["m_sql"] = "(select concat(sum(a.candidato2), \" votos (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto29["m_sql"] = "(select concat(sum(a.candidato2), \" (\", ROUND((((sum(a.candidato2)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto29["m_srcTableName"] = "Alc - Por Distrito";
 $proto29["m_expr"]=$obj;
 $proto29["m_alias"] = "FAPER";
@@ -3627,7 +3627,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto50=array();
 			$proto51=array();
 $proto51["m_strHead"] = "select";
-$proto51["m_strFieldList"] = "concat(sum(a.candidato3), \" votos (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto51["m_strFieldList"] = "concat(sum(a.candidato3), \" (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto51["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto51["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto51["m_strOrderBy"] = "";
@@ -3679,7 +3679,7 @@ $proto58["m_arguments"] = array();
 
 $proto58["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto58["m_arguments"][]=$obj;
@@ -3696,7 +3696,7 @@ $proto58["m_arguments"][]=$obj;
 $proto58["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto58);
 
-$proto57["m_sql"] = "concat(sum(a.candidato3), \" votos (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto57["m_sql"] = "concat(sum(a.candidato3), \" (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto57["m_srcTableName"] = "Alc - Por Distrito";
 $proto57["m_expr"]=$obj;
 $proto57["m_alias"] = "";
@@ -3803,7 +3803,7 @@ $proto51["m_orderby"] = array();
 $proto51["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto51);
 
-$proto50["m_sql"] = "(select concat(sum(a.candidato3), \" votos (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto50["m_sql"] = "(select concat(sum(a.candidato3), \" (\", ROUND((((sum(a.candidato3)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto50["m_srcTableName"] = "Alc - Por Distrito";
 $proto50["m_expr"]=$obj;
 $proto50["m_alias"] = "NUEVA_RUTA";
@@ -3813,7 +3813,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto71=array();
 			$proto72=array();
 $proto72["m_strHead"] = "select";
-$proto72["m_strFieldList"] = "concat(sum(a.candidato4), \" votos (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto72["m_strFieldList"] = "concat(sum(a.candidato4), \" (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto72["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto72["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto72["m_strOrderBy"] = "";
@@ -3865,7 +3865,7 @@ $proto79["m_arguments"] = array();
 
 $proto79["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto79["m_arguments"][]=$obj;
@@ -3882,7 +3882,7 @@ $proto79["m_arguments"][]=$obj;
 $proto79["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto79);
 
-$proto78["m_sql"] = "concat(sum(a.candidato4), \" votos (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto78["m_sql"] = "concat(sum(a.candidato4), \" (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto78["m_srcTableName"] = "Alc - Por Distrito";
 $proto78["m_expr"]=$obj;
 $proto78["m_alias"] = "";
@@ -3989,7 +3989,7 @@ $proto72["m_orderby"] = array();
 $proto72["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto72);
 
-$proto71["m_sql"] = "(select concat(sum(a.candidato4), \" votos (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto71["m_sql"] = "(select concat(sum(a.candidato4), \" (\", ROUND((((sum(a.candidato4)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto71["m_srcTableName"] = "Alc - Por Distrito";
 $proto71["m_expr"]=$obj;
 $proto71["m_alias"] = "ALIANZA_PAT";
@@ -3999,7 +3999,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto92=array();
 			$proto93=array();
 $proto93["m_strHead"] = "select";
-$proto93["m_strFieldList"] = "concat(sum(a.candidato5), \" votos (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto93["m_strFieldList"] = "concat(sum(a.candidato5), \" (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto93["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto93["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto93["m_strOrderBy"] = "";
@@ -4051,7 +4051,7 @@ $proto100["m_arguments"] = array();
 
 $proto100["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto100["m_arguments"][]=$obj;
@@ -4068,7 +4068,7 @@ $proto100["m_arguments"][]=$obj;
 $proto100["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto100);
 
-$proto99["m_sql"] = "concat(sum(a.candidato5), \" votos (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto99["m_sql"] = "concat(sum(a.candidato5), \" (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto99["m_srcTableName"] = "Alc - Por Distrito";
 $proto99["m_expr"]=$obj;
 $proto99["m_alias"] = "";
@@ -4175,7 +4175,7 @@ $proto93["m_orderby"] = array();
 $proto93["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto93);
 
-$proto92["m_sql"] = "(select concat(sum(a.candidato5), \" votos (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto92["m_sql"] = "(select concat(sum(a.candidato5), \" (\", ROUND((((sum(a.candidato5)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto92["m_srcTableName"] = "Alc - Por Distrito";
 $proto92["m_expr"]=$obj;
 $proto92["m_alias"] = "LIBRE";
@@ -4185,7 +4185,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto113=array();
 			$proto114=array();
 $proto114["m_strHead"] = "select";
-$proto114["m_strFieldList"] = "concat(sum(a.candidato6), \" votos (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto114["m_strFieldList"] = "concat(sum(a.candidato6), \" (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto114["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto114["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto114["m_strOrderBy"] = "";
@@ -4237,7 +4237,7 @@ $proto121["m_arguments"] = array();
 
 $proto121["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto121["m_arguments"][]=$obj;
@@ -4254,7 +4254,7 @@ $proto121["m_arguments"][]=$obj;
 $proto121["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto121);
 
-$proto120["m_sql"] = "concat(sum(a.candidato6), \" votos (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto120["m_sql"] = "concat(sum(a.candidato6), \" (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto120["m_srcTableName"] = "Alc - Por Distrito";
 $proto120["m_expr"]=$obj;
 $proto120["m_alias"] = "";
@@ -4361,7 +4361,7 @@ $proto114["m_orderby"] = array();
 $proto114["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto114);
 
-$proto113["m_sql"] = "(select concat(sum(a.candidato6), \" votos (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto113["m_sql"] = "(select concat(sum(a.candidato6), \" (\", ROUND((((sum(a.candidato6)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto113["m_srcTableName"] = "Alc - Por Distrito";
 $proto113["m_expr"]=$obj;
 $proto113["m_alias"] = "PSH";
@@ -4371,7 +4371,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto134=array();
 			$proto135=array();
 $proto135["m_strHead"] = "select";
-$proto135["m_strFieldList"] = "concat(sum(a.candidato7), \" votos (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto135["m_strFieldList"] = "concat(sum(a.candidato7), \" (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto135["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto135["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto135["m_strOrderBy"] = "";
@@ -4423,7 +4423,7 @@ $proto142["m_arguments"] = array();
 
 $proto142["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto142["m_arguments"][]=$obj;
@@ -4440,7 +4440,7 @@ $proto142["m_arguments"][]=$obj;
 $proto142["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto142);
 
-$proto141["m_sql"] = "concat(sum(a.candidato7), \" votos (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto141["m_sql"] = "concat(sum(a.candidato7), \" (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto141["m_srcTableName"] = "Alc - Por Distrito";
 $proto141["m_expr"]=$obj;
 $proto141["m_alias"] = "";
@@ -4547,7 +4547,7 @@ $proto135["m_orderby"] = array();
 $proto135["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto135);
 
-$proto134["m_sql"] = "(select concat(sum(a.candidato7), \" votos (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto134["m_sql"] = "(select concat(sum(a.candidato7), \" (\", ROUND((((sum(a.candidato7)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto134["m_srcTableName"] = "Alc - Por Distrito";
 $proto134["m_expr"]=$obj;
 $proto134["m_alias"] = "LIDEHR";
@@ -4557,7 +4557,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto155=array();
 			$proto156=array();
 $proto156["m_strHead"] = "select";
-$proto156["m_strFieldList"] = "concat(sum(a.candidato8), \" votos (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto156["m_strFieldList"] = "concat(sum(a.candidato8), \" (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto156["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto156["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto156["m_strOrderBy"] = "";
@@ -4609,7 +4609,7 @@ $proto163["m_arguments"] = array();
 
 $proto163["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto163["m_arguments"][]=$obj;
@@ -4626,7 +4626,7 @@ $proto163["m_arguments"][]=$obj;
 $proto163["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto163);
 
-$proto162["m_sql"] = "concat(sum(a.candidato8), \" votos (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto162["m_sql"] = "concat(sum(a.candidato8), \" (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto162["m_srcTableName"] = "Alc - Por Distrito";
 $proto162["m_expr"]=$obj;
 $proto162["m_alias"] = "";
@@ -4733,7 +4733,7 @@ $proto156["m_orderby"] = array();
 $proto156["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto156);
 
-$proto155["m_sql"] = "(select concat(sum(a.candidato8), \" votos (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto155["m_sql"] = "(select concat(sum(a.candidato8), \" (\", ROUND((((sum(a.candidato8)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto155["m_srcTableName"] = "Alc - Por Distrito";
 $proto155["m_expr"]=$obj;
 $proto155["m_alias"] = "DC";
@@ -4743,7 +4743,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto176=array();
 			$proto177=array();
 $proto177["m_strHead"] = "select";
-$proto177["m_strFieldList"] = "concat(sum(a.candidato9), \" votos (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto177["m_strFieldList"] = "concat(sum(a.candidato9), \" (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto177["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto177["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto177["m_strOrderBy"] = "";
@@ -4795,7 +4795,7 @@ $proto184["m_arguments"] = array();
 
 $proto184["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto184["m_arguments"][]=$obj;
@@ -4812,7 +4812,7 @@ $proto184["m_arguments"][]=$obj;
 $proto184["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto184);
 
-$proto183["m_sql"] = "concat(sum(a.candidato9), \" votos (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto183["m_sql"] = "concat(sum(a.candidato9), \" (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto183["m_srcTableName"] = "Alc - Por Distrito";
 $proto183["m_expr"]=$obj;
 $proto183["m_alias"] = "";
@@ -4919,7 +4919,7 @@ $proto177["m_orderby"] = array();
 $proto177["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto177);
 
-$proto176["m_sql"] = "(select concat(sum(a.candidato9), \" votos (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto176["m_sql"] = "(select concat(sum(a.candidato9), \" (\", ROUND((((sum(a.candidato9)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto176["m_srcTableName"] = "Alc - Por Distrito";
 $proto176["m_expr"]=$obj;
 $proto176["m_alias"] = "TSH";
@@ -4929,7 +4929,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto197=array();
 			$proto198=array();
 $proto198["m_strHead"] = "select";
-$proto198["m_strFieldList"] = "concat(sum(a.candidato10), \" votos (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto198["m_strFieldList"] = "concat(sum(a.candidato10), \" (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto198["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto198["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto198["m_strOrderBy"] = "";
@@ -4981,7 +4981,7 @@ $proto205["m_arguments"] = array();
 
 $proto205["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto205["m_arguments"][]=$obj;
@@ -4998,7 +4998,7 @@ $proto205["m_arguments"][]=$obj;
 $proto205["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto205);
 
-$proto204["m_sql"] = "concat(sum(a.candidato10), \" votos (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto204["m_sql"] = "concat(sum(a.candidato10), \" (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto204["m_srcTableName"] = "Alc - Por Distrito";
 $proto204["m_expr"]=$obj;
 $proto204["m_alias"] = "";
@@ -5105,7 +5105,7 @@ $proto198["m_orderby"] = array();
 $proto198["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto198);
 
-$proto197["m_sql"] = "(select concat(sum(a.candidato10), \" votos (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto197["m_sql"] = "(select concat(sum(a.candidato10), \" (\", ROUND((((sum(a.candidato10)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto197["m_srcTableName"] = "Alc - Por Distrito";
 $proto197["m_expr"]=$obj;
 $proto197["m_alias"] = "LIBERAL";
@@ -5115,7 +5115,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto218=array();
 			$proto219=array();
 $proto219["m_strHead"] = "select";
-$proto219["m_strFieldList"] = "concat(sum(a.candidato11), \" votos (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto219["m_strFieldList"] = "concat(sum(a.candidato11), \" (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto219["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto219["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto219["m_strOrderBy"] = "";
@@ -5167,7 +5167,7 @@ $proto226["m_arguments"] = array();
 
 $proto226["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto226["m_arguments"][]=$obj;
@@ -5184,7 +5184,7 @@ $proto226["m_arguments"][]=$obj;
 $proto226["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto226);
 
-$proto225["m_sql"] = "concat(sum(a.candidato11), \" votos (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto225["m_sql"] = "concat(sum(a.candidato11), \" (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto225["m_srcTableName"] = "Alc - Por Distrito";
 $proto225["m_expr"]=$obj;
 $proto225["m_alias"] = "";
@@ -5291,7 +5291,7 @@ $proto219["m_orderby"] = array();
 $proto219["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto219);
 
-$proto218["m_sql"] = "(select concat(sum(a.candidato11), \" votos (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto218["m_sql"] = "(select concat(sum(a.candidato11), \" (\", ROUND((((sum(a.candidato11)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto218["m_srcTableName"] = "Alc - Por Distrito";
 $proto218["m_expr"]=$obj;
 $proto218["m_alias"] = "NACIONAL";
@@ -5301,7 +5301,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto239=array();
 			$proto240=array();
 $proto240["m_strHead"] = "select";
-$proto240["m_strFieldList"] = "concat(sum(a.candidato12), \" votos (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto240["m_strFieldList"] = "concat(sum(a.candidato12), \" (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto240["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto240["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto240["m_strOrderBy"] = "";
@@ -5353,7 +5353,7 @@ $proto247["m_arguments"] = array();
 
 $proto247["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto247["m_arguments"][]=$obj;
@@ -5370,7 +5370,7 @@ $proto247["m_arguments"][]=$obj;
 $proto247["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto247);
 
-$proto246["m_sql"] = "concat(sum(a.candidato12), \" votos (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto246["m_sql"] = "concat(sum(a.candidato12), \" (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto246["m_srcTableName"] = "Alc - Por Distrito";
 $proto246["m_expr"]=$obj;
 $proto246["m_alias"] = "";
@@ -5477,7 +5477,7 @@ $proto240["m_orderby"] = array();
 $proto240["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto240);
 
-$proto239["m_sql"] = "(select concat(sum(a.candidato12), \" votos (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto239["m_sql"] = "(select concat(sum(a.candidato12), \" (\", ROUND((((sum(a.candidato12)/((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto239["m_srcTableName"] = "Alc - Por Distrito";
 $proto239["m_expr"]=$obj;
 $proto239["m_alias"] = "PINU";
@@ -5487,7 +5487,7 @@ $proto0["m_fieldlist"][]=$obj;
 						$proto260=array();
 			$proto261=array();
 $proto261["m_strHead"] = "select";
-$proto261["m_strFieldList"] = "concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" votos (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto261["m_strFieldList"] = "concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto261["m_strFrom"] = "from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna";
 $proto261["m_strWhere"] = "u.id_distrito = ur.id_distrito";
 $proto261["m_strOrderBy"] = "";
@@ -5539,7 +5539,7 @@ $proto268["m_arguments"] = array();
 
 $proto268["m_arguments"][]=$obj;
 						$obj = new SQLNonParsed(array(
-	"m_sql" => "\" votos (\""
+	"m_sql" => "\" (\""
 ));
 
 $proto268["m_arguments"][]=$obj;
@@ -5556,7 +5556,7 @@ $proto268["m_arguments"][]=$obj;
 $proto268["m_strFunctionName"] = "concat";
 $obj = new SQLFunctionCall($proto268);
 
-$proto267["m_sql"] = "concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" votos (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
+$proto267["m_sql"] = "concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")";
 $proto267["m_srcTableName"] = "Alc - Por Distrito";
 $proto267["m_expr"]=$obj;
 $proto267["m_alias"] = "";
@@ -5663,7 +5663,7 @@ $proto261["m_orderby"] = array();
 $proto261["m_srcTableName"]="Alc - Por Distrito";		
 $obj = new SQLQuery($proto261);
 
-$proto260["m_sql"] = "(select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" votos (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
+$proto260["m_sql"] = "(select concat(((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8))   + (sum(a.candidato9)) + (sum(a.candidato12))), \" (\", ROUND((((((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4)) +  (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato12))) / ((sum(a.candidato1)) + (sum(a.candidato2)) + (sum(a.candidato3)) + (sum(a.candidato4))   + (sum(a.candidato5)) + (sum(a.candidato6)) + (sum(a.candidato7)) + (sum(a.candidato8)) + (sum(a.candidato9)) + (sum(a.candidato10)) + (sum(a.candidato11))   + (sum(a.candidato12)))))*100),1), \"%)\")  from voto_alcalde as a  inner join urna as u on a.id_urna = u.id_urna where u.id_distrito = ur.id_distrito)";
 $proto260["m_srcTableName"] = "Alc - Por Distrito";
 $proto260["m_expr"]=$obj;
 $proto260["m_alias"] = "Otros";

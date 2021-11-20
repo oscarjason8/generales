@@ -82,9 +82,6 @@ pdfDocument = {
 										{BEGIN col_grid_7}
 					"%",
 					{END col_grid_7}
-										{BEGIN col_grid_8}
-					"%",
-					{END col_grid_8}
 															],
 											heights: [ // first height for header part
 					"%",
@@ -269,7 +266,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field4}","text":"{$jslabel voto_presidente id_urna }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field3}","text":"{$jslabel voto_presidente id_urna }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -321,7 +318,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field5}","text":"{$jslabel voto_presidente candidato15 }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field4}","text":"{$jslabel voto_presidente candidato15 }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -347,7 +344,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field6}","text":"{$jslabel voto_presidente candidato7 }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field5}","text":"{$jslabel voto_presidente candidato7 }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -407,32 +404,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field5}
-																			{BEGIN cellblock_grid_headcell_field6}
-{
-	cellId: 'headcell_field6',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel voto_presidente elecciones }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$elecciones_align}',
-  },
-
-{END cellblock_grid_headcell_field6}
 											],
 				{END row_grid_0}
 								
@@ -655,32 +626,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field5}
-																			{BEGIN cellblock_grid_cell_field6}
-{
-	cellId: 'cell_field6',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field3}","text":{$elecciones_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$elecciones_align}',
-  },
-
-{END cellblock_grid_cell_field6}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -881,30 +826,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field5}
-																			{BEGIN cellblock_grid_footcell_field6}
-{
-	cellId: 'footcell_field6',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field6}
 											],
 				{END row_grid_2}
 							

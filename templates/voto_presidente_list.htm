@@ -758,9 +758,6 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
-		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="elecciones"]:before {
-		content: "{$label voto_presidente elecciones}";
-	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_urna"]:before {
 		content: "{$label voto_presidente id_urna}";
 	}
@@ -852,7 +849,7 @@
 	 
 		{BEGIN id_urna_fieldheadercolumn}
 	{BEGIN id_urna_fieldheader}
-	<SPAN {$id_urna_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_urna">
+	<SPAN {$id_urna_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_urna">
 	{$label voto_presidente id_urna }	{$arrow_icon_id_urna}
 	</SPAN>
 	{END id_urna_fieldheader}
@@ -906,7 +903,7 @@
 	 
 		{BEGIN candidato15_fieldheadercolumn}
 	{BEGIN candidato15_fieldheader}
-	<SPAN {$candidato15_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="candidato15">
+	<SPAN {$candidato15_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="candidato15">
 	{$label voto_presidente candidato15 }	{$arrow_icon_candidato15}
 	</SPAN>
 	{END candidato15_fieldheader}
@@ -933,7 +930,7 @@
 	 
 		{BEGIN candidato7_fieldheadercolumn}
 	{BEGIN candidato7_fieldheader}
-	<SPAN {$candidato7_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="candidato7">
+	<SPAN {$candidato7_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="candidato7">
 	{$label voto_presidente candidato7 }	{$arrow_icon_candidato7}
 	</SPAN>
 	{END candidato7_fieldheader}
@@ -996,33 +993,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field5}
-				 
-					{BEGIN cellblock_grid_headcell_field6}
-	<th
-	
-	{$cell_grid_headcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$elecciones_class}
-			"
-
-			data-field="elecciones"
-	
-	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN elecciones_fieldheadercolumn}
-	{BEGIN elecciones_fieldheader}
-	<SPAN {$elecciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="elecciones">
-	{$label voto_presidente elecciones }	{$arrow_icon_elecciones}
-	</SPAN>
-	{END elecciones_fieldheader}
-{END elecciones_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field6}
 							</tr>
 					 
 					 
@@ -1248,29 +1218,6 @@
 {END fecha_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
-				 
-					{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$elecciones_class}
-			"
-
-			data-field="elecciones"
-	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN elecciones_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="elecciones" data-default-width >
-{$elecciones_value}
-</span>
-{END elecciones_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field6}
 							</tr>
 					 
 					
@@ -1414,22 +1361,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
-				 
-					{BEGIN cellblock_grid_footcell_field6}
-	<td
-	
-	{$cell_grid_footcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voto_presidente_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field6}
 							</tr>
 					
 					</tfoot>

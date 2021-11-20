@@ -220,12 +220,14 @@ $tdataestructura[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "order by cor";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdataestructura[".strOrderBy"] = $tstrOrderBy;
 
 $tdataestructura[".orderindexes"] = array();
+	$tdataestructura[".orderindexes"][] = array(1, (1 ? "ASC" : "DESC"), "cor");
+
 
 
 $tdataestructura[".sqlHead"] = "SELECT cor,  	cargo,  	nombre,  	dep,  	mun,  	Usuario,  	id,  	partido,  	tot,  	factor,  	restante";
@@ -1858,7 +1860,7 @@ $proto0["m_strHead"] = "SELECT";
 $proto0["m_strFieldList"] = "cor,  	cargo,  	nombre,  	dep,  	mun,  	Usuario,  	id,  	partido,  	tot,  	factor,  	restante";
 $proto0["m_strFrom"] = "FROM estructura";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "order by cor";
 	
 		;
 			$proto0["cipherer"] = null;
@@ -2093,7 +2095,31 @@ $obj = new SQLFromListItem($proto28);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
+												$proto32=array();
+						$obj = new SQLField(array(
+	"m_strName" => "cor",
+	"m_strTable" => "estructura",
+	"m_srcTableName" => "estructura"
+));
+
+$proto32["m_column"]=$obj;
+$obj = new SQLGroupByItem($proto32);
+
+$proto0["m_groupby"][]=$obj;
 $proto0["m_orderby"] = array();
+												$proto34=array();
+						$obj = new SQLField(array(
+	"m_strName" => "cor",
+	"m_strTable" => "estructura",
+	"m_srcTableName" => "estructura"
+));
+
+$proto34["m_column"]=$obj;
+$proto34["m_bAsc"] = 1;
+$proto34["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto34);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="estructura";		
 $obj = new SQLQuery($proto0);
 
