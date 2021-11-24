@@ -1,0 +1,305 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel actas view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_urna_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_urna}  r-vertical-field" data-fieldname="id_urna" data-signal-error-for="id_urna{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_urna" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_urna}">
+		
+		{BEGIN id_urna_label}{$label actas id_urna }{END id_urna_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_urna_value}	</div>
+
+		
+</div>
+
+
+{END id_urna_fieldblock}
+											
+{BEGIN presidente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_presidente}  r-vertical-field" data-fieldname="presidente" data-signal-error-for="presidente{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="presidente" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_presidente}">
+		
+		{BEGIN presidente_label}{$label actas presidente }{END presidente_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$presidente_value}	</div>
+
+		
+</div>
+
+
+{END presidente_fieldblock}
+											
+{BEGIN diputado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_diputado}  r-vertical-field" data-fieldname="diputado" data-signal-error-for="diputado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="diputado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_diputado}">
+		
+		{BEGIN diputado_label}{$label actas diputado }{END diputado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$diputado_value}	</div>
+
+		
+</div>
+
+
+{END diputado_fieldblock}
+											
+{BEGIN alcalde_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_alcalde}  r-vertical-field" data-fieldname="alcalde" data-signal-error-for="alcalde{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="alcalde" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_alcalde}">
+		
+		{BEGIN alcalde_label}{$label actas alcalde }{END alcalde_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$alcalde_value}	</div>
+
+		
+</div>
+
+
+{END alcalde_fieldblock}
+											
+{BEGIN ingresado_por_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ingresado_por}  r-vertical-field" data-fieldname="ingresado_por" data-signal-error-for="ingresado_por{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="ingresado_por" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ingresado_por}">
+		
+		{BEGIN ingresado_por_label}{$label actas ingresado_por }{END ingresado_por_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ingresado_por_value}	</div>
+
+		
+</div>
+
+
+{END ingresado_por_fieldblock}
+											
+{BEGIN fecha_ingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_ingreso}  r-vertical-field" data-fieldname="fecha_ingreso" data-signal-error-for="fecha_ingreso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="fecha_ingreso" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_ingreso}">
+		
+		{BEGIN fecha_ingreso_label}{$label actas fecha_ingreso }{END fecha_ingreso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_ingreso_value}	</div>
+
+		
+</div>
+
+
+{END fecha_ingreso_fieldblock}
+											
+{BEGIN editado_por_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_editado_por}  r-vertical-field" data-fieldname="editado_por" data-signal-error-for="editado_por{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="editado_por" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_editado_por}">
+		
+		{BEGIN editado_por_label}{$label actas editado_por }{END editado_por_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$editado_por_value}	</div>
+
+		
+</div>
+
+
+{END editado_por_fieldblock}
+											
+{BEGIN fecha_edicion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_edicion}  r-vertical-field" data-fieldname="fecha_edicion" data-signal-error-for="fecha_edicion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="fecha_edicion" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fecha_edicion}">
+		
+		{BEGIN fecha_edicion_label}{$label actas fecha_edicion }{END fecha_edicion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fecha_edicion_value}	</div>
+
+		
+</div>
+
+
+{END fecha_edicion_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="actas_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

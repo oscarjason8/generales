@@ -54,6 +54,8 @@ include_once(getabspath("include/dashboard_events.php"));
 $tableEvents["Dashboard"] = new eventclass_dashboard;
 include_once(getabspath("include/estructura_events.php"));
 $tableEvents["estructura"] = new eventclass_estructura;
+include_once(getabspath("include/actas_events.php"));
+$tableEvents["actas"] = new eventclass_actas;
 
 $xt = new Xtempl();
 

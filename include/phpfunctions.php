@@ -958,10 +958,6 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
-				if($table=="voto_presidente" && $field=="elecciones")
-	{
-		return '2021I';
-	}
 				if($table=="voto_presidente" && $field=="usuario")
 	{
 		return $_SESSION["UserID"];
@@ -983,6 +979,14 @@ function GetDefaultValue($field, $ptype, $table="")
 		return $_SESSION["UserID"];
 	}
 				if($table=="Presidente_Chart" && $field=="fecha")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="actas" && $field=="ingresado_por")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="actas" && $field=="fecha_ingreso")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
@@ -1018,6 +1022,14 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return $_SESSION["UserID"];
 	}
 				if($table=="voto_presidente" && $field=="fecha_edicion")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="actas" && $field=="editado_por")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="actas" && $field=="fecha_edicion")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}

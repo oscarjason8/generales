@@ -52,5 +52,8 @@
 [data-page=".global_menu"][data-itemid="welcome_item15"] > .bs-welcome-header {
   background-color: #CFAE83;
 }
+[data-page=".global_menu"][data-itemid="welcome_item18"] > .bs-welcome-header {
+  background-color: #DB7093;
+}
 
 

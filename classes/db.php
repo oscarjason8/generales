@@ -405,6 +405,7 @@ class DB
 		$dalTables[ $conn->connId ] = array();
 		if( "internas_new_at_localhost" == $conn->connId )
 		{
+			$dalTables[$conn->connId][] = array("name" => "actas", "varname" => "internas_new_at_localhost__actas", "altvarname" => "actas", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 			$dalTables[$conn->connId][] = array("name" => "candidatos", "varname" => "internas_new_at_localhost__candidatos", "altvarname" => "candidatos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 			$dalTables[$conn->connId][] = array("name" => "corporacion", "varname" => "internas_new_at_localhost__corporacion", "altvarname" => "corporacion", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 			$dalTables[$conn->connId][] = array("name" => "corporaciones", "varname" => "internas_new_at_localhost__corporaciones", "altvarname" => "corporaciones", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");

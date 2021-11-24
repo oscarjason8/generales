@@ -536,6 +536,8 @@ class Chart
 			return true;
 		if("usuario" == $this->chrt_array['tables'][0])
 			return true;
+		if("actas" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

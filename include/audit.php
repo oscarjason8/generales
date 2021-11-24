@@ -414,6 +414,10 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="actas")
+		{
+			return false;
+		}
 	}
 
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -831,6 +835,10 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="admin_users")
+		{
+			return false;
+		}
+		if($table=="actas")
 		{
 			return false;
 		}

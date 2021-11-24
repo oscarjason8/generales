@@ -1,402 +1,378 @@
 <!doctype html>
 <html  {$html_attrs}>
-	<head>
-				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{$pagetitle}</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<base href="{$projectPath}">
-		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
-	{BEGIN rtlCSS}
-	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
-	{END rtlCSS}
-	{BEGIN styleCSSFiles}
-	<link REL="stylesheet" href="{$stylepath}" type="text/css">
-	{END styleCSSFiles}
-	</head>
-
-	<body class="{$stylename} function-rprint" {$bodyattrs}>
-	{BEGIN body}
-		{$header}
-		<style>
-			{$containerCss}
-		</style>
-		{$locking}
-		<div class="r-small-page" 
-			data-body-align="center"
-			data-body-width="compact"
-		>
-							{BEGIN top_block}
-<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
-	 
-		<div class="row">
-			 
-				<div 
-	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
-	class=" r-ori-vert			col-md-12
-	
-">
-		 
-		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel Pres___Por_Urna rprint}</h2>
-	 
-		{BEGIN printtabheader}
-<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
-{$printtabheader_text}
-</span>
-{END printtabheader}
-		</div>					</div>
-	</div>		
-{END top_block}
-									{BEGIN above-grid_block}
-<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
-	 
-		<div class="row">
-			 
-				<div 
-	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
-	class=" r-ori-vert			col-md-12
-	
-">
-		{BEGIN firstAboveGridCell}
-		 
-		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
-	{$print_pages_labelprint_pages}
-</span>			{END firstAboveGridCell}	
-	</div>					</div>
-	</div>		
-{END above-grid_block}
-									{BEGIN grid_block}
-<style>
-	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
-		background-color: #ffffbb;
-	}
-	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
-	}
-</style>
-<div id="grid_block{$id}" class="rnr-report-gridblock">
-			<!-- 0 group fields -->
-
- <!-- add to settings ? -->
-<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" >
-	<thead>
-		{BEGIN grid_header}
-		<tr class="rnr-toprow table-header style1">
-					<th class="{$fieldclass_id_distrito}"> {$label Pres___Por_Urna id_distrito }</th>
-					<th class="{$fieldclass_id_sector}"> {$label Pres___Por_Urna id_sector }</th>
-					<th class="{$fieldclass_id_urna}"> {$label Pres___Por_Urna id_urna }</th>
-					<th class="{$fieldclass_ubicaci_n}"> {$label Pres___Por_Urna ubicaci_n }</th>
-					<th class="{$fieldclass_PAC}"> {$label Pres___Por_Urna PAC }</th>
-					<th class="{$fieldclass_FAPER}"> {$label Pres___Por_Urna FAPER }</th>
-					<th class="{$fieldclass_NUEVA_RUTA}"> {$label Pres___Por_Urna NUEVA_RUTA }</th>
-					<th class="{$fieldclass_ALIANZA_PAT}"> {$label Pres___Por_Urna ALIANZA_PAT }</th>
-					<th class="{$fieldclass_MIDE}"> {$label Pres___Por_Urna MIDE }</th>
-					<th class="{$fieldclass_VAMOS}"> {$label Pres___Por_Urna VAMOS }</th>
-					<th class="{$fieldclass_LIBRE}"> {$label Pres___Por_Urna LIBRE }</th>
-					<th class="{$fieldclass_PSH}"> {$label Pres___Por_Urna PSH }</th>
-					<th class="{$fieldclass_LIDEHR}"> {$label Pres___Por_Urna LIDEHR }</th>
-					<th class="{$fieldclass_UD}"> {$label Pres___Por_Urna UD }</th>
-					<th class="{$fieldclass_DC}"> {$label Pres___Por_Urna DC }</th>
-					<th class="{$fieldclass_TSH}"> {$label Pres___Por_Urna TSH }</th>
-					<th class="{$fieldclass_HON_HUMANA}"> {$label Pres___Por_Urna HON_HUMANA }</th>
-					<th class="{$fieldclass_LIBERAL}"> {$label Pres___Por_Urna LIBERAL }</th>
-					<th class="{$fieldclass_NACIONAL}"> {$label Pres___Por_Urna NACIONAL }</th>
-					<th class="{$fieldclass_Validos}"> {$label Pres___Por_Urna Validos }</th>
-					<th class="{$fieldclass_Blancos}"> {$label Pres___Por_Urna Blancos }</th>
-					<th class="{$fieldclass_Nulos}"> {$label Pres___Por_Urna Nulos }</th>
-					<th class="{$fieldclass_Utilizados}"> {$label Pres___Por_Urna Utilizados }</th>
-					<th class="{$fieldclass_No_Utilizados}"> {$label Pres___Por_Urna No_Utilizados }</th>
-					<th class="{$fieldclass_Total}"> {$label Pres___Por_Urna Total }</th>
-				</tr>
-		{END grid_header}
-	</thead>
-	<tbody>
-{BEGIN grid_row}
-	{BEGIN row_data}
-		<tr class="rnr-row style1" {$rowattrs}>
-			
-			<td {$recordattrs} class="{$fieldclass_id_distrito}">
-						<span data-itemtype="grid_field" data-field="id_distrito" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
-{$id_distrito_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_id_sector}">
-						<span data-itemtype="grid_field" data-field="id_sector" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
-{$id_sector_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_id_urna}">
-						<span data-itemtype="grid_field" data-field="id_urna" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
-{$id_urna_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_ubicaci_n}">
-						<span data-itemtype="grid_field" data-field="ubicaci_n" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
-{$ubicaci_n_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_PAC}">
-						<span data-itemtype="grid_field" data-field="PAC" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
-{$PAC_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_FAPER}">
-						<span data-itemtype="grid_field" data-field="FAPER" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
-{$FAPER_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_NUEVA_RUTA}">
-						<span data-itemtype="grid_field" data-field="NUEVA_RUTA" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
-{$NUEVA_RUTA_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_ALIANZA_PAT}">
-						<span data-itemtype="grid_field" data-field="ALIANZA_PAT" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
-{$ALIANZA_PAT_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_MIDE}">
-						<span data-itemtype="grid_field" data-field="MIDE" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
-{$MIDE_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_VAMOS}">
-						<span data-itemtype="grid_field" data-field="VAMOS" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
-{$VAMOS_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_LIBRE}">
-						<span data-itemtype="grid_field" data-field="LIBRE" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
-{$LIBRE_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_PSH}">
-						<span data-itemtype="grid_field" data-field="PSH" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
-{$PSH_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_LIDEHR}">
-						<span data-itemtype="grid_field" data-field="LIDEHR" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
-{$LIDEHR_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_UD}">
-						<span data-itemtype="grid_field" data-field="UD" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
-{$UD_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_DC}">
-						<span data-itemtype="grid_field" data-field="DC" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
-{$DC_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_TSH}">
-						<span data-itemtype="grid_field" data-field="TSH" data-itemid="grid_field17" data-pageid={$pageid} data-record-id="{$recId}">
-{$TSH_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_HON_HUMANA}">
-						<span data-itemtype="grid_field" data-field="HON_HUMANA" data-itemid="grid_field18" data-pageid={$pageid} data-record-id="{$recId}">
-{$HON_HUMANA_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_LIBERAL}">
-						<span data-itemtype="grid_field" data-field="LIBERAL" data-itemid="grid_field19" data-pageid={$pageid} data-record-id="{$recId}">
-{$LIBERAL_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_NACIONAL}">
-						<span data-itemtype="grid_field" data-field="NACIONAL" data-itemid="grid_field20" data-pageid={$pageid} data-record-id="{$recId}">
-{$NACIONAL_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_Validos}">
-						<span data-itemtype="grid_field" data-field="Validos" data-itemid="grid_field21" data-pageid={$pageid} data-record-id="{$recId}">
-{$Validos_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_Blancos}">
-						<span data-itemtype="grid_field" data-field="Blancos" data-itemid="grid_field22" data-pageid={$pageid} data-record-id="{$recId}">
-{$Blancos_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_Nulos}">
-						<span data-itemtype="grid_field" data-field="Nulos" data-itemid="grid_field23" data-pageid={$pageid} data-record-id="{$recId}">
-{$Nulos_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_Utilizados}">
-						<span data-itemtype="grid_field" data-field="Utilizados" data-itemid="grid_field24" data-pageid={$pageid} data-record-id="{$recId}">
-{$Utilizados_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_No_Utilizados}">
-						<span data-itemtype="grid_field" data-field="No_Utilizados" data-itemid="grid_field25" data-pageid={$pageid} data-record-id="{$recId}">
-{$No_Utilizados_value}
-</span>			</td>
-			
-			<td {$recordattrs} class="{$fieldclass_Total}">
-						<span data-itemtype="grid_field" data-field="Total" data-itemid="grid_field26" data-pageid={$pageid} data-record-id="{$recId}">
-{$Total_value}
-</span>			</td>
-				</tr>
-	{END row_data}
-{END grid_row}
-
-		{BEGIN summary_header}
-		<tr class="rnr-toprow summary-header style1">
-					<td class="{$fieldclass_id_distrito}">{$label Pres___Por_Urna id_distrito }</td>
-					<td class="{$fieldclass_id_sector}">{$label Pres___Por_Urna id_sector }</td>
-					<td class="{$fieldclass_id_urna}">{$label Pres___Por_Urna id_urna }</td>
-					<td class="{$fieldclass_ubicaci_n}">{$label Pres___Por_Urna ubicaci_n }</td>
-					<td class="{$fieldclass_PAC}">{$label Pres___Por_Urna PAC }</td>
-					<td class="{$fieldclass_FAPER}">{$label Pres___Por_Urna FAPER }</td>
-					<td class="{$fieldclass_NUEVA_RUTA}">{$label Pres___Por_Urna NUEVA_RUTA }</td>
-					<td class="{$fieldclass_ALIANZA_PAT}">{$label Pres___Por_Urna ALIANZA_PAT }</td>
-					<td class="{$fieldclass_MIDE}">{$label Pres___Por_Urna MIDE }</td>
-					<td class="{$fieldclass_VAMOS}">{$label Pres___Por_Urna VAMOS }</td>
-					<td class="{$fieldclass_LIBRE}">{$label Pres___Por_Urna LIBRE }</td>
-					<td class="{$fieldclass_PSH}">{$label Pres___Por_Urna PSH }</td>
-					<td class="{$fieldclass_LIDEHR}">{$label Pres___Por_Urna LIDEHR }</td>
-					<td class="{$fieldclass_UD}">{$label Pres___Por_Urna UD }</td>
-					<td class="{$fieldclass_DC}">{$label Pres___Por_Urna DC }</td>
-					<td class="{$fieldclass_TSH}">{$label Pres___Por_Urna TSH }</td>
-					<td class="{$fieldclass_HON_HUMANA}">{$label Pres___Por_Urna HON_HUMANA }</td>
-					<td class="{$fieldclass_LIBERAL}">{$label Pres___Por_Urna LIBERAL }</td>
-					<td class="{$fieldclass_NACIONAL}">{$label Pres___Por_Urna NACIONAL }</td>
-					<td class="{$fieldclass_Validos}">{$label Pres___Por_Urna Validos }</td>
-					<td class="{$fieldclass_Blancos}">{$label Pres___Por_Urna Blancos }</td>
-					<td class="{$fieldclass_Nulos}">{$label Pres___Por_Urna Nulos }</td>
-					<td class="{$fieldclass_Utilizados}">{$label Pres___Por_Urna Utilizados }</td>
-					<td class="{$fieldclass_No_Utilizados}">{$label Pres___Por_Urna No_Utilizados }</td>
-					<td class="{$fieldclass_Total}">{$label Pres___Por_Urna Total }</td>
-				</tr>
-	{END summary_header}	
-	
-
-	
-	<!-- global summary-->
-	{BEGIN global_summary}
-		<tr class="rnr-row summary-global style1">
-			<td class="globalsummary rnr-edge" colspan="25">Resumen global 
-			 {$global_total_cnt} - Registros totales</td>
-		</tr>
-
-				<!--  Sum -->
-		<tr class="rnr-row style1">
-														<td class="globalsummary 0 ">
-				 Sum&nbsp; 				
-							&nbsp;
-							</td>
-														<td class="globalsummary 0  {$fieldclass_id_sector}">
-								
-							&nbsp;
-							</td>
-														<td class="globalsummary 0  {$fieldclass_id_urna}">
-								
-							&nbsp;
-							</td>
-														<td class="globalsummary 0  {$fieldclass_ubicaci_n}">
-								
-							&nbsp;
-							</td>
-														<td class="globalsummary 0  {$fieldclass_PAC}">
-								
-							{$global_totalPAC_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_FAPER}">
-								
-							{$global_totalFAPER_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_NUEVA_RUTA}">
-								
-							{$global_totalNUEVA_RUTA_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_ALIANZA_PAT}">
-								
-							{$global_totalALIANZA_PAT_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_MIDE}">
-								
-							{$global_totalMIDE_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_VAMOS}">
-								
-							{$global_totalVAMOS_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_LIBRE}">
-								
-							{$global_totalLIBRE_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_PSH}">
-								
-							{$global_totalPSH_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_LIDEHR}">
-								
-							{$global_totalLIDEHR_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_UD}">
-								
-							{$global_totalUD_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_DC}">
-								
-							{$global_totalDC_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_TSH}">
-								
-							{$global_totalTSH_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_HON_HUMANA}">
-								
-							{$global_totalHON_HUMANA_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_LIBERAL}">
-								
-							{$global_totalLIBERAL_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_NACIONAL}">
-								
-							{$global_totalNACIONAL_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_Validos}">
-								
-							{$global_totalValidos_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_Blancos}">
-								
-							{$global_totalBlancos_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_Nulos}">
-								
-							{$global_totalNulos_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_Utilizados}">
-								
-							{$global_totalUtilizados_sum}
-							</td>
-														<td class="globalsummary 0  {$fieldclass_No_Utilizados}">
-								
-							{$global_totalNo_Utilizados_sum}
-							</td>
-														<td class="globalsummary rnr-edge  {$fieldclass_Total}">
-								
-							{$global_totalTotal_sum}
-							</td>
-					</tr>	
-		
-		
-		
-			{END global_summary}
-
-	</tbody>
-</table>	</div>
-{END grid_block}									{BEGIN below-grid_block}
-<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
-	</div>		
-{END below-grid_block}
-			</div>
-		{$footer}
-	{END body}
-	</body>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base href="{$projectPath}">
+    <link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+			type="text/css">
+    {END styleCSSFiles}
+  </head>
+  <BODY class="{$stylename} function-rprint" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <style>
+        {$containerCss}
+      </style>
+      {$locking}
+      <DIV class="r-small-page" data-body-align="center" data-body-width="compact">
+        {BEGIN top_block}
+          <DIV class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}">
+            <DIV data-cellId="top_c2" data-pageid="{$pageid}" {$cell_top_c2} class="r-ori-vert">
+              <DIV class="center-xs">
+                <h1 style="font-weight: bold; font-size: 40px;">
+                  Sistema de Conteo de Votos
+                </h1>
+                <h1 style="font-weight: bold; font-size: 30px;">
+                  Profe. Tita Alcaldesa 2022-2026
+                </h1>
+                <h1 style="font-weight: bold; font-size: 27px;">
+                  Elecciones Generales 2021
+                </h1>
+              </div>
+              <DIV class="center-xs">
+                <h1 style="font-size: 25px;">
+                  Nivel Presidencial
+                </h1>
+                <h1 style="font-size: 25px;">
+                  Votos por Urna
+                </h1>
+              </div>
+            </div>
+          </div>
+        {END top_block}
+        {BEGIN grid_block}
+          <style>
+            td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+            background-color: #ffffbb;
+            }
+            td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+            }
+          </style>
+          <DIV id="grid_block{$id}" class="rnr-report-gridblock">
+            <!-- 0 group fields -->
+            <!-- add to settings ? -->
+            <TABLE class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}">
+              <thead>
+                {BEGIN grid_header}
+                  <TR class="rnr-toprow table-header style1">
+                    <TH class="{$fieldclass_id_distrito}">
+                      {$label Pres___Por_Urna id_distrito}
+                    </th>
+                    <TH class="{$fieldclass_id_sector}">
+                      {$label Pres___Por_Urna id_sector}
+                    </th>
+                    <TH class="{$fieldclass_id_urna}">
+                      {$label Pres___Por_Urna id_urna}
+                    </th>
+                    <TH class="{$fieldclass_ubicaci_n}">
+                      {$label Pres___Por_Urna ubicaci_n}
+                    </th>
+                    <TH class="{$fieldclass_PAC}">
+                      {$label Pres___Por_Urna PAC}
+                    </th>
+                    <TH class="{$fieldclass_FAPER}">
+                      {$label Pres___Por_Urna FAPER}
+                    </th>
+                    <TH class="{$fieldclass_NUEVA_RUTA}">
+                      {$label Pres___Por_Urna NUEVA_RUTA}
+                    </th>
+                    <TH class="{$fieldclass_ALIANZA_PAT}">
+                      {$label Pres___Por_Urna ALIANZA_PAT}
+                    </th>
+                    <TH class="{$fieldclass_MIDE}">
+                      {$label Pres___Por_Urna MIDE}
+                    </th>
+                    <TH class="{$fieldclass_VAMOS}">
+                      {$label Pres___Por_Urna VAMOS}
+                    </th>
+                    <TH class="{$fieldclass_LIBRE}">
+                      {$label Pres___Por_Urna LIBRE}
+                    </th>
+                    <TH class="{$fieldclass_PSH}">
+                      {$label Pres___Por_Urna PSH}
+                    </th>
+                    <TH class="{$fieldclass_LIDEHR}">
+                      {$label Pres___Por_Urna LIDEHR}
+                    </th>
+                    <TH class="{$fieldclass_UD}">
+                      {$label Pres___Por_Urna UD}
+                    </th>
+                    <TH class="{$fieldclass_DC}">
+                      {$label Pres___Por_Urna DC}
+                    </th>
+                    <TH class="{$fieldclass_TSH}">
+                      {$label Pres___Por_Urna TSH}
+                    </th>
+                    <TH class="{$fieldclass_HON_HUMANA}">
+                      {$label Pres___Por_Urna HON_HUMANA}
+                    </th>
+                    <TH class="{$fieldclass_LIBERAL}">
+                      {$label Pres___Por_Urna LIBERAL}
+                    </th>
+                    <TH class="{$fieldclass_NACIONAL}">
+                      {$label Pres___Por_Urna NACIONAL}
+                    </th>
+                    <TH class="{$fieldclass_Validos}">
+                      {$label Pres___Por_Urna Validos}
+                    </th>
+                    <TH class="{$fieldclass_Blancos}">
+                      {$label Pres___Por_Urna Blancos}
+                    </th>
+                    <TH class="{$fieldclass_Nulos}">
+                      {$label Pres___Por_Urna Nulos}
+                    </th>
+                    <TH class="{$fieldclass_Utilizados}">
+                      {$label Pres___Por_Urna Utilizados}
+                    </th>
+                    <TH class="{$fieldclass_No_Utilizados}">
+                      {$label Pres___Por_Urna No_Utilizados}
+                    </th>
+                    <TH class="{$fieldclass_Total}">
+                      {$label Pres___Por_Urna Total}
+                    </th>
+                  </tr>
+                {END grid_header}
+              </thead>
+              <tbody>
+                {BEGIN grid_row}
+                  {BEGIN row_data}
+                    <TR class="rnr-row style1" {$rowattrs}>
+                      <TD {$recordattrs} class="{$fieldclass_id_distrito}">
+                        <span data-itemtype="grid_field" data-field="id_distrito" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$id_distrito_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_id_sector}">
+                        <span data-itemtype="grid_field" data-field="id_sector" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$id_sector_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_id_urna}">
+                        <span data-itemtype="grid_field" data-field="id_urna" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$id_urna_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_ubicaci_n}">
+                        <span data-itemtype="grid_field" data-field="ubicaci_n" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$ubicaci_n_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_PAC}">
+                        <span data-itemtype="grid_field" data-field="PAC" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$PAC_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_FAPER}">
+                        <span data-itemtype="grid_field" data-field="FAPER" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$FAPER_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_NUEVA_RUTA}">
+                        <span data-itemtype="grid_field" data-field="NUEVA_RUTA" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$NUEVA_RUTA_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_ALIANZA_PAT}">
+                        <span data-itemtype="grid_field" data-field="ALIANZA_PAT" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$ALIANZA_PAT_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_MIDE}">
+                        <span data-itemtype="grid_field" data-field="MIDE" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$MIDE_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_VAMOS}">
+                        <span data-itemtype="grid_field" data-field="VAMOS" data-itemid="grid_field11" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$VAMOS_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_LIBRE}">
+                        <span data-itemtype="grid_field" data-field="LIBRE" data-itemid="grid_field12" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$LIBRE_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_PSH}">
+                        <span data-itemtype="grid_field" data-field="PSH" data-itemid="grid_field13" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$PSH_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_LIDEHR}">
+                        <span data-itemtype="grid_field" data-field="LIDEHR" data-itemid="grid_field14" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$LIDEHR_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_UD}">
+                        <span data-itemtype="grid_field" data-field="UD" data-itemid="grid_field15" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$UD_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_DC}">
+                        <span data-itemtype="grid_field" data-field="DC" data-itemid="grid_field16" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$DC_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_TSH}">
+                        <span data-itemtype="grid_field" data-field="TSH" data-itemid="grid_field17" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$TSH_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_HON_HUMANA}">
+                        <span data-itemtype="grid_field" data-field="HON_HUMANA" data-itemid="grid_field18" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$HON_HUMANA_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_LIBERAL}">
+                        <span data-itemtype="grid_field" data-field="LIBERAL" data-itemid="grid_field19" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$LIBERAL_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_NACIONAL}">
+                        <span data-itemtype="grid_field" data-field="NACIONAL" data-itemid="grid_field20" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$NACIONAL_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_Validos}">
+                        <span data-itemtype="grid_field" data-field="Validos" data-itemid="grid_field21" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$Validos_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_Blancos}">
+                        <span data-itemtype="grid_field" data-field="Blancos" data-itemid="grid_field22" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$Blancos_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_Nulos}">
+                        <span data-itemtype="grid_field" data-field="Nulos" data-itemid="grid_field23" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$Nulos_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_Utilizados}">
+                        <span data-itemtype="grid_field" data-field="Utilizados" data-itemid="grid_field24" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$Utilizados_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_No_Utilizados}">
+                        <span data-itemtype="grid_field" data-field="No_Utilizados" data-itemid="grid_field25" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$No_Utilizados_value}
+                        </span>
+                      </td>
+                      <TD {$recordattrs} class="{$fieldclass_Total}">
+                        <span data-itemtype="grid_field" data-field="Total" data-itemid="grid_field26" data-pageid={$pageid} data-record-id="{$recId}">
+                          {$Total_value}
+                        </span>
+                      </td>
+                    </tr>
+                  {END row_data}
+                {END grid_row}
+                <!-- global summary-->
+                {BEGIN global_summary}
+                  <!--  Sum -->
+                  <TR class="rnr-row style1" style="font-weight: bold;">
+                    <TD class="globalsummary 0 center-xs" colspan="4">
+                      Total de Votos&nbsp; &nbsp;
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_PAC}">
+                      {$global_totalPAC_sum}
+											({$can1}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_FAPER}">
+                      {$global_totalFAPER_sum}
+											({$can2}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_NUEVA_RUTA}">
+                      {$global_totalNUEVA_RUTA_sum}
+											({$can3}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_ALIANZA_PAT}">
+                      {$global_totalALIANZA_PAT_sum}
+											({$can4}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_MIDE}">
+                      {$global_totalMIDE_sum}
+											({$can5}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_VAMOS}">
+                      {$global_totalVAMOS_sum}
+											({$can6}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_LIBRE}">
+                      {$global_totalLIBRE_sum}
+											({$can7}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_PSH}">
+                      {$global_totalPSH_sum}
+											({$can8}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_LIDEHR}">
+                      {$global_totalLIDEHR_sum}
+											({$can9}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_UD}">
+                      {$global_totalUD_sum}
+											({$can10}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_DC}">
+                      {$global_totalDC_sum}
+											({$can11}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_TSH}">
+                      {$global_totalTSH_sum}
+											({$can12}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_HON_HUMANA}">
+                      {$global_totalHON_HUMANA_sum}
+											({$can13}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_LIBERAL}">
+                      {$global_totalLIBERAL_sum}
+											({$can14}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_NACIONAL}">
+                      {$global_totalNACIONAL_sum}
+											({$can15}%)
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_Validos}">
+                      {$global_totalValidos_sum}
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_Blancos}">
+                      {$global_totalBlancos_sum}
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_Nulos}">
+                      {$global_totalNulos_sum}
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_Utilizados}">
+                      {$global_totalUtilizados_sum}
+                    </td>
+                    <TD class="globalsummary 0 {$fieldclass_No_Utilizados}">
+                      {$global_totalNo_Utilizados_sum}
+                    </td>
+                    <TD class="globalsummary rnr-edge {$fieldclass_Total}">
+                      {$global_totalTotal_sum}
+                    </td>
+                  </tr>
+                {END global_summary}
+              </tbody>
+            </table>
+          </div>
+        {END grid_block}
+        {BEGIN below-grid_block}
+          <DIV class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}">
+          </div>
+        {END below-grid_block}
+      </div>
+      {$footer}
+    {END body}
+  </body>
 </html>

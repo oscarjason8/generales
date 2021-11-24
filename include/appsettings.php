@@ -659,9 +659,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "509_1636948520";
+$projectBuildKey = "529_1637719833";
 $wizardBuildKey = "35214";
-$projectBuildNumber = "509";
+$projectBuildNumber = "529";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -710,6 +710,7 @@ $tableCaptions["Spanish"]["estructura"] = "Corporación Municipal - Elecciones G
 $tableCaptions["Spanish"]["admin_rights"] = "Admin Rights";
 $tableCaptions["Spanish"]["admin_members"] = "Admin Members";
 $tableCaptions["Spanish"]["admin_users"] = "Add/Edit users";
+$tableCaptions["Spanish"]["actas"] = "Actas - Elecciones Generales 2021";
 
 
 $globalEvents = new class_GlobalEvents;

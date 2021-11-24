@@ -182,9 +182,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_import_field25}","text":{$candidato15_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_import_field26}","text":{$elecciones_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

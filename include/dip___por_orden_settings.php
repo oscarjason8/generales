@@ -172,7 +172,7 @@ $tdatadip___por_orden[".tableType"] = "report";
 $tdatadip___por_orden[".printerPageOrientation"] = 0;
 $tdatadip___por_orden[".nPrinterPageScale"] = 100;
 
-$tdatadip___por_orden[".nPrinterSplitRecords"] = 25;
+$tdatadip___por_orden[".nPrinterSplitRecords"] = 20;
 
 $tdatadip___por_orden[".geocodingEnabled"] = false;
 
@@ -180,7 +180,7 @@ $tdatadip___por_orden[".geocodingEnabled"] = false;
 $tdatadip___por_orden[".printReportLayout"] = 6;
 
 $tdatadip___por_orden[".reportPrintPartitionType"] = 1;
-$tdatadip___por_orden[".reportPrintGroupsPerPage"] = 25;
+$tdatadip___por_orden[".reportPrintGroupsPerPage"] = 20;
 $tdatadip___por_orden[".lowGroup"] = 0;
 
 

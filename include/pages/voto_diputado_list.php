@@ -915,5 +915,6 @@ array( 'cell' => 'footcell_field4' ) ) ) ),
 'detailsOnly' => true ),
 'grid_inline_cancel' => array( 'type' => 'grid_inline_cancel' ) ),
 'dbProps' => array(  ),
-'version' => 4 );
+'version' => 4,
+'pageWidth' => 'full' );
 		?>

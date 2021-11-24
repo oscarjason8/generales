@@ -241,6 +241,8 @@ function checkTableName($shortTName )
 		return true;
 	if ("admin_users" == $shortTName )
 		return true;
+	if ("actas" == $shortTName )
+		return true;
 	return false;
 }
 
@@ -543,6 +545,15 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="admin_users";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("actas");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="actas";
+	}
 	return $arr;
 }
 
@@ -580,6 +591,7 @@ function GetTablesListWithoutSecurity()
 	$arr[]="admin_rights";
 	$arr[]="admin_members";
 	$arr[]="admin_users";
+	$arr[]="actas";
 	return $arr;
 }
 
@@ -1462,6 +1474,12 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_users" )
+	{
+//	default permissions
+		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="actas" )
 	{
 //	default permissions
 		// grant all by default

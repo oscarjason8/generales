@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('actas',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var urna=Runner.getControl(pageid,'id_urna');urna.makeReadonly();;});

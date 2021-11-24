@@ -6,11 +6,11 @@ $tdataestructura[".OwnerID"] = "";
 $tdataestructura[".OriginalTable"] = "estructura";
 
 
-$tdataestructura[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"search\":[\"search\"]}" );
+$tdataestructura[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdataestructura[".originalPagesByType"] = $tdataestructura[".pagesByType"];
-$tdataestructura[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"search\":[\"search\"]}" ) );
+$tdataestructura[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdataestructura[".originalPages"] = $tdataestructura[".pages"];
-$tdataestructura[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"search\":\"search\"}" );
+$tdataestructura[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdataestructura[".originalDefaultPages"] = $tdataestructura[".defaultPages"];
 
 //	field labels

@@ -229,6 +229,13 @@ function InitLookupLinks()
 			$lookupTableLinks["partido"]["estructura.partido"] = array();
 		}
 		$lookupTableLinks["partido"]["estructura.partido"]["edit"] = array("table" => "estructura", "field" => "partido", "page" => "edit");
+		if( !isset( $lookupTableLinks["urna"] ) ) {
+			$lookupTableLinks["urna"] = array();
+		}
+		if( !isset( $lookupTableLinks["urna"]["actas.id_urna"] )) {
+			$lookupTableLinks["urna"]["actas.id_urna"] = array();
+		}
+		$lookupTableLinks["urna"]["actas.id_urna"]["edit"] = array("table" => "actas", "field" => "id_urna", "page" => "edit");
 }
 
 ?>

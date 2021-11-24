@@ -47,6 +47,7 @@ function DBLookup($sql)
   */
 class tDAL
 {
+	var $tblinternas_new_at_localhost__actas;
 	var $tblinternas_new_at_localhost__candidatos;
 	var $tblinternas_new_at_localhost__corporacion;
 	var $tblinternas_new_at_localhost__corporaciones;
@@ -70,6 +71,7 @@ class tDAL
 	{
 		if($this->lstTables)
 			return;
+		$this->lstTables[] = array("name" => "actas", "varname" => "internas_new_at_localhost__actas", "altvarname" => "actas", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "candidatos", "varname" => "internas_new_at_localhost__candidatos", "altvarname" => "candidatos", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "corporacion", "varname" => "internas_new_at_localhost__corporacion", "altvarname" => "corporacion", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");
 		$this->lstTables[] = array("name" => "corporaciones", "varname" => "internas_new_at_localhost__corporaciones", "altvarname" => "corporaciones", "connId" => "internas_new_at_localhost", "schema" => "", "connName" => "cmlpc_generales2021 at 192.185.95.83");

@@ -103,9 +103,6 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsvoto_presidente["Spanish"]["candidato15"] = "Nasry Asfura";
 	$fieldToolTipsvoto_presidente["Spanish"]["candidato15"] = "";
 	$placeHoldersvoto_presidente["Spanish"]["candidato15"] = "";
-	$fieldLabelsvoto_presidente["Spanish"]["elecciones"] = "Elecciones";
-	$fieldToolTipsvoto_presidente["Spanish"]["elecciones"] = "";
-	$placeHoldersvoto_presidente["Spanish"]["elecciones"] = "";
 	if (count($fieldToolTipsvoto_presidente["Spanish"]))
 		$tdatavoto_presidente[".isUseToolTips"] = true;
 }
@@ -230,7 +227,6 @@ $tdatavoto_presidente[".filterFields"] = array();
 $tdatavoto_presidente[".requiredSearchFields"] = array();
 
 $tdatavoto_presidente[".googleLikeFields"] = array();
-$tdatavoto_presidente[".googleLikeFields"][] = "elecciones";
 $tdatavoto_presidente[".googleLikeFields"][] = "id_urna";
 $tdatavoto_presidente[".googleLikeFields"][] = "candidato1";
 $tdatavoto_presidente[".googleLikeFields"][] = "candidato2";
@@ -292,7 +288,7 @@ $tdatavoto_presidente[".strOrderBy"] = $tstrOrderBy;
 $tdatavoto_presidente[".orderindexes"] = array();
 
 
-$tdatavoto_presidente[".sqlHead"] = "SELECT elecciones,  	id_urna,  	candidato1,  	candidato2,  	candidato3,  	candidato4,  	candidato5,  	candidato6,  	candidato7,  	candidato8,  	candidato9,  	candidato10,  	candidato11,  	candidato12,  	candidato13,  	candidato14,  	candidato15,  	validos,  	blancos,  	nulos,  	utilizados,  	no_utilizados,  	total,  	usuario,  	fecha,  	editado_por,  	fecha_edicion";
+$tdatavoto_presidente[".sqlHead"] = "SELECT id_urna,  	candidato1,  	candidato2,  	candidato3,  	candidato4,  	candidato5,  	candidato6,  	candidato7,  	candidato8,  	candidato9,  	candidato10,  	candidato11,  	candidato12,  	candidato13,  	candidato14,  	candidato15,  	validos,  	blancos,  	nulos,  	utilizados,  	no_utilizados,  	total,  	usuario,  	fecha,  	editado_por,  	fecha_edicion";
 $tdatavoto_presidente[".sqlFrom"] = "FROM voto_presidente";
 $tdatavoto_presidente[".sqlWhereExpr"] = "";
 $tdatavoto_presidente[".sqlTail"] = "";
@@ -340,144 +336,10 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 
 
 
-//	elecciones
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 1;
-	$fdata["strName"] = "elecciones";
-	$fdata["GoodName"] = "elecciones";
-	$fdata["ownerTable"] = "voto_presidente";
-	$fdata["Label"] = GetFieldLabel("voto_presidente","elecciones");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "elecciones";
-
-	
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "elecciones";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Readonly");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatavoto_presidente["elecciones"] = $fdata;
-		$tdatavoto_presidente[".searchableFields"][] = "elecciones";
 //	id_urna
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 2;
+	$fdata["Index"] = 1;
 	$fdata["strName"] = "id_urna";
 	$fdata["GoodName"] = "id_urna";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -644,7 +506,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato1
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 3;
+	$fdata["Index"] = 2;
 	$fdata["strName"] = "candidato1";
 	$fdata["GoodName"] = "candidato1";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -781,7 +643,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato2
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 4;
+	$fdata["Index"] = 3;
 	$fdata["strName"] = "candidato2";
 	$fdata["GoodName"] = "candidato2";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -918,7 +780,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato3
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 5;
+	$fdata["Index"] = 4;
 	$fdata["strName"] = "candidato3";
 	$fdata["GoodName"] = "candidato3";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1055,7 +917,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato4
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 6;
+	$fdata["Index"] = 5;
 	$fdata["strName"] = "candidato4";
 	$fdata["GoodName"] = "candidato4";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1192,7 +1054,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato5
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 7;
+	$fdata["Index"] = 6;
 	$fdata["strName"] = "candidato5";
 	$fdata["GoodName"] = "candidato5";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1329,7 +1191,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato6
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
+	$fdata["Index"] = 7;
 	$fdata["strName"] = "candidato6";
 	$fdata["GoodName"] = "candidato6";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1466,7 +1328,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato7
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 9;
+	$fdata["Index"] = 8;
 	$fdata["strName"] = "candidato7";
 	$fdata["GoodName"] = "candidato7";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1603,7 +1465,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato8
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 10;
+	$fdata["Index"] = 9;
 	$fdata["strName"] = "candidato8";
 	$fdata["GoodName"] = "candidato8";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1740,7 +1602,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato9
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 11;
+	$fdata["Index"] = 10;
 	$fdata["strName"] = "candidato9";
 	$fdata["GoodName"] = "candidato9";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -1877,7 +1739,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato10
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 12;
+	$fdata["Index"] = 11;
 	$fdata["strName"] = "candidato10";
 	$fdata["GoodName"] = "candidato10";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2014,7 +1876,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato11
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 13;
+	$fdata["Index"] = 12;
 	$fdata["strName"] = "candidato11";
 	$fdata["GoodName"] = "candidato11";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2151,7 +2013,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato12
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 14;
+	$fdata["Index"] = 13;
 	$fdata["strName"] = "candidato12";
 	$fdata["GoodName"] = "candidato12";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2288,7 +2150,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato13
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 15;
+	$fdata["Index"] = 14;
 	$fdata["strName"] = "candidato13";
 	$fdata["GoodName"] = "candidato13";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2425,7 +2287,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato14
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 16;
+	$fdata["Index"] = 15;
 	$fdata["strName"] = "candidato14";
 	$fdata["GoodName"] = "candidato14";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2562,7 +2424,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	candidato15
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 17;
+	$fdata["Index"] = 16;
 	$fdata["strName"] = "candidato15";
 	$fdata["GoodName"] = "candidato15";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2699,7 +2561,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	validos
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 18;
+	$fdata["Index"] = 17;
 	$fdata["strName"] = "validos";
 	$fdata["GoodName"] = "validos";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2836,7 +2698,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	blancos
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 19;
+	$fdata["Index"] = 18;
 	$fdata["strName"] = "blancos";
 	$fdata["GoodName"] = "blancos";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -2973,7 +2835,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	nulos
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 20;
+	$fdata["Index"] = 19;
 	$fdata["strName"] = "nulos";
 	$fdata["GoodName"] = "nulos";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3110,7 +2972,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	utilizados
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 21;
+	$fdata["Index"] = 20;
 	$fdata["strName"] = "utilizados";
 	$fdata["GoodName"] = "utilizados";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3247,7 +3109,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	no_utilizados
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 22;
+	$fdata["Index"] = 21;
 	$fdata["strName"] = "no_utilizados";
 	$fdata["GoodName"] = "no_utilizados";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3384,7 +3246,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	total
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 23;
+	$fdata["Index"] = 22;
 	$fdata["strName"] = "total";
 	$fdata["GoodName"] = "total";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3521,7 +3383,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	usuario
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 24;
+	$fdata["Index"] = 23;
 	$fdata["strName"] = "usuario";
 	$fdata["GoodName"] = "usuario";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3655,7 +3517,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	fecha
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 25;
+	$fdata["Index"] = 24;
 	$fdata["strName"] = "fecha";
 	$fdata["GoodName"] = "fecha";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3790,7 +3652,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	editado_por
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 26;
+	$fdata["Index"] = 25;
 	$fdata["strName"] = "editado_por";
 	$fdata["GoodName"] = "editado_por";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -3925,7 +3787,7 @@ $tdatavoto_presidente[".hideMobileList"] = array();
 //	fecha_edicion
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 27;
+	$fdata["Index"] = 26;
 	$fdata["strName"] = "fecha_edicion";
 	$fdata["GoodName"] = "fecha_edicion";
 	$fdata["ownerTable"] = "voto_presidente";
@@ -4111,7 +3973,7 @@ function createSqlQuery_voto_presidente()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "elecciones,  	id_urna,  	candidato1,  	candidato2,  	candidato3,  	candidato4,  	candidato5,  	candidato6,  	candidato7,  	candidato8,  	candidato9,  	candidato10,  	candidato11,  	candidato12,  	candidato13,  	candidato14,  	candidato15,  	validos,  	blancos,  	nulos,  	utilizados,  	no_utilizados,  	total,  	usuario,  	fecha,  	editado_por,  	fecha_edicion";
+$proto0["m_strFieldList"] = "id_urna,  	candidato1,  	candidato2,  	candidato3,  	candidato4,  	candidato5,  	candidato6,  	candidato7,  	candidato8,  	candidato9,  	candidato10,  	candidato11,  	candidato12,  	candidato13,  	candidato14,  	candidato15,  	validos,  	blancos,  	nulos,  	utilizados,  	no_utilizados,  	total,  	usuario,  	fecha,  	editado_por,  	fecha_edicion";
 $proto0["m_strFrom"] = "FROM voto_presidente";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -4153,12 +4015,12 @@ $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
 						$proto6=array();
 			$obj = new SQLField(array(
-	"m_strName" => "elecciones",
+	"m_strName" => "id_urna",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto6["m_sql"] = "elecciones";
+$proto6["m_sql"] = "id_urna";
 $proto6["m_srcTableName"] = "voto_presidente";
 $proto6["m_expr"]=$obj;
 $proto6["m_alias"] = "";
@@ -4167,12 +4029,12 @@ $obj = new SQLFieldListItem($proto6);
 $proto0["m_fieldlist"][]=$obj;
 						$proto8=array();
 			$obj = new SQLField(array(
-	"m_strName" => "id_urna",
+	"m_strName" => "candidato1",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto8["m_sql"] = "id_urna";
+$proto8["m_sql"] = "candidato1";
 $proto8["m_srcTableName"] = "voto_presidente";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "";
@@ -4181,12 +4043,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato1",
+	"m_strName" => "candidato2",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto10["m_sql"] = "candidato1";
+$proto10["m_sql"] = "candidato2";
 $proto10["m_srcTableName"] = "voto_presidente";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -4195,12 +4057,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato2",
+	"m_strName" => "candidato3",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto12["m_sql"] = "candidato2";
+$proto12["m_sql"] = "candidato3";
 $proto12["m_srcTableName"] = "voto_presidente";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -4209,12 +4071,12 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato3",
+	"m_strName" => "candidato4",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto14["m_sql"] = "candidato3";
+$proto14["m_sql"] = "candidato4";
 $proto14["m_srcTableName"] = "voto_presidente";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -4223,12 +4085,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato4",
+	"m_strName" => "candidato5",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto16["m_sql"] = "candidato4";
+$proto16["m_sql"] = "candidato5";
 $proto16["m_srcTableName"] = "voto_presidente";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -4237,12 +4099,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato5",
+	"m_strName" => "candidato6",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto18["m_sql"] = "candidato5";
+$proto18["m_sql"] = "candidato6";
 $proto18["m_srcTableName"] = "voto_presidente";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -4251,12 +4113,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato6",
+	"m_strName" => "candidato7",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto20["m_sql"] = "candidato6";
+$proto20["m_sql"] = "candidato7";
 $proto20["m_srcTableName"] = "voto_presidente";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -4265,12 +4127,12 @@ $obj = new SQLFieldListItem($proto20);
 $proto0["m_fieldlist"][]=$obj;
 						$proto22=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato7",
+	"m_strName" => "candidato8",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto22["m_sql"] = "candidato7";
+$proto22["m_sql"] = "candidato8";
 $proto22["m_srcTableName"] = "voto_presidente";
 $proto22["m_expr"]=$obj;
 $proto22["m_alias"] = "";
@@ -4279,12 +4141,12 @@ $obj = new SQLFieldListItem($proto22);
 $proto0["m_fieldlist"][]=$obj;
 						$proto24=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato8",
+	"m_strName" => "candidato9",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto24["m_sql"] = "candidato8";
+$proto24["m_sql"] = "candidato9";
 $proto24["m_srcTableName"] = "voto_presidente";
 $proto24["m_expr"]=$obj;
 $proto24["m_alias"] = "";
@@ -4293,12 +4155,12 @@ $obj = new SQLFieldListItem($proto24);
 $proto0["m_fieldlist"][]=$obj;
 						$proto26=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato9",
+	"m_strName" => "candidato10",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto26["m_sql"] = "candidato9";
+$proto26["m_sql"] = "candidato10";
 $proto26["m_srcTableName"] = "voto_presidente";
 $proto26["m_expr"]=$obj;
 $proto26["m_alias"] = "";
@@ -4307,12 +4169,12 @@ $obj = new SQLFieldListItem($proto26);
 $proto0["m_fieldlist"][]=$obj;
 						$proto28=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato10",
+	"m_strName" => "candidato11",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto28["m_sql"] = "candidato10";
+$proto28["m_sql"] = "candidato11";
 $proto28["m_srcTableName"] = "voto_presidente";
 $proto28["m_expr"]=$obj;
 $proto28["m_alias"] = "";
@@ -4321,12 +4183,12 @@ $obj = new SQLFieldListItem($proto28);
 $proto0["m_fieldlist"][]=$obj;
 						$proto30=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato11",
+	"m_strName" => "candidato12",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto30["m_sql"] = "candidato11";
+$proto30["m_sql"] = "candidato12";
 $proto30["m_srcTableName"] = "voto_presidente";
 $proto30["m_expr"]=$obj;
 $proto30["m_alias"] = "";
@@ -4335,12 +4197,12 @@ $obj = new SQLFieldListItem($proto30);
 $proto0["m_fieldlist"][]=$obj;
 						$proto32=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato12",
+	"m_strName" => "candidato13",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto32["m_sql"] = "candidato12";
+$proto32["m_sql"] = "candidato13";
 $proto32["m_srcTableName"] = "voto_presidente";
 $proto32["m_expr"]=$obj;
 $proto32["m_alias"] = "";
@@ -4349,12 +4211,12 @@ $obj = new SQLFieldListItem($proto32);
 $proto0["m_fieldlist"][]=$obj;
 						$proto34=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato13",
+	"m_strName" => "candidato14",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto34["m_sql"] = "candidato13";
+$proto34["m_sql"] = "candidato14";
 $proto34["m_srcTableName"] = "voto_presidente";
 $proto34["m_expr"]=$obj;
 $proto34["m_alias"] = "";
@@ -4363,12 +4225,12 @@ $obj = new SQLFieldListItem($proto34);
 $proto0["m_fieldlist"][]=$obj;
 						$proto36=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato14",
+	"m_strName" => "candidato15",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto36["m_sql"] = "candidato14";
+$proto36["m_sql"] = "candidato15";
 $proto36["m_srcTableName"] = "voto_presidente";
 $proto36["m_expr"]=$obj;
 $proto36["m_alias"] = "";
@@ -4377,12 +4239,12 @@ $obj = new SQLFieldListItem($proto36);
 $proto0["m_fieldlist"][]=$obj;
 						$proto38=array();
 			$obj = new SQLField(array(
-	"m_strName" => "candidato15",
+	"m_strName" => "validos",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto38["m_sql"] = "candidato15";
+$proto38["m_sql"] = "validos";
 $proto38["m_srcTableName"] = "voto_presidente";
 $proto38["m_expr"]=$obj;
 $proto38["m_alias"] = "";
@@ -4391,12 +4253,12 @@ $obj = new SQLFieldListItem($proto38);
 $proto0["m_fieldlist"][]=$obj;
 						$proto40=array();
 			$obj = new SQLField(array(
-	"m_strName" => "validos",
+	"m_strName" => "blancos",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto40["m_sql"] = "validos";
+$proto40["m_sql"] = "blancos";
 $proto40["m_srcTableName"] = "voto_presidente";
 $proto40["m_expr"]=$obj;
 $proto40["m_alias"] = "";
@@ -4405,12 +4267,12 @@ $obj = new SQLFieldListItem($proto40);
 $proto0["m_fieldlist"][]=$obj;
 						$proto42=array();
 			$obj = new SQLField(array(
-	"m_strName" => "blancos",
+	"m_strName" => "nulos",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto42["m_sql"] = "blancos";
+$proto42["m_sql"] = "nulos";
 $proto42["m_srcTableName"] = "voto_presidente";
 $proto42["m_expr"]=$obj;
 $proto42["m_alias"] = "";
@@ -4419,12 +4281,12 @@ $obj = new SQLFieldListItem($proto42);
 $proto0["m_fieldlist"][]=$obj;
 						$proto44=array();
 			$obj = new SQLField(array(
-	"m_strName" => "nulos",
+	"m_strName" => "utilizados",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto44["m_sql"] = "nulos";
+$proto44["m_sql"] = "utilizados";
 $proto44["m_srcTableName"] = "voto_presidente";
 $proto44["m_expr"]=$obj;
 $proto44["m_alias"] = "";
@@ -4433,12 +4295,12 @@ $obj = new SQLFieldListItem($proto44);
 $proto0["m_fieldlist"][]=$obj;
 						$proto46=array();
 			$obj = new SQLField(array(
-	"m_strName" => "utilizados",
+	"m_strName" => "no_utilizados",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto46["m_sql"] = "utilizados";
+$proto46["m_sql"] = "no_utilizados";
 $proto46["m_srcTableName"] = "voto_presidente";
 $proto46["m_expr"]=$obj;
 $proto46["m_alias"] = "";
@@ -4447,12 +4309,12 @@ $obj = new SQLFieldListItem($proto46);
 $proto0["m_fieldlist"][]=$obj;
 						$proto48=array();
 			$obj = new SQLField(array(
-	"m_strName" => "no_utilizados",
+	"m_strName" => "total",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto48["m_sql"] = "no_utilizados";
+$proto48["m_sql"] = "total";
 $proto48["m_srcTableName"] = "voto_presidente";
 $proto48["m_expr"]=$obj;
 $proto48["m_alias"] = "";
@@ -4461,12 +4323,12 @@ $obj = new SQLFieldListItem($proto48);
 $proto0["m_fieldlist"][]=$obj;
 						$proto50=array();
 			$obj = new SQLField(array(
-	"m_strName" => "total",
+	"m_strName" => "usuario",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto50["m_sql"] = "total";
+$proto50["m_sql"] = "usuario";
 $proto50["m_srcTableName"] = "voto_presidente";
 $proto50["m_expr"]=$obj;
 $proto50["m_alias"] = "";
@@ -4475,12 +4337,12 @@ $obj = new SQLFieldListItem($proto50);
 $proto0["m_fieldlist"][]=$obj;
 						$proto52=array();
 			$obj = new SQLField(array(
-	"m_strName" => "usuario",
+	"m_strName" => "fecha",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto52["m_sql"] = "usuario";
+$proto52["m_sql"] = "fecha";
 $proto52["m_srcTableName"] = "voto_presidente";
 $proto52["m_expr"]=$obj;
 $proto52["m_alias"] = "";
@@ -4489,12 +4351,12 @@ $obj = new SQLFieldListItem($proto52);
 $proto0["m_fieldlist"][]=$obj;
 						$proto54=array();
 			$obj = new SQLField(array(
-	"m_strName" => "fecha",
+	"m_strName" => "editado_por",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto54["m_sql"] = "fecha";
+$proto54["m_sql"] = "editado_por";
 $proto54["m_srcTableName"] = "voto_presidente";
 $proto54["m_expr"]=$obj;
 $proto54["m_alias"] = "";
@@ -4503,89 +4365,75 @@ $obj = new SQLFieldListItem($proto54);
 $proto0["m_fieldlist"][]=$obj;
 						$proto56=array();
 			$obj = new SQLField(array(
-	"m_strName" => "editado_por",
+	"m_strName" => "fecha_edicion",
 	"m_strTable" => "voto_presidente",
 	"m_srcTableName" => "voto_presidente"
 ));
 
-$proto56["m_sql"] = "editado_por";
+$proto56["m_sql"] = "fecha_edicion";
 $proto56["m_srcTableName"] = "voto_presidente";
 $proto56["m_expr"]=$obj;
 $proto56["m_alias"] = "";
 $obj = new SQLFieldListItem($proto56);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto58=array();
-			$obj = new SQLField(array(
-	"m_strName" => "fecha_edicion",
-	"m_strTable" => "voto_presidente",
-	"m_srcTableName" => "voto_presidente"
-));
-
-$proto58["m_sql"] = "fecha_edicion";
-$proto58["m_srcTableName"] = "voto_presidente";
-$proto58["m_expr"]=$obj;
-$proto58["m_alias"] = "";
-$obj = new SQLFieldListItem($proto58);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto60=array();
-$proto60["m_link"] = "SQLL_MAIN";
-			$proto61=array();
-$proto61["m_strName"] = "voto_presidente";
-$proto61["m_srcTableName"] = "voto_presidente";
-$proto61["m_columns"] = array();
-$proto61["m_columns"][] = "elecciones";
-$proto61["m_columns"][] = "id_urna";
-$proto61["m_columns"][] = "candidato1";
-$proto61["m_columns"][] = "candidato2";
-$proto61["m_columns"][] = "candidato3";
-$proto61["m_columns"][] = "candidato4";
-$proto61["m_columns"][] = "candidato5";
-$proto61["m_columns"][] = "candidato6";
-$proto61["m_columns"][] = "candidato7";
-$proto61["m_columns"][] = "candidato8";
-$proto61["m_columns"][] = "candidato9";
-$proto61["m_columns"][] = "candidato10";
-$proto61["m_columns"][] = "candidato11";
-$proto61["m_columns"][] = "candidato12";
-$proto61["m_columns"][] = "candidato13";
-$proto61["m_columns"][] = "candidato14";
-$proto61["m_columns"][] = "candidato15";
-$proto61["m_columns"][] = "validos";
-$proto61["m_columns"][] = "blancos";
-$proto61["m_columns"][] = "nulos";
-$proto61["m_columns"][] = "utilizados";
-$proto61["m_columns"][] = "no_utilizados";
-$proto61["m_columns"][] = "total";
-$proto61["m_columns"][] = "usuario";
-$proto61["m_columns"][] = "fecha";
-$proto61["m_columns"][] = "editado_por";
-$proto61["m_columns"][] = "fecha_edicion";
-$obj = new SQLTable($proto61);
+												$proto58=array();
+$proto58["m_link"] = "SQLL_MAIN";
+			$proto59=array();
+$proto59["m_strName"] = "voto_presidente";
+$proto59["m_srcTableName"] = "voto_presidente";
+$proto59["m_columns"] = array();
+$proto59["m_columns"][] = "elecciones";
+$proto59["m_columns"][] = "id_urna";
+$proto59["m_columns"][] = "candidato1";
+$proto59["m_columns"][] = "candidato2";
+$proto59["m_columns"][] = "candidato3";
+$proto59["m_columns"][] = "candidato4";
+$proto59["m_columns"][] = "candidato5";
+$proto59["m_columns"][] = "candidato6";
+$proto59["m_columns"][] = "candidato7";
+$proto59["m_columns"][] = "candidato8";
+$proto59["m_columns"][] = "candidato9";
+$proto59["m_columns"][] = "candidato10";
+$proto59["m_columns"][] = "candidato11";
+$proto59["m_columns"][] = "candidato12";
+$proto59["m_columns"][] = "candidato13";
+$proto59["m_columns"][] = "candidato14";
+$proto59["m_columns"][] = "candidato15";
+$proto59["m_columns"][] = "validos";
+$proto59["m_columns"][] = "blancos";
+$proto59["m_columns"][] = "nulos";
+$proto59["m_columns"][] = "utilizados";
+$proto59["m_columns"][] = "no_utilizados";
+$proto59["m_columns"][] = "total";
+$proto59["m_columns"][] = "usuario";
+$proto59["m_columns"][] = "fecha";
+$proto59["m_columns"][] = "editado_por";
+$proto59["m_columns"][] = "fecha_edicion";
+$obj = new SQLTable($proto59);
 
-$proto60["m_table"] = $obj;
-$proto60["m_sql"] = "voto_presidente";
-$proto60["m_alias"] = "";
-$proto60["m_srcTableName"] = "voto_presidente";
-$proto62=array();
-$proto62["m_sql"] = "";
-$proto62["m_uniontype"] = "SQLL_UNKNOWN";
+$proto58["m_table"] = $obj;
+$proto58["m_sql"] = "voto_presidente";
+$proto58["m_alias"] = "";
+$proto58["m_srcTableName"] = "voto_presidente";
+$proto60=array();
+$proto60["m_sql"] = "";
+$proto60["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto62["m_column"]=$obj;
-$proto62["m_contained"] = array();
-$proto62["m_strCase"] = "";
-$proto62["m_havingmode"] = false;
-$proto62["m_inBrackets"] = false;
-$proto62["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto62);
+$proto60["m_column"]=$obj;
+$proto60["m_contained"] = array();
+$proto60["m_strCase"] = "";
+$proto60["m_havingmode"] = false;
+$proto60["m_inBrackets"] = false;
+$proto60["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto60);
 
-$proto60["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto60);
+$proto58["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto58);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -4601,7 +4449,7 @@ $queryData_voto_presidente = createSqlQuery_voto_presidente();
 	
 		;
 
-																											
+																										
 
 $tdatavoto_presidente[".sqlquery"] = $queryData_voto_presidente;
 

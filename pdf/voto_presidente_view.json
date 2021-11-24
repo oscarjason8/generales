@@ -194,9 +194,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel voto_presidente fecha_edicion }","bold":true},{"text":{$fecha_edicion_pdfvalue}}],"margin":[0,0,0,15]},
 				
-				
-			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel voto_presidente elecciones }","bold":true},{"text":{$elecciones_pdfvalue}}],"margin":[0,0,0,15]},
-				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',

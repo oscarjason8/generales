@@ -40,6 +40,7 @@ $nonAdminTablesArr[] = "Urnas - Completadas";
 $nonAdminTablesArr[] = "partido";
 $nonAdminTablesArr[] = "corporaciones";
 $nonAdminTablesArr[] = "estructura";
+$nonAdminTablesArr[] = "actas";
 
 $ug_connection = $cman->getForUserGroups();
 

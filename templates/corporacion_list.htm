@@ -460,7 +460,7 @@
 {END supertop_block}
 						{$locking}
 				</div>	
-				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+				<div class="r-body" data-resize-top="topbar" data-body-width="full">
 					{$header}
 					<div class="r-top">
 									{BEGIN top_block}
@@ -622,22 +622,7 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="regidor5"]:before {
 		content: "{$label corporacion regidor5}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="regidor6"]:before {
-		content: "{$label corporacion regidor6}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="regidor7"]:before {
-		content: "{$label corporacion regidor7}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="regidor8"]:before {
-		content: "{$label corporacion regidor8}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="regidor9"]:before {
-		content: "{$label corporacion regidor9}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="regidor10"]:before {
-		content: "{$label corporacion regidor10}";
-	}
-	}
+						}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -710,7 +695,7 @@
 	 
 		{BEGIN id_partido_fieldheadercolumn}
 	{BEGIN id_partido_fieldheader}
-	<SPAN {$id_partido_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_partido">
+	<SPAN {$id_partido_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_partido">
 	{$label corporacion id_partido }	{$arrow_icon_id_partido}
 	</SPAN>
 	{END id_partido_fieldheader}
@@ -737,7 +722,7 @@
 	 
 		{BEGIN alcalde_fieldheadercolumn}
 	{BEGIN alcalde_fieldheader}
-	<SPAN {$alcalde_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alcalde">
+	<SPAN {$alcalde_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="alcalde">
 	{$label corporacion alcalde }	{$arrow_icon_alcalde}
 	</SPAN>
 	{END alcalde_fieldheader}
@@ -764,7 +749,7 @@
 	 
 		{BEGIN vice_alcalde_fieldheadercolumn}
 	{BEGIN vice_alcalde_fieldheader}
-	<SPAN {$vice_alcalde_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vice_alcalde">
+	<SPAN {$vice_alcalde_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vice_alcalde">
 	{$label corporacion vice_alcalde }	{$arrow_icon_vice_alcalde}
 	</SPAN>
 	{END vice_alcalde_fieldheader}
@@ -791,7 +776,7 @@
 	 
 		{BEGIN regidor1_fieldheadercolumn}
 	{BEGIN regidor1_fieldheader}
-	<SPAN {$regidor1_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor1">
+	<SPAN {$regidor1_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor1">
 	{$label corporacion regidor1 }	{$arrow_icon_regidor1}
 	</SPAN>
 	{END regidor1_fieldheader}
@@ -818,7 +803,7 @@
 	 
 		{BEGIN regidor2_fieldheadercolumn}
 	{BEGIN regidor2_fieldheader}
-	<SPAN {$regidor2_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor2">
+	<SPAN {$regidor2_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor2">
 	{$label corporacion regidor2 }	{$arrow_icon_regidor2}
 	</SPAN>
 	{END regidor2_fieldheader}
@@ -845,7 +830,7 @@
 	 
 		{BEGIN regidor3_fieldheadercolumn}
 	{BEGIN regidor3_fieldheader}
-	<SPAN {$regidor3_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor3">
+	<SPAN {$regidor3_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor3">
 	{$label corporacion regidor3 }	{$arrow_icon_regidor3}
 	</SPAN>
 	{END regidor3_fieldheader}
@@ -872,7 +857,7 @@
 	 
 		{BEGIN regidor4_fieldheadercolumn}
 	{BEGIN regidor4_fieldheader}
-	<SPAN {$regidor4_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor4">
+	<SPAN {$regidor4_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor4">
 	{$label corporacion regidor4 }	{$arrow_icon_regidor4}
 	</SPAN>
 	{END regidor4_fieldheader}
@@ -899,7 +884,7 @@
 	 
 		{BEGIN regidor5_fieldheadercolumn}
 	{BEGIN regidor5_fieldheader}
-	<SPAN {$regidor5_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor5">
+	<SPAN {$regidor5_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor5">
 	{$label corporacion regidor5 }	{$arrow_icon_regidor5}
 	</SPAN>
 	{END regidor5_fieldheader}
@@ -908,141 +893,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field7}
-				 
-					{BEGIN cellblock_grid_headcell_field8}
-	<th
-	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor6_class}
-			"
-
-			data-field="regidor6"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor6_fieldheadercolumn}
-	{BEGIN regidor6_fieldheader}
-	<SPAN {$regidor6_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor6">
-	{$label corporacion regidor6 }	{$arrow_icon_regidor6}
-	</SPAN>
-	{END regidor6_fieldheader}
-{END regidor6_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
-				 
-					{BEGIN cellblock_grid_headcell_field9}
-	<th
-	
-	{$cell_grid_headcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor7_class}
-			"
-
-			data-field="regidor7"
-	
-	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor7_fieldheadercolumn}
-	{BEGIN regidor7_fieldheader}
-	<SPAN {$regidor7_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor7">
-	{$label corporacion regidor7 }	{$arrow_icon_regidor7}
-	</SPAN>
-	{END regidor7_fieldheader}
-{END regidor7_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field9}
-				 
-					{BEGIN cellblock_grid_headcell_field10}
-	<th
-	
-	{$cell_grid_headcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor8_class}
-			"
-
-			data-field="regidor8"
-	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor8_fieldheadercolumn}
-	{BEGIN regidor8_fieldheader}
-	<SPAN {$regidor8_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor8">
-	{$label corporacion regidor8 }	{$arrow_icon_regidor8}
-	</SPAN>
-	{END regidor8_fieldheader}
-{END regidor8_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field10}
-				 
-					{BEGIN cellblock_grid_headcell_field11}
-	<th
-	
-	{$cell_grid_headcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor9_class}
-			"
-
-			data-field="regidor9"
-	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor9_fieldheadercolumn}
-	{BEGIN regidor9_fieldheader}
-	<SPAN {$regidor9_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor9">
-	{$label corporacion regidor9 }	{$arrow_icon_regidor9}
-	</SPAN>
-	{END regidor9_fieldheader}
-{END regidor9_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field11}
-				 
-					{BEGIN cellblock_grid_headcell_field12}
-	<th
-	
-	{$cell_grid_headcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor10_class}
-			"
-
-			data-field="regidor10"
-	
-	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor10_fieldheadercolumn}
-	{BEGIN regidor10_fieldheader}
-	<SPAN {$regidor10_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor10">
-	{$label corporacion regidor10 }	{$arrow_icon_regidor10}
-	</SPAN>
-	{END regidor10_fieldheader}
-{END regidor10_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field12}
 							</tr>
 					 
 					 
@@ -1305,121 +1155,6 @@
 {END regidor5_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
-				 
-					{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor6_class}
-			"
-
-			data-field="regidor6"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor6_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor6" data-default-width >
-{$regidor6_value}
-</span>
-{END regidor6_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
-				 
-					{BEGIN cellblock_grid_cell_field9}
-	<td
-	
-	{$cell_grid_cell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor7_class}
-			"
-
-			data-field="regidor7"
-	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor7_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor7" data-default-width >
-{$regidor7_value}
-</span>
-{END regidor7_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field9}
-				 
-					{BEGIN cellblock_grid_cell_field10}
-	<td
-	
-	{$cell_grid_cell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor8_class}
-			"
-
-			data-field="regidor8"
-	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor8_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor8" data-default-width >
-{$regidor8_value}
-</span>
-{END regidor8_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field10}
-				 
-					{BEGIN cellblock_grid_cell_field11}
-	<td
-	
-	{$cell_grid_cell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor9_class}
-			"
-
-			data-field="regidor9"
-	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor9_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor9" data-default-width >
-{$regidor9_value}
-</span>
-{END regidor9_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field11}
-				 
-					{BEGIN cellblock_grid_cell_field12}
-	<td
-	
-	{$cell_grid_cell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$regidor10_class}
-			"
-
-			data-field="regidor10"
-	
-	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN regidor10_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="regidor10" data-default-width >
-{$regidor10_value}
-</span>
-{END regidor10_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field12}
 							</tr>
 					 
 					
@@ -1595,86 +1330,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
-				 
-					{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="corporacion_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
-				 
-					{BEGIN cellblock_grid_footcell_field9}
-	<td
-	
-	{$cell_grid_footcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="corporacion_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field9}
-				 
-					{BEGIN cellblock_grid_footcell_field10}
-	<td
-	
-	{$cell_grid_footcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="corporacion_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field10}
-				 
-					{BEGIN cellblock_grid_footcell_field11}
-	<td
-	
-	{$cell_grid_footcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="corporacion_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field11}
-				 
-					{BEGIN cellblock_grid_footcell_field12}
-	<td
-	
-	{$cell_grid_footcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="corporacion_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field12}
 							</tr>
 					
 					</tfoot>
