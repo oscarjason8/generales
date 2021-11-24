@@ -311,5 +311,6 @@ array( 'cell' => 'c2' ) ),
 'logo1' => array( 'type' => 'logo' ),
 'expand_button' => array( 'type' => 'expand_button' ) ),
 'dbProps' => array(  ),
-'version' => 4 );
+'version' => 4,
+'pageWidth' => 'full' );
 		?>

@@ -309,5 +309,6 @@ array( 'cell' => 'c2' ) ),
 'adminarea_link' => array( 'type' => 'adminarea_link' ),
 'expand_button' => array( 'type' => 'expand_button' ) ),
 'dbProps' => array(  ),
-'version' => 4 );
+'version' => 4,
+'pageWidth' => 'full' );
 		?>
