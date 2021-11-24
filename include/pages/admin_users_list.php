@@ -498,5 +498,6 @@ array( 'cell' => 'footcell_field2' ) ) ) ),
 'grid_edit' => array( 'type' => 'grid_edit' ),
 'expand_button' => array( 'type' => 'expand_button' ) ),
 'dbProps' => array(  ),
-'version' => 4 );
+'version' => 4,
+'pageWidth' => 'full' );
 		?>
