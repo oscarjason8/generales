@@ -918,6 +918,21 @@ function CustomExpression($value, $data, $field, $ptype, $table="")
 function fileCustomExpression($file, $data, $field, $ptype, $table )
 {
 	$value = "";
+				if($table=="actas" && $field=="presidente")
+	{
+		;
+		return $value;
+	}
+				if($table=="actas" && $field=="diputado")
+	{
+		;
+		return $value;
+	}
+				if($table=="actas" && $field=="alcalde")
+	{
+		;
+		return $value;
+	}
 	return $value;
 }
 

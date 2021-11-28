@@ -459,29 +459,14 @@ $tdataactas[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "File-based Image");
+	$vdata = array("ViewFormat" => "Document Download");
 
+	
 	
 	
 				$vdata["ShowThumbnail"] = true;
-	$vdata["ThumbWidth"] = 200;
-	$vdata["ThumbHeight"] = 150;
-	$vdata["ImageWidth"] = 600;
-	$vdata["ImageHeight"] = 400;
-
-			$vdata["multipleImgMode"] = 1;
-	$vdata["maxImages"] = 0;
-
-			$vdata["showGallery"] = true;
-	$vdata["galleryMode"] = 2;
-	$vdata["captionMode"] = 2;
-	$vdata["captionField"] = "";
-
-	$vdata["imageBorder"] = 1;
-	$vdata["imageFullWidth"] = 1;
-
-
-	
+					$vdata["ShowIcon"] = true;
+		
 	
 	
 	
@@ -612,29 +597,14 @@ $tdataactas[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "File-based Image");
+	$vdata = array("ViewFormat" => "Document Download");
 
+	
 	
 	
 				$vdata["ShowThumbnail"] = true;
-	$vdata["ThumbWidth"] = 200;
-	$vdata["ThumbHeight"] = 150;
-	$vdata["ImageWidth"] = 600;
-	$vdata["ImageHeight"] = 400;
-
-			$vdata["multipleImgMode"] = 1;
-	$vdata["maxImages"] = 0;
-
-			$vdata["showGallery"] = true;
-	$vdata["galleryMode"] = 2;
-	$vdata["captionMode"] = 2;
-	$vdata["captionField"] = "";
-
-	$vdata["imageBorder"] = 1;
-	$vdata["imageFullWidth"] = 1;
-
-
-	
+					$vdata["ShowIcon"] = true;
+		
 	
 	
 	
@@ -765,29 +735,14 @@ $tdataactas[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "File-based Image");
+	$vdata = array("ViewFormat" => "Document Download");
 
+	
 	
 	
 				$vdata["ShowThumbnail"] = true;
-	$vdata["ThumbWidth"] = 200;
-	$vdata["ThumbHeight"] = 150;
-	$vdata["ImageWidth"] = 600;
-	$vdata["ImageHeight"] = 400;
-
-			$vdata["multipleImgMode"] = 1;
-	$vdata["maxImages"] = 0;
-
-			$vdata["showGallery"] = true;
-	$vdata["galleryMode"] = 2;
-	$vdata["captionMode"] = 2;
-	$vdata["captionField"] = "";
-
-	$vdata["imageBorder"] = 1;
-	$vdata["imageFullWidth"] = 1;
-
-
-	
+					$vdata["ShowIcon"] = true;
+		
 	
 	
 	

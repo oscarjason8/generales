@@ -236,7 +236,7 @@ $tdataalc___por_distrito[".tableType"] = "report";
 $tdataalc___por_distrito[".printerPageOrientation"] = 1;
 $tdataalc___por_distrito[".nPrinterPageScale"] = 100;
 
-$tdataalc___por_distrito[".nPrinterSplitRecords"] = 15;
+$tdataalc___por_distrito[".nPrinterSplitRecords"] = 20;
 
 $tdataalc___por_distrito[".geocodingEnabled"] = false;
 
@@ -244,7 +244,7 @@ $tdataalc___por_distrito[".geocodingEnabled"] = false;
 $tdataalc___por_distrito[".printReportLayout"] = 6;
 
 $tdataalc___por_distrito[".reportPrintPartitionType"] = 1;
-$tdataalc___por_distrito[".reportPrintGroupsPerPage"] = 15;
+$tdataalc___por_distrito[".reportPrintGroupsPerPage"] = 20;
 $tdataalc___por_distrito[".lowGroup"] = 0;
 
 
